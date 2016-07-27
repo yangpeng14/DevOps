@@ -11,8 +11,8 @@ import sys
 from qiniu import Auth
 from qiniu import BucketManager
 
-access_key = 'Jo5akwq7rWq1iHexcRhH8j1NEIzZWBNVSeAoAeIZ'
-secret_key = '3XN7V_ik7L2TvRowfJXIXn5yQIW-SE3VVVjkxmjT'
+access_key = ''
+secret_key = ''
 
 #初始化Auth状态
 q = Auth(access_key, secret_key)
@@ -21,7 +21,7 @@ q = Auth(access_key, secret_key)
 bucket = BucketManager(q)
 
 #你要删除的空间名
-bucket_name = 'yp-test'
+bucket_name = ''
 
 # 列出所要删除的文件
 out_file = '/tmp/qiniu_list'
