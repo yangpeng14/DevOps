@@ -3,7 +3,7 @@
 
 """
 删除单个七牛目录下文件或者单个文件
-使用方法  python3 qiniu_delete3_single.py 需要删除七牛目录路径或者文件
+使用方法  python3 qiniu_delete3_single.py 需要删除七牛目录路径下文件或者单个文件
 """
 
 import subprocess
