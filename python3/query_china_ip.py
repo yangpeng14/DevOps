@@ -1,6 +1,11 @@
 #!/usr/bin/python3
 # -*-coding=utf-8-*-
 
+"""
+用途：查询中国地区ipv4地址
+使用方法： python3 query_china_ip.py
+"""
+
 import re
 import requests
 import math
