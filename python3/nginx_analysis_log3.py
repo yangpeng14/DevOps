@@ -4,7 +4,7 @@
 # ------------------------------------------------------
 # Name:         nginx 日志分析脚本
 # Purpose:      此脚本只用来分析nginx的访问日志
-# Employ:       python3 nginx_analysis_log3.py or python3 nginx_analysis_log3.py number
+# Employ:       python3 nginx_analysis_log3.py NginxLogFilePath or python3 nginx_analysis_log3.py NginxLogFilePath number
 # ------------------------------------------------------
 
 import time
