@@ -2,9 +2,9 @@
 #-*-coding=utf-8-*-
 
 # ------------------------------------------------------
-# Name:         nginx 日志分析脚本
-# Purpose:      此脚本只用来分析nginx的访问日志
-# Employ:       python3 nginx_analysis_log3.py NginxLogFilePath or python3 nginx_analysis_log3.py NginxLogFilePath number
+# Name:         varnish 日志分析脚本
+# Purpose:      此脚本只用来分析varnish的访问日志
+# Employ:       python3 varnish_analysis_log3.py VarnishLogFilePath or python3 varnish_analysis_log3.py VarnishLogFilePath number
 # ------------------------------------------------------
 
 import time
@@ -97,12 +97,14 @@ class analysis_log():
 
     def generate_log_report(self, logfile):
         # 读取文件，分析split_eachline_todict方法生成的字典
-        with open(logfile, 'r') as infile:
+        with open(logfile, 'rb') as infile:
             for line in infile.readlines():
                 try:
                     line_dict = self.split_eachline_todict(line)
-                    host = line_dict['remote_host']
-                    status = line_dict['status']
+                    host1 = line_dict['remote_host']
+                    host = str(host1).split("'")[1]
+                    status1 = line_dict['status']
+                    status = str(status1).split("'")[1]
                 except ValueError:
                     continue
                 except IndexError:
@@ -110,10 +112,10 @@ class analysis_log():
 
                 if host not in self.report_dict:
                     host_info_obj = hostInfo(host)
-                    #out <__main__.hostInfo object at 0x7fc0aa7ff510>
+                    # out <__main__.hostInfo object at 0x7fc0aa7ff510>
                     # out {'500': 0, '502': 0, '302': 0, '304': 0, '301': 0, 'times': 0, '200': 0, '404': 0, '401': 0, '403': 0, 'size': 0, '503': 0, '409': 0}
-                    self.report_dict[host] = host_info_obj  #以host_info_obj方法做为value值
-                    #out {'1.1.1.1': <__main__.hostInfo object at 0x7fc0aa7ff510>}
+                    self.report_dict[host] = host_info_obj  # 以host_info_obj方法做为value值
+                    # out {'1.1.1.1': <__main__.hostInfo object at 0x7fc0aa7ff510>}
                     # out {'1.1.1.1': {'500': 0, '502': 0, '302': 0, '304': 0, '301': 0, 'times': 0, '200': 0, '404': 0, '401': 0, '403': 0, 'size': 0, '503': 0, '409': 0}}
                 else:
                     host_info_obj = self.report_dict[host]
