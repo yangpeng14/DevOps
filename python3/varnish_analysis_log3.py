@@ -33,7 +33,7 @@ class displayFormat():
     def error_print(self):
         # 输出错误信息
         print
-        print('Usage : ' + sys.argv[0] + ' NginxLogFilePath [Number]')
+        print('Usage : ' + sys.argv[0] + ' VarnishLogFilePath [Number]')
         print
         sys.exit(1)
 
