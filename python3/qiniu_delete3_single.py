@@ -50,3 +50,4 @@ if __name__ == '__main__':
         print("""$"Usage: $1 Need to delete the path, Output /tmp/qiniu_list""")
         sys.exit(1)
     del_file()
+    subprocess.Popen('rm -f {}'.format(out_file), shell=True)
