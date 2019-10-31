@@ -1,10 +1,11 @@
-### 一、写本脚本背景
+### 一、写本外壳背景
 1. [acme.sh](https://github.com/Neilpang/acme.sh) 使用 [DNS alias mode 功能](https://github.com/Neilpang/acme.sh/wiki/DNS-alias-mode) 申请 Let's Encrypt 证书，如果申请DNS域大约超过8个以上就会遇到 `Incorrect TXT record`错误。本人大致看了`acme.sh`脚本`alias mode`功能暂时没有发现脚本中间有bug，后本人没有办法就在`acme.sh`脚本外面套一层外壳，具体使用方法见下面内容。
 
 ### 二、使用本外壳前准备环境
 1. [acme.sh 脚本安装](https://github.com/Neilpang/acme.sh/wiki/How-to-install)
 2. [设置DNS CNAME 记录](https://github.com/Neilpang/acme.sh/wiki/DNS-alias-mode)
 3. 安装`Python3`环境
+4. [下载 letsencrypt-dns-alias.py](https://github.com/yangpeng14/DevOps/blob/master/letsencrypt/letsencrypt-dns-alias.py)
 
 ### 三、本外壳使用注意
 1. 只支持`DNS alias mode 功能`。
