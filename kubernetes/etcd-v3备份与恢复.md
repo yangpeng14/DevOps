@@ -1,8 +1,8 @@
----
-参考链接:
----
-https://skyao.gitbooks.io/learning-etcd3/content/documentation/op-guide/recovery.html
-https://github.com/coreos/etcd/blob/master/Documentation/op-guide/recovery.md
+> 参考链接:
+
+> https://skyao.gitbooks.io/learning-etcd3/content/documentation/op-guide/recovery.html
+> https://github.com/coreos/etcd/blob/master/Documentation/op-guide/recovery.md
+
 
 #### 一、灾难恢复
 
