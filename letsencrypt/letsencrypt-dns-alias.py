@@ -127,7 +127,7 @@ class Main(object):
                             break
                     else:
                         print("\033[31;31m")
-                        print("重试申请次数超过3次")
+                        print("重试申请次数超过2次")
                         print("\033[0m \n")
                         sys.exit(1)
         else:
@@ -155,7 +155,7 @@ class Main(object):
                             break
                     else:
                         print("\033[31;31m")
-                        print("重试申请次数超过3次")
+                        print("重试申请次数超过2次")
                         print("\033[0m \n")
                         sys.exit(1)
 
