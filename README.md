@@ -20,14 +20,17 @@
 1. [Python工具](https://github.com/yangpeng14/DevOps/tree/master/python3)
 
 
-### 三、Kubernetes知识
+### 三、Docker知识
+1. [Docker容器日志清理方案](https://github.com/yangpeng14/DevOps/blob/master/docker/docker-%E5%AE%B9%E5%99%A8%E6%97%A5%E5%BF%97%E6%B8%85%E7%90%86%E6%96%B9%E6%A1%88.md)
+
+### 四、Kubernetes知识
 1. [Metrics Serve 0.3.2安装](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/metrics-Server-v0-3-2%E7%89%88%E6%9C%AC%E5%AE%89%E8%A3%85.md)
 2. [Prometheus Operator手动安装](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/prometheus-operator%E6%89%8B%E5%8A%A8%E9%83%A8%E7%BD%B2.md)
 3. [Etcd v3版本备份与恢复](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/etcd-v3%E5%A4%87%E4%BB%BD%E4%B8%8E%E6%81%A2%E5%A4%8D.md)
 4. [Etcd 使用命令](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/etcd%E4%BD%BF%E7%94%A8%E5%91%BD%E4%BB%A4.md)
 5. [Kubernetes v1.12.0 HA搭建](https://www.yp14.cn/2018/09/30/Kubernetes-v1-12-0-HA%E6%90%AD%E5%BB%BA/)
 
-### 四、Istio知识
+### 五、Istio知识
 1. [Istio Helm 安装](https://github.com/yangpeng14/DevOps/blob/master/istio/istio-Helm-%E5%AE%89%E8%A3%85.md)
 
 ## 公众号
