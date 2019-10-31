@@ -16,6 +16,8 @@
 1. [基于 acme.sh脚本 DNS别名功能 分批申请证书](https://github.com/yangpeng14/DevOps/blob/master/letsencrypt/letsencrypt-dns-alias.md)
 
 
+### 二、一些Python工具
+1. [Python工具](https://github.com/yangpeng14/DevOps/tree/master/python3)
 
 
 ## 公众号
