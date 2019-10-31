@@ -11,7 +11,7 @@
 1. 只支持`DNS alias mode 功能`。
 2. 只支持`--challenge-alias`参数，不支持`--domain-alias`参数。
 3. 不能往外壳传入`--domain -d --domain-alias --challenge-alias --dns --log-level --log`参数。
-4. 每次向`Let's Encrypt`申请5个域名，依次累加。
+4. 每次向`Let's Encrypt`申请5个域名，依次累加，申请通过的域名在一断时间内不需要再次验证。
 5. 开启记录日志模式，日志级别为 `2`。
 6. 申请证书失败时，支持重试2次，每次等待20秒。
 
