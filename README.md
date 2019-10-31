@@ -12,7 +12,7 @@
 
 ## 目录
 
-### 一、Let's Encrypt 自动颁发脚本
+### 一、Let's Encrypt 证书自动颁发脚本
 1. [基于 acme.sh脚本 DNS别名功能 分批申请证书](https://github.com/yangpeng14/DevOps/blob/master/letsencrypt/letsencrypt-dns-alias.md)
 
 
