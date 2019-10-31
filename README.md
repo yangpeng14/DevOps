@@ -1,6 +1,6 @@
 # 个人自动化运维指南 
 
-> 如果中间内容有对你有所帮助，可以帮我在 [yangpeng14/DevOps](https://github.com/yangpeng14/DevOps)上点个 star
+> 如果中间内容对你有所帮助，可以帮我在 [yangpeng14/DevOps](https://github.com/yangpeng14/DevOps)上点个 star
 
 > 你的赞赏是我的动力
 
