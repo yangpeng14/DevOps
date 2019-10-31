@@ -20,6 +20,14 @@
 1. [Python工具](https://github.com/yangpeng14/DevOps/tree/master/python3)
 
 
+### 三、Kubernetes知识
+1. [Metrics Serve 0.3.2安装](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/metrics-Server-v0-3-2%E7%89%88%E6%9C%AC%E5%AE%89%E8%A3%85.md)
+2. [Prometheus Operator手动安装](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/prometheus-operator%E6%89%8B%E5%8A%A8%E9%83%A8%E7%BD%B2.md)
+3. [Etcd v3版本备份与恢复](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/etcd-v3%E5%A4%87%E4%BB%BD%E4%B8%8E%E6%81%A2%E5%A4%8D.md)
+4. [Etcd 使用命令](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/etcd%E4%BD%BF%E7%94%A8%E5%91%BD%E4%BB%A4.md)
+
+### 四、Istio知识
+
 ## 公众号
 欢迎关注公众号**YP小站**，我会定期分享本人家乡美食以及自动化运维相关文章，欢迎大家关注交流，如果有机会也可以去我家乡湖南游玩
 
