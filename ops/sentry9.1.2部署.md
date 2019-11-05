@@ -117,6 +117,9 @@ sentry_smtp | 邮件服务
 sentry_web | 使用django+drf写的一套Sentry Web界面
 sentry_worker | celery的worker服务，用来跑异步任务的
 
+## 配置钉钉通知
+Sentry服务启动后，任意选择`一个项目` -->  点击`设置` --> 点击`Legacy Integrations` --> 搜索到`DingDing`开启并配置钉钉机器人`Access Token`
+
 # 五、配置外部反向代理
 ## 配置Nginx Sentry虚拟主机配置
 ```bash
