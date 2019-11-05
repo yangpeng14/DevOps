@@ -35,7 +35,7 @@
 
 ### 六、运维知识
 1. [Sentry历史数据清理](https://github.com/yangpeng14/DevOps/blob/master/ops/sentry%E5%8E%86%E5%8F%B2%E6%95%B0%E6%8D%AE%E6%B8%85%E7%90%86.md)
-2. [sentry9.1.2部署](https://github.com/yangpeng14/DevOps/blob/master/ops/sentry9.1.2%E9%83%A8%E7%BD%B2.md)
+2. [Sentry9.1.2部署](https://github.com/yangpeng14/DevOps/blob/master/ops/sentry9.1.2%E9%83%A8%E7%BD%B2.md)
 3. [Gitlab Docker Compose 启动配置](https://github.com/yangpeng14/DevOps/blob/master/ops/Gitlab-Docker-Compose-%E5%90%AF%E5%8A%A8%E9%85%8D%E7%BD%AE.md)
 4. [ES6版本自定义索引模板](https://github.com/yangpeng14/DevOps/blob/master/ops/es6%E8%87%AA%E5%AE%9A%E4%B9%89%E7%B4%A2%E5%BC%95%E6%A8%A1%E6%9D%BF.md)
 5. [Elasticsearch查询](https://github.com/yangpeng14/DevOps/blob/master/ops/Elasticsearch%E6%9F%A5%E8%AF%A2.md)
