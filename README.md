@@ -39,6 +39,7 @@
 3. [Gitlab Docker Compose 启动配置](https://github.com/yangpeng14/DevOps/blob/master/ops/Gitlab-Docker-Compose-%E5%90%AF%E5%8A%A8%E9%85%8D%E7%BD%AE.md)
 4. [ES6版本自定义索引模板](https://github.com/yangpeng14/DevOps/blob/master/ops/es6%E8%87%AA%E5%AE%9A%E4%B9%89%E7%B4%A2%E5%BC%95%E6%A8%A1%E6%9D%BF.md)
 5. [Elasticsearch查询](https://github.com/yangpeng14/DevOps/blob/master/ops/Elasticsearch%E6%9F%A5%E8%AF%A2.md)
+6. [gitlab-ci-搭建持续集成环境](https://github.com/yangpeng14/DevOps/blob/master/ops/gitlab-ci-%E6%90%AD%E5%BB%BA%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90%E7%8E%AF%E5%A2%83.md)
 
 ## 公众号
 欢迎关注公众号**YP小站**，我会定期分享本人家乡美食以及自动化运维相关文章，欢迎大家关注交流，如果有机会也可以去我家乡湖南游玩
