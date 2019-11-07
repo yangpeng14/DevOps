@@ -130,10 +130,13 @@ always | 执行作业，而不管先前阶段的作业状态如何
 manual | 手动执行作业（在GitLab 8.10中已添加）
 
 ## 参考文献
-`https://docs.gitlab.com/ce/ci/yaml/README.html`
-`https://wiki.mbalib.com/wiki/%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90`
-`https://zh.wikipedia.org/wiki/%E6%8C%81%E7%BA%8C%E6%95%B4%E5%90%88`
-`https://zh.wikipedia.org/wiki/%E6%8C%81%E7%BA%8C%E9%83%A8%E7%BD%B2`
+https://docs.gitlab.com/ce/ci/yaml/README.html
+
+https://wiki.mbalib.com/wiki/%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90
+
+https://zh.wikipedia.org/wiki/%E6%8C%81%E7%BA%8C%E6%95%B4%E5%90%88
+
+https://zh.wikipedia.org/wiki/%E6%8C%81%E7%BA%8C%E9%83%A8%E7%BD%B2
 
 ## 关注我
 ![公众号](https://www.yp14.cn/img/gzh.jpeg)
