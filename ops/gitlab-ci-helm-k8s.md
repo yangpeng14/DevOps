@@ -68,7 +68,7 @@ job 2:
 ```
 
 ## deploy 部署脚本
-- deploy 部分代码，获取脚本全部代码，请关注我的 `YP小站` 公众号并回复 `获取deploy代码`
+- 下面是 deploy 部分代码，获取脚本全部代码，请关注我的 `YP小站` 公众号并回复 `获取deploy代码`
 
 ```python
 #!/usr/bin/env python3
