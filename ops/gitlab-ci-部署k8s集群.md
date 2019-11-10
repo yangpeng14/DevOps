@@ -2,8 +2,8 @@
 ![](/images/gitlab-k8s.png)
 
 ## Gitlab 和 Gitlab CI搭建参考往期文章
--
--
+- https://github.com/yangpeng14/DevOps/blob/master/ops/Gitlab-Docker-Compose-%E5%90%AF%E5%8A%A8%E9%85%8D%E7%BD%AE.md
+- https://github.com/yangpeng14/DevOps/blob/master/ops/gitlab-ci-%E6%90%AD%E5%BB%BA%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90%E7%8E%AF%E5%A2%83.md
 
 ## Helm安装(gitlab runner机器上安装)
 - 安装目前最新helm 2.16.0版本
@@ -68,7 +68,7 @@ job 2:
 ```
 
 ## deploy 部署脚本
-- deploy 部分代码，获取脚本全部代码，请关注我的公众号并回复 `获取deploy代码`
+- deploy 部分代码，获取脚本全部代码，请关注我的 `YP小站` 公众号并回复 `获取deploy代码`
 
 ```python
 #!/usr/bin/env python3
