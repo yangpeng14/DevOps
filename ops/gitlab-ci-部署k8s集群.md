@@ -120,3 +120,6 @@ def check_item_exists(project, server_name, docker_images_version, *args):
     --set image.tag=$docker_images_version "Helm warehouse address" $helm_values_file')
     return
 ```
+
+## 参考文献
+https://blog.csdn.net/ygqygq2/article/details/85097857
