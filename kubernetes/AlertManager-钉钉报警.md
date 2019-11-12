@@ -91,6 +91,94 @@ if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
 ```
 
-## 使用 Docker 运行
-`docker run -p 5000:5000 --name -e ROBOT_TOKEN=<钉钉机器人TOKEN> dingtalk-hook -d yangpeng2468/alertmanager-dingtalk-hook:v1`
+## 使用 Docker 部署
+```
+$ docker run -p 5000:5000 --name -e ROBOT_TOKEN=<钉钉机器人TOKEN> dingtalk-hook -d yangpeng2468/alertmanager-dingtalk-hook:v1
+```
 
+## 使用 Kubernetes 部署
+- 第一步 创建`kube-ops namespace`，建议将钉钉机器人`TOKEN`创建成`Secret`资源对象
+```
+$ kubectl create namespace kube-ops
+
+$ kubectl create secret generic dingtalk-secret --from-literal=token=<钉钉群聊的机器人TOKEN> -n kube-ops
+
+secret "dingtalk-secret" created
+```
+
+- 第二步 定义 `Deployment` 和 `Service` 资源对象：`dingtalk-hook.yaml`
+```yaml
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: dingtalk-hook
+  namespace: kube-ops
+spec:
+  template:
+    metadata:
+      labels:
+        app: dingtalk-hook
+    spec:
+      containers:
+      - name: dingtalk-hook
+        image: yangpeng2468/alertmanager-dingtalk-hook:v1
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 5000
+          name: http
+        env:
+        - name: ROBOT_TOKEN
+          valueFrom:
+            secretKeyRef:
+              name: dingtalk-secret
+              key: token
+        resources:
+          requests:
+            cpu: 50m
+            memory: 100Mi
+          limits:
+            cpu: 50m
+            memory: 100Mi
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: dingtalk-hook
+  namespace: kube-ops
+spec:
+  selector:
+    app: dingtalk-hook
+  ports:
+  - name: hook
+    port: 5000
+    targetPort: http
+```
+
+- 第三步 创建上面的资源对象即可
+```
+$ kubectl create -f dingtalk-hook.yaml
+
+deployment.extensions "dingtalk-hook" created
+service "dingtalk-hook" created
+
+$ kubectl get pods -n kube-ops
+
+NAME                            READY     STATUS      RESTARTS   AGE
+dingtalk-hook-c4fcd8cd6-6r2b6   1/1       Running     0          45m
+......
+```
+
+- 最后 `AlertManager`中 `webhook` 地址直接通过 `DNS` 形式访问即可
+```yaml
+receivers:
+- name: 'webhook'
+  webhook_configs:
+  - url: 'http://dingtalk-hook.kube-ops.svc.cluster.local:5000'
+    send_resolved: true
+```
+
+## 参考文档
+`钉钉自定义机器人文档` https://ding-doc.dingtalk.com/doc#/serverapi2/qf2nxq
+
+`AlertManager的使用` https://www.qikqiak.com/k8s-book/docs/57.AlertManager%E7%9A%84%E4%BD%BF%E7%94%A8.html

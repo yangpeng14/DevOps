@@ -29,6 +29,7 @@
 3. [Etcd v3版本备份与恢复](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/etcd-v3%E5%A4%87%E4%BB%BD%E4%B8%8E%E6%81%A2%E5%A4%8D.md)
 4. [Etcd 使用命令](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/etcd%E4%BD%BF%E7%94%A8%E5%91%BD%E4%BB%A4.md)
 5. [Kubernetes v1.12.0 HA搭建](https://www.yp14.cn/2018/09/30/Kubernetes-v1-12-0-HA%E6%90%AD%E5%BB%BA/)
+6. [AlertManager-钉钉报警](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/AlertManager-%E9%92%89%E9%92%89%E6%8A%A5%E8%AD%A6.md)
 
 ### 五、Istio知识
 1. [Istio Helm 安装](https://github.com/yangpeng14/DevOps/blob/master/istio/istio-Helm-%E5%AE%89%E8%A3%85.md)
