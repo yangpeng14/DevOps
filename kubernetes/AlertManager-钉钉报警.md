@@ -2,7 +2,7 @@
 用于接收`AlertManager`服务通知并通过钉钉机器人报警
 
 ## prometheus-operator 安装请参考往期文章
-- `https://github.com/yangpeng14/DevOps/blob/master/kubernetes/prometheus-operator%E6%89%8B%E5%8A%A8%E9%83%A8%E7%BD%B2.md`
+- https://github.com/yangpeng14/DevOps/blob/master/kubernetes/prometheus-operator%E6%89%8B%E5%8A%A8%E9%83%A8%E7%BD%B2.md
 
 ## AlertManager 钉钉报警服务示例
 ![](https://www.yp14.cn/img/warn.png)
