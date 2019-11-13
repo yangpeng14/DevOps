@@ -30,6 +30,7 @@
 4. [Etcd 使用命令](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/etcd%E4%BD%BF%E7%94%A8%E5%91%BD%E4%BB%A4.md)
 5. [Kubernetes v1.12.0 HA搭建](https://www.yp14.cn/2018/09/30/Kubernetes-v1-12-0-HA%E6%90%AD%E5%BB%BA/)
 6. [AlertManager 钉钉报警](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/AlertManager-%E9%92%89%E9%92%89%E6%8A%A5%E8%AD%A6.md)
+7. [Prometheus 如何自动发现 Kubernetes Metrics 接口](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/prometheus-%E5%A6%82%E4%BD%95%E8%87%AA%E5%8A%A8%E5%8F%91%E7%8E%B0kubernetes-metrics%E6%8E%A5%E5%8F%A3.md)
 
 ### 五、Istio知识
 1. [Istio Helm 安装](https://github.com/yangpeng14/DevOps/blob/master/istio/istio-Helm-%E5%AE%89%E8%A3%85.md)
