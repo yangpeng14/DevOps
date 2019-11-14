@@ -7,13 +7,13 @@
 - 服务器时间不对，导致证书过期
 - 确实证书过期了
 
-证书过期，很多同学会很疑惑，我证书明明签署10年有效期或者更久，怎么刚1年就过期了，下面就来解惑。
+证书过期，很多同学会很疑惑，我证书明明`签署10年`有效期或者`更久`，怎么刚`1年就过期了`，下面就来解惑。
 
 ## Kubernetes 集群证书
-集群分为两种证书：一、用于集群 `Master、Etcd`等通信的证书。 二、用于集群 `Kubelet` 证书
+集群分为两种证书：一、用于集群 `Master、Etcd`等通信的证书。 二、用于集群 `Kubelet` 组件证书
 
 ## Kubernetes 集群中 Kubelet 组件坑
-我们在搭建 Kubernetes 集群时，一般只声明用于集群 `Master、Etcd`等通信的证书 为 `10年` 或者 `更久`，但未声明集群 `Kubelet 证书` ，`Kubelet 证书` 默认有效期为`1年`。集群运行1年以后就会导致报 `certificate has expired or is not yet valid` 错误，导致`集群 Node`不能于`集群 Master`正常通信。
+我们在搭建 Kubernetes 集群时，一般只声明用于集群 `Master、Etcd`等通信的证书 为 `10年` 或者 `更久`，但未声明集群 `Kubelet 组件证书` ，`Kubelet 组件证书` 默认有效期为`1年`。集群运行1年以后就会导致报 `certificate has expired or is not yet valid` 错误，导致`集群 Node`不能于`集群 Master`正常通信。
 
 # 二、 解决方法
 
