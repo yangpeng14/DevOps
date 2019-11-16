@@ -45,6 +45,7 @@
 6. [Gitlab CI 搭建持续集成环境](https://github.com/yangpeng14/DevOps/blob/master/ops/gitlab-ci-%E6%90%AD%E5%BB%BA%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90%E7%8E%AF%E5%A2%83.md)
 7. [Gitlab CI + Helm + Kubernetes 构建CI/CD](https://github.com/yangpeng14/DevOps/blob/master/ops/gitlab-ci-helm-k8s.md)
 8. [批量创建阿里云ECS并初始化](https://github.com/yangpeng14/DevOps/blob/master/ops/%E6%89%B9%E9%87%8F%E5%88%9B%E5%BB%BA%E9%98%BF%E9%87%8C%E4%BA%91ECS%E5%B9%B6%E5%88%9D%E5%A7%8B%E5%8C%96.md)
+9. [Harbor v1.7.0自动镜像回收](https://github.com/yangpeng14/DevOps/blob/master/ops/harbor-v1.7.0-%E8%87%AA%E5%8A%A8%E9%95%9C%E5%83%8F%E5%9B%9E%E6%94%B6.md)
 
 ## 公众号
 欢迎关注公众号**YP小站**，我会定期分享本人家乡美食以及自动化运维相关文章，欢迎大家关注交流，如果有机会也可以去我家乡湖南游玩

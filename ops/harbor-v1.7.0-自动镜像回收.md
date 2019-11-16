@@ -215,3 +215,6 @@ if __name__ == '__main__':
     cline_get = GetHarborApi(host, user, password, protocol)
     cline_get.main()
 ```
+
+## 程序执行完成，再次执行垃圾回收
+![](https://www.yp14.cn/img/harbor.png)
