@@ -1,5 +1,5 @@
 ## Helm 是什么？
-Helm 是一个命令行下的客户端工具。主要用于 Kubernetes 应用程序 Chart 的`创建`、`打包`、`发布`以及创建和管理本地和远程的 Chart 仓库。
+Helm 是一个命令行下的客户端工具。主要用于 Kubernetes 应用程序 Chart 的`创建`、`打包`、`发布`以及`创建管理本地或者远程的Chart仓库`。
 
 ## Helm 解决什么痛点？
 - 如何统一管理、配置和更新分散的`k8s yaml`资源文件
@@ -25,7 +25,7 @@ Helm 是一个命令行下的客户端工具。主要用于 Kubernetes 应用程
 
 - `helm cli`命令重命名
 ```bash
-helm delete  重命名为 helm uninstall
+# v2中删除项目需要提供--purge参数，v3默认情况下启用此功能。要保留以前的行为，请使用 helm uninstall --keep-history
 helm delete  重命名为 helm uninstall
 helm fetch   重命名为 helm pull
 helm inspect 重命名为 helm show
@@ -33,7 +33,7 @@ helm inspect 重命名为 helm show
 以上命令虽然重命名，但旧命令仍然可用
 ```
 
-- 命名空间不存在，`helm 2`会自动创建命名空间，`helm 3`会遵守`Kubernetes`行为，返回错误
+- 创建的命名空间不存在时，在`helm 2`会自动创建命名空间，`helm 3`会遵守`Kubernetes`行为，返回错误
 
 ## Helm 3 功能更强大，赶快来使用吧！
 

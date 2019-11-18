@@ -32,6 +32,7 @@
 6. [AlertManager 钉钉报警](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/AlertManager-%E9%92%89%E9%92%89%E6%8A%A5%E8%AD%A6.md)
 7. [Prometheus 如何自动发现 Kubernetes Metrics 接口](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/prometheus-%E5%A6%82%E4%BD%95%E8%87%AA%E5%8A%A8%E5%8F%91%E7%8E%B0kubernetes-metrics%E6%8E%A5%E5%8F%A3.md)
 8. [Kubelet 证书自动续期](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/kubelet-%E8%AF%81%E4%B9%A6%E8%87%AA%E5%8A%A8%E7%BB%AD%E6%9C%9F.md)
+9. [Helm v3 新的功能](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/helm-v3-%E6%96%B0%E7%9A%84%E5%8A%9F%E8%83%BD.md)
 
 ### 五、Istio知识
 1. [Istio Helm 安装](https://github.com/yangpeng14/DevOps/blob/master/istio/istio-Helm-%E5%AE%89%E8%A3%85.md)
