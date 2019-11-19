@@ -333,3 +333,7 @@ spec:
           servicePort: 8080
         path: /
 ```
+
+## 参考链接
+- `官方部署文档` https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/static/mandatory.yaml
+- `nginx annotations配置` https://github.com/kubernetes/ingress-nginx/blob/master/docs/user-guide/nginx-configuration/annotations.md
