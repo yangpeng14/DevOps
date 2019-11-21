@@ -24,7 +24,7 @@ Istio 服务网格逻辑上分为`数据平面`和`控制平面`。
 - `控制平面`：负责管理和配置代理来路由流量。此外控制平面配置 Mixer 以`实施策略`和`收集遥测数据`。
 
 下图显示了构成每个面板的不同组件：
-![](https://archive.istio.io/v1.2/docs/concepts/what-is-istio/arch.svg)
+![](https://www.yp14.cn/img/istio.png)
 
 
 ## Istio 金丝雀部署

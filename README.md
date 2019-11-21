@@ -38,6 +38,7 @@
 
 ### 五、Istio知识
 1. [Istio Helm 安装](https://github.com/yangpeng14/DevOps/blob/master/istio/istio-Helm-%E5%AE%89%E8%A3%85.md)
+2. [K8S 金丝雀部署之 Istio](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/k8s%E9%87%91%E4%B8%9D%E9%9B%80%E9%83%A8%E7%BD%B2%E4%B9%8B-Istio.md)
 
 ### 六、运维知识
 1. [Sentry历史数据清理](https://github.com/yangpeng14/DevOps/blob/master/ops/sentry%E5%8E%86%E5%8F%B2%E6%95%B0%E6%8D%AE%E6%B8%85%E7%90%86.md)
