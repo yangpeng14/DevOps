@@ -25,7 +25,7 @@ console | 将 markdown 直接输出到终端，可以按需处理
 --port | 代理，比如抓取掘金文章中图片就需要开启
 --localhost | 本地主机端口
 --open-browser, --ob | Web格式自动打开浏览器
---rename | 获取的文章重新全名
+--rename | 获取的文章重新命名
 --dir | 获取的文章存储本地位置
 
 ## 安装
