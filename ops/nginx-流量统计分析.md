@@ -34,7 +34,7 @@ $ ./nginx_large_file_flow_analysis3.py -f /var/log/nginx/access.log -m 60
 ```
 
 ## 程序代码
-下面是 nginx_large_file_flow_analysis3.py 部分代码，获取程序全部代码，请关注我的 `YP小站` 公众号并回复 `nginx流量统计`
+下面是 nginx_large_file_flow_analysis3.py 部分代码，获取程序全部代码，请关注我的 `YP小站` 微信公众号并回复 `nginx流量统计`
 
 ```python
 #!/usr/bin/python3
