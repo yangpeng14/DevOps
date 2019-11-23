@@ -54,6 +54,6 @@
 11. [Nginx 流量统计分析](https://github.com/yangpeng14/DevOps/blob/master/ops/nginx-%E6%B5%81%E9%87%8F%E7%BB%9F%E8%AE%A1%E5%88%86%E6%9E%90.md)
 
 ## 公众号
-欢迎关注公众号**YP小站**，我会定期分享本人家乡美食以及自动化运维相关文章，欢迎大家关注交流，如果有机会也可以去我家乡湖南游玩
+欢迎关注公众号**YP小站**，我会定期分享本人家乡美食、自动化运维、DevOps、Kubernetes、Service Mesh和Cloud Native相关文章，欢迎大家关注交流，如果有机会也可以去我家乡湖南游玩。
 
 ![YP小站](https://www.yp14.cn/img/yp_wx.png)
