@@ -124,6 +124,7 @@ docker-ce-19.03.5-3.el7.x86_64
 ## k8s 部署
 - 配置 `k8s源`
 ```bash
+# k8s-master1 和 k8s-node1 机器都需要操作
 # 添加 k8s yum 源
 $ cat <<EOF > /etc/yum.repos.d/kubernetes.repo
 [kubernetes]
