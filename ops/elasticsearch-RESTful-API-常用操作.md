@@ -34,12 +34,12 @@ $ curl localhost:9200/_template/logstash  | jq
 
 - 查询 ES 集群健康状态
 ```bash
-$  curl -s -XGET 'http://localhost:19200/_cluster/health?pretty'
+$  curl -s -XGET 'http://localhost:9200/_cluster/health?pretty'
 ```
 
 - 查询 ES 集群设置
 ```bash
-curl -s -XGET 'http://localhost:19200/_cluster/settings' | jq
+curl -s -XGET 'http://localhost:9200/_cluster/settings' | jq
 ```
 
 - 下架 ES 集群中一个节点

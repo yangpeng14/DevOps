@@ -53,6 +53,7 @@
 9. [Harbor v1.7.0自动镜像回收](https://github.com/yangpeng14/DevOps/blob/master/ops/harbor-v1.7.0-%E8%87%AA%E5%8A%A8%E9%95%9C%E5%83%8F%E5%9B%9E%E6%94%B6.md)
 10. [网页主体格式转换神器](https://github.com/yangpeng14/DevOps/blob/master/ops/zignis-plugin-read.md)
 11. [Nginx 流量统计分析](https://github.com/yangpeng14/DevOps/blob/master/ops/nginx-%E6%B5%81%E9%87%8F%E7%BB%9F%E8%AE%A1%E5%88%86%E6%9E%90.md)
+12. [Elasticsearch RESTful API 常用操作](https://github.com/yangpeng14/DevOps/blob/master/ops/elasticsearch-RESTful-API-%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C.md)
 
 ## 公众号
 欢迎关注公众号**YP小站**，我会定期分享本人家乡美食、自动化运维、DevOps、Kubernetes、Service Mesh和Cloud Native相关文章，欢迎大家关注交流，如果有机会也可以去我家乡湖南游玩。
