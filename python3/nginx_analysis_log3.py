@@ -44,10 +44,10 @@ class displayFormat():
         print
 
 class hostInfo():
-    host_info = ['200', '301', '302', '304', '400', '401', '403', '404', '499', '500', '502', '503', '504', 'times', 'size']
+    host_info = ['200', '301', '302', '304', '307', '400', '401', '403', '404', '499', '500', '502', '503', '504', '206', '204', '202', '201', '101', '429', '415', '410', '408', 'times', 'size']
     def __init__(self, host):
         self.host = host = {}.fromkeys(self.host_info, 0)
-        #out {'500': 0, '502': 0, '302': 0, '304': 0, '301': 0, 'times': 0, '200': 0, '404': 0, '401': 0, '403': 0, 'size': 0, '503': 0, '409': 0}
+        # out {'500': 0, '502': 0, '302': 0, '304': 0, '301': 0, 'times': 0, '200': 0, '404': 0, '401': 0, '403': 0, 'size': 0, '503': 0, '409': 0}
 
     def increment(self, status_times_size, is_size):
        # 该方法是用来给host_info中的各个值加1
@@ -57,15 +57,11 @@ class hostInfo():
             self.host['size'] = self.host['size'] + status_times_size
         else:
             self.host[status_times_size] += 1
-        #print(self.host) # out
+        # print(self.host) # out
         # ip: 1.1.1.1
         # {'200': 0, '302': 0, '304': 0, 'times': 1, '404': 0, '403': 0, '503': 0, '500': 0, 'size': 0}
         # {'200': 1, '302': 0, '304': 0, 'times': 1, '404': 0, '403': 0, '503': 0, '500': 0, 'size': 0}
         # {'200': 1, '302': 0, '304': 0, 'times': 1, '404': 0, '403': 0, '503': 0, '500': 0, 'size': 27882}
-        # ip: 1.1.1.1
-        # {'200': 1, '302': 0, '304': 0, 'times': 2, '404': 0, '403': 0, '503': 0, '500': 0, 'size': 27882}
-        # {'200': 2, '302': 0, '304': 0, 'times': 2, '404': 0, '403': 0, '503': 0, '500': 0, 'size': 27882}
-        # {'200': 2, '302': 0, '304': 0, 'times': 2, '404': 0, '403': 0, '503': 0, '500': 0, 'size': 30884}
         # ip: 2.2.2.2
         # {'200': 0, '302': 0, '304': 0, 'times': 1, '404': 0, '403': 0, '503': 0, '500': 0, 'size': 0}
         # {'200': 1, '302': 0, '304': 0, 'times': 1, '404': 0, '403': 0, '503': 0, '500': 0, 'size': 0}
@@ -75,22 +71,25 @@ class hostInfo():
         # 该方法是取到各个主机信息中对应的值
         return self.host[value]
 
+
 class analysis_log():
-    #内存优化
+    # 内存优化
     __slots__ = ['report_dict', 'total_size_sent', 'total_request_times', 'total_200', 'total_301', \
-        'total_302', 'total_304', 'total_400', 'total_401', 'total_403', 'total_404', 'total_499', \
-        'total_500', 'total_502', 'total_503', 'total_504']
+        'total_302', 'total_304', 'total_307', 'total_400', 'total_401', 'total_403', 'total_404', 'total_499', \
+        'total_500', 'total_502', 'total_503', 'total_504', 'total_206', 'total_204', 'total_202', 'total_201', 'total_101', 'total_429', 'total_415', 'total_410', 'total_408']
 
     def __init__(self):
-        #初始化一个空字典
+        # 初始化一个空字典
         self.report_dict = {}
         self.total_size_sent, self.total_request_times, self.total_200, self.total_301, \
-        self.total_302, self.total_304, self.total_400, self.total_401, self.total_403, \
+        self.total_302, self.total_304, self.total_307, self.total_400, self.total_401, self.total_403, \
         self.total_404, self.total_499, self.total_500, self.total_502, self.total_503, \
-        self.total_504 = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+        self.total_504, self.total_206, self.total_204, self.total_202, self.total_201, \
+        self.total_101, self.total_429, self.total_415, self.total_410, \
+        self.total_408 = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
 
     def split_eachline_todict(self, line):
-        #分割文件中的每一行，并返回一个字典
+        # 分割文件中的每一行，并返回一个字典
         split_line = line.split()
         split_dict = {'remote_host': split_line[0], 'status': split_line[8], 'bytes_sent': split_line[9]}
         return split_dict
@@ -110,10 +109,8 @@ class analysis_log():
 
                 if host not in self.report_dict:
                     host_info_obj = hostInfo(host)
-                    #out <__main__.hostInfo object at 0x7fc0aa7ff510>
                     # out {'500': 0, '502': 0, '302': 0, '304': 0, '301': 0, 'times': 0, '200': 0, '404': 0, '401': 0, '403': 0, 'size': 0, '503': 0, '409': 0}
                     self.report_dict[host] = host_info_obj  #以host_info_obj方法做为value值
-                    #out {'1.1.1.1': <__main__.hostInfo object at 0x7fc0aa7ff510>}
                     # out {'1.1.1.1': {'500': 0, '502': 0, '302': 0, '304': 0, '301': 0, 'times': 0, '200': 0, '404': 0, '401': 0, '403': 0, 'size': 0, '503': 0, '409': 0}}
                 else:
                     host_info_obj = self.report_dict[host]
@@ -128,7 +125,7 @@ class analysis_log():
                     bytes_sent = 0
                 host_info_obj.increment(bytes_sent, True)  # 发送字节相加
         return self.report_dict
-        #out {'1.1.1.1': <__main__.hostInfo object at 0x7ffd3d1cd550>, '2.2.2.2': <__main__.hostInfo object at 0x7ffd3d1cd510>}
+        # out {'1.1.1.1': <__main__.hostInfo object at 0x7ffd3d1cd550>, '2.2.2.2': <__main__.hostInfo object at 0x7ffd3d1cd510>}
 
     def return_sorted_list(self, true_dict):
         # 输出方法ost_info_obj
@@ -144,6 +141,7 @@ class analysis_log():
             o301 = host_value.get_value('301')
             o302 = host_value.get_value('302')
             o304 = host_value.get_value('304')
+            o307 = host_value.get_value('307')
             o400 = host_value.get_value('400')
             o401 = host_value.get_value('401')
             o403 = host_value.get_value('403')
@@ -153,16 +151,28 @@ class analysis_log():
             o502 = host_value.get_value('502')
             o503 = host_value.get_value('503')
             o504 = host_value.get_value('504')
+            o206 = host_value.get_value('206')
+            o204 = host_value.get_value('204')
+            o202 = host_value.get_value('202')
+            o201 = host_value.get_value('201')
+            o101 = host_value.get_value('101')
+            o429 = host_value.get_value('429')
+            o415 = host_value.get_value('415')
+            o410 = host_value.get_value('410')
+            o408 = host_value.get_value('408')
 
-            #字典中如果出现重复的key值，那会以最后传入的key值为准
-            true_dict[host_key] = {'200': o200, '301': o301, '302': o302, '304': o304, '400': o400, '401': o401, '403': o403, \
+            # 字典中如果出现重复的key值，那会以最后传入的key值为准
+            true_dict[host_key] = {'200': o200, '301': o301, '302': o302, '304': o304, '307': o307, '400': o400, '401': o401, '403': o403, \
                                    '404': o404, '499': o499, '500': o500, '502': o502, '503': o503, '504': o504, \
+                                   '206': o206, '204': o204, '202': o202, '201': o201, '101': o101, '429': o429, \
+                                   '415': o415, '410': o410, '408': o408, \
                                    'total_request_times': times, 'total_size_sent': size}
 
             self.total_200 = self.total_200 + o200
             self.total_301 = self.total_301 + o301
             self.total_302 = self.total_302 + o302
             self.total_304 = self.total_304 + o304
+            self.total_307 = self.total_307 + o307
             self.total_400 = self.total_400 + o400
             self.total_401 = self.total_401 + o401
             self.total_403 = self.total_403 + o403
@@ -172,13 +182,23 @@ class analysis_log():
             self.total_502 = self.total_502 + o502
             self.total_503 = self.total_503 + o503
             self.total_504 = self.total_504 + o504
+            self.total_206 = self.total_206 + o206
+            self.total_204 = self.total_204 + o204
+            self.total_202 = self.total_202 + o202
+            self.total_201 = self.total_201 + o201
+            self.total_101 = self.total_101 + o101
+            self.total_429 = self.total_429 + o429
+            self.total_415 = self.total_415 + o415
+            self.total_410 = self.total_410 + o410
+            self.total_408 = self.total_408 + o408
 
-        sorted_list = sorted(true_dict.items(), key= lambda k: (k[1]['total_request_times'], k[1]['total_size_sent']), reverse=True)
+        sorted_list = sorted(true_dict.items(), key=lambda k: (k[1]['total_request_times'], k[1]['total_size_sent']), reverse=True)
         return sorted_list
+
 
 class Main():
     def main(self):
-        #主调函数
+        # 主调函数
         display_format = displayFormat()
         arg_length = len(sys.argv)
         if arg_length == 1:
@@ -211,11 +231,11 @@ class Main():
         print('\n')
         total_size_sent = display_format.format_size(fileAnalysis_obj.total_size_sent)
         total_request_times = fileAnalysis_obj.total_request_times
-        print('Total IP: %s   Total Send Size: %s   Total Request Times: %d' % (total_ip, total_size_sent, total_request_times))
+        print('Total IP: %s   Total Send Size: %s   Total Request Number: %d' % (total_ip, total_size_sent, total_request_times))
         print('\n')
 
-        X = PrettyTable(['IP', 'Send Size', 'Request Times', 'Request Times%', '200', '301', '302', '304', '400', '401', '403', \
-                         '404', '499', '500', '502', '503', '504'])
+        X = PrettyTable(['IP', 'Send Size', 'Request Number', 'Request Number%', '200', '301', '302', '304', '307', '400', '401', '403', \
+                         '404', '499', '500', '502', '503', '504', '206', '204', '202', '201', '101', '429', '415', '410', '408'])
         X.align["IP"] = "l"  # Left align IP
         X.padding_width = 1  # One space between column edges and contents (default)
         for host in log_report:
@@ -226,15 +246,18 @@ class Main():
             list1.append("%s" % (display_format.format_size(host[1]['total_size_sent'])))
             list1.append("%s" % times)
             list1.append("%.2f" % float(times_percent))
-            list2 = [host[1]['200'], host[1]['301'], host[1]['302'], host[1]['304'], host[1]['400'], host[1]['401'], host[1]['403'], \
-                     host[1]['404'], host[1]['499'], host[1]['500'], host[1]['502'], host[1]['503'], host[1]['504']]
+            list2 = [host[1]['200'], host[1]['301'], host[1]['302'], host[1]['304'], host[1]['307'], host[1]['400'], \
+                     host[1]['401'], host[1]['403'], host[1]['404'], host[1]['499'], host[1]['500'], host[1]['502'], \
+                     host[1]['503'], host[1]['504'], host[1]['206'], host[1]['204'], host[1]['202'], host[1]['201'], \
+                     host[1]['101'], host[1]['429'], host[1]['415'], host[1]['410'], host[1]['408']]
             list1.extend(list2)
             X.add_row(list1)
         print(X)
 
         print('\n')
-        Total_X = PrettyTable(['TIP', 'TSend Size', 'TRequest Times', 'TRequest Times%', 'T200', 'T301', \
-                         'T302', 'T304', 'T400', 'T401', 'T403', 'T404', 'T499', 'T500', 'T502', 'T503', 'T504'])
+        Total_X = PrettyTable(['TIP', 'TSend Size', 'TRequest Number', 'TRequest Number%', 'T200', 'T301', \
+                         'T302', 'T304', 'T307', 'T400', 'T401', 'T403', 'T404', 'T499', 'T500', 'T502', 'T503', 'T504', \
+                         'T206', 'T204', 'T202', 'T201', 'T101', 'T429', 'T415', 'T410', 'T408'])
         Total_X.align["T IP"] = "l"  # Left align IP
         Total_X.padding_width = 1  # One space between column edges and contents (default)
         Total_list = []
@@ -242,10 +265,12 @@ class Main():
         Total_list.append(total_size_sent)
         Total_list.append(total_request_times)
         Total_list.append('100%')
-        Total_list1 = [fileAnalysis_obj.total_200, fileAnalysis_obj.total_301, fileAnalysis_obj.total_302, fileAnalysis_obj.total_304, \
+        Total_list1 = [fileAnalysis_obj.total_200, fileAnalysis_obj.total_301, fileAnalysis_obj.total_302, fileAnalysis_obj.total_304, fileAnalysis_obj.total_307, \
                        fileAnalysis_obj.total_400, fileAnalysis_obj.total_401, fileAnalysis_obj.total_403, fileAnalysis_obj.total_404, \
                        fileAnalysis_obj.total_499, fileAnalysis_obj.total_500, fileAnalysis_obj.total_502, fileAnalysis_obj.total_503, \
-                       fileAnalysis_obj.total_504]
+                       fileAnalysis_obj.total_504, fileAnalysis_obj.total_206, fileAnalysis_obj.total_204, fileAnalysis_obj.total_202, \
+                       fileAnalysis_obj.total_201, fileAnalysis_obj.total_101, fileAnalysis_obj.total_429, fileAnalysis_obj.total_415, \
+                       fileAnalysis_obj.total_410, fileAnalysis_obj.total_408]
         Total_list.extend(Total_list1)
         Total_X.add_row(Total_list)
         print(Total_X)
@@ -253,6 +278,7 @@ class Main():
         print('\n')
         display_format.execut_time()
         print('\n')
+
 
 if __name__ == '__main__':
     main_obj = Main()
