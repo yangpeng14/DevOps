@@ -36,7 +36,7 @@
 10. [K8S Ingress Nginx 支持 Socket.io](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/k8s-ingress-nginx%E6%94%AF%E6%8C%81socket.io.md)
 11. [K8S 蓝绿部署之 Service Label](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/k8s%E8%93%9D%E7%BB%BF%E9%83%A8%E7%BD%B2%E4%B9%8B-service-label.md)
 12. [K8S 之 kubeadm 安装](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/k8s%E4%B9%8Bkubeadm%E5%AE%89%E8%A3%85.md)
-13. [K8S Dashboard V2.0.0 Beta6 部署 ](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/k8s-dashboard-v2.0.0-beta6%E9%83%A8%E7%BD%B2.md)
+13. [K8S Dashboard V2.0.0 Beta6 部署](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/k8s-dashboard-v2.0.0-beta6%E9%83%A8%E7%BD%B2.md)
 
 ### 五、Istio知识
 1. [Istio Helm 安装](https://github.com/yangpeng14/DevOps/blob/master/istio/istio-Helm-%E5%AE%89%E8%A3%85.md)
