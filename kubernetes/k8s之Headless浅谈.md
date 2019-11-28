@@ -22,9 +22,121 @@
 
 ![](https://www.yp14.cn/img/k8s-service.png)
 
+## Headless Services 创建
+
+```bash
+$ vim headless_service.yaml
+$ kubectl apply -f headless_service.yaml
+```
+
+`headless_service.yaml 配置如下`
+
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-test
+  labels:
+    app: nginx_test
+spec:
+  ports:
+  - port: 80
+    name: nginx-web
+  # clusterIP 设置为 None
+  clusterIP: None
+  selector:
+    app: nginx_test
+
+---
+
+apiVersion: apps/v1beta1
+kind: StatefulSet
+metadata:
+  name: nginx-web
+spec:
+  serviceName: "nginx-test"
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: nginx_test
+    spec:
+      containers:
+      - name: nginx-test
+        image: nginx:1.11
+        ports:
+        - containerPort: 80
+          name: nginx-web
+```
+
+## Headless Services 验证
+
+```bash
+# 查看 statefulsets nginx-web
+$ kubectl get statefulsets nginx-web
+
+NAME        READY   AGE
+nginx-web   2/2     93m
+
+# 查看 pods 
+$ kubectl get pods -o wide | grep nginx-web
+
+nginx-web-0                         1/1     Running   0          96m    192.168.40.103   it-zabbix   <none>           <none>
+nginx-web-1                         1/1     Running   0          96m    192.168.40.96    it-zabbix   <none>           <none>
+
+
+# 显示 nginx-test Headless Services 详细信息
+$ kubectl describe svc nginx-test
+
+Name:              nginx-test
+Namespace:         default
+Labels:            app=nginx_test
+Annotations:       kubectl.kubernetes.io/last-applied-configuration:
+                     {"apiVersion":"v1","kind":"Service","metadata":{"annotations":{},"labels":{"app":"nginx_test"},"name":"nginx-test","namespace":"default"},...
+Selector:          app=nginx_test
+Type:              ClusterIP
+IP:                None
+Port:              nginx-web  80/TCP
+TargetPort:        80/TCP
+Endpoints:         192.168.40.103:80,192.168.40.96:80
+Session Affinity:  None
+Events:            <none>
+
+# 测试 service 域名是否解析出两个 pod ip
+$ nslookup nginx-test.default.svc.cluster.local 192.168.16.2
+
+Server:		192.168.16.2
+Address:	192.168.16.2#53
+
+Name:	nginx-test.default.svc.cluster.local
+Address: 192.168.40.103
+Name:	nginx-test.default.svc.cluster.local
+Address: 192.168.40.96
+
+# 测试 pod 域名是否解析出对应的 pod ip
+$ nslookup nginx-web-0.nginx-test.default.svc.cluster.local 192.168.16.2
+
+Server:		192.168.16.2
+Address:	192.168.16.2#53
+
+Name:	nginx-web-0.nginx-test.default.svc.cluster.local
+Address: 192.168.40.103
+
+$ nslookup nginx-web-1.nginx-test.default.svc.cluster.local 192.168.16.2
+
+Server:		192.168.16.2
+Address:	192.168.16.2#53
+
+Name:	nginx-web-1.nginx-test.default.svc.cluster.local
+Address: 192.168.40.96
+```
+
 ## Headless Services 应用场景
 
 - 第一种：自主选择权，有时候 `client` 想自己来决定使用哪个`Real Server`，可以通过查询DNS来获取 `Real Server` 的信息。
-- Headless Service 的对应的每一个 `Endpoints`，即每一个`Pod`，都会有对应的`DNS域名`，这样`Pod之间`就可以`互相访问`。
+- 第二种：`Headless Service` 的对应的每一个 `Endpoints`，即每一个`Pod`，都会有对应的`DNS域名`，这样`Pod之间`就可以`互相访问`。
 
-## Headless Services 创建
+## 参考链接
+
+- https://kubernetes.io/zh/docs/concepts/services-networking/service/#headless-services
+- https://zhuanlan.zhihu.com/p/54153164
