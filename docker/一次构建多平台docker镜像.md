@@ -117,7 +117,7 @@ Manifests:
 
 ## 测试多平台镜像
 
-由于我的环境是 `linux/amd64`，如果测试其它平台环境，需要开启 `binfmt_misc` 功能
+由于我的环境是 `linux/amd64`，如果测试其它平台镜像，需要开启 `binfmt_misc` 功能
 
 - `binfmt_misc` 开启方法
 ```bash
