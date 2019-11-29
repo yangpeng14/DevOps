@@ -126,16 +126,14 @@ $ docker run --rm --privileged docker/binfmt:66f9012c56a8316f9244ffd7622d7c21c1f
 
 - 查看 `binfmt_misc` 设置是否正确
 ```bash
-$ ls -al /proc/sys/fs/binfmt_misc/
+$ ls -la /proc/sys/fs/binfmt_misc/
 
-drwxr-xr-x 2 root root 0 11月 29 18:29 .
-dr-xr-xr-x 1 root root 0 11月 11 19:15 ..
--rw-r--r-- 1 root root 0 11月 29 18:45 qemu-aarch64
--rw-r--r-- 1 root root 0 11月 29 18:45 qemu-arm
--rw-r--r-- 1 root root 0 11月 29 18:45 qemu-ppc64le
--rw-r--r-- 1 root root 0 11月 29 18:45 qemu-s390x
---w------- 1 root root 0 11月 29 18:29 register
--rw-r--r-- 1 root root 0 11月 29 18:29 status
+-rw-r--r-- 1 root root 0 11月 29 20:45 qemu-aarch64
+-rw-r--r-- 1 root root 0 11月 29 20:45 qemu-arm
+-rw-r--r-- 1 root root 0 11月 29 20:45 qemu-ppc64le
+-rw-r--r-- 1 root root 0 11月 29 20:45 qemu-s390x
+--w------- 1 root root 0 11月 29 20:29 register
+-rw-r--r-- 1 root root 0 11月 29 20:29 status
 ```
 
 - 验证 linux/arm, linux/arm64, linux/amd64 镜像
