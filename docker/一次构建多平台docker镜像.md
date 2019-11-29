@@ -121,7 +121,7 @@ Manifests:
 
 - `binfmt_misc` 开启方法
 ```bash
-$ $ docker run --rm --privileged docker/binfmt:66f9012c56a8316f9244ffd7622d7c21c1f6f28d
+$ docker run --rm --privileged docker/binfmt:66f9012c56a8316f9244ffd7622d7c21c1f6f28d
 ```
 
 - 查看 `binfmt_misc` 设置是否正确
