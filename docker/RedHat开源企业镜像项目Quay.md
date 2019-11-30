@@ -10,7 +10,7 @@
 
 - 提高镜像安全性。`Red Hat Quay` 提供可靠强大的`访问控制`。
 
-- `轻松构建`和`部署新容器`。`Red Hat Quay`通过与 `GitHub`，`Bitbucket`等集成实现容器构建的`自动化`。机器人帐户允许自动部署软件。
+- `轻松构建`和`部署新容器`。`Red Hat Quay`通过与 `GitHub`，`Bitbucket`等集成实现容器构建的`自动化`。
 ![](https://www.yp14.cn/img/Quay-commit.png)
 
 - 扫描容器以提供安全性。`Red Hat Quay`会`扫描`您的`容器中的漏洞`，从而使您可以`了解已知问题`以及`如何解决它们`。
