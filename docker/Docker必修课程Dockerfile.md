@@ -191,7 +191,7 @@ $ docker build -t yangpeng2468/test:v1 . -f Dockerfile
 
 # -t 声明 docker image 名称
 # . 把当前目录加入到镜像中
-# -f 指定 Dockerfile 文件，默认识别 Dockerfile 名称，如果是其它名称，需要使用 -f 来指定
+# -f 指定 Dockerfile 文件，默认为 Dockerfile 名称，如果是其它名称，需要使用 -f 来指定
 # --no-cache 不使用历史缓存
 ```
 
