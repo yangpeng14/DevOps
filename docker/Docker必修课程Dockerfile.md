@@ -79,7 +79,7 @@ CMD ["nginx", "-g", "daemon off;"]
     RUN mkdir /app
     RUN echo "Hello World!"
     RUN touch /tmp/testfile
-    ``` 
+    ```
 
     如果 `RUN` 写多行会增加 `docker image` 体积
 
