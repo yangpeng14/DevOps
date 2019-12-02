@@ -6,6 +6,10 @@
 - 监控，剔除故障节点，保证容器正常运行
 - 认证，谁能访问我
 
+`K8S 架构草图`
+
+![](https://www.yp14.cn/img/k8s架构草图.png)
+
 ## Node 是什么？
 
 `Node` 是 `Kubernetes` 的`工作节点`，以前叫做 `minion`。取决于你的集群，Node 可以是一个虚拟机或者物理机器。每个 `node` 都有用于运行 `pods` 的必要服务，并由 `master` 组件管理。Node 上的服务包括 `Docker`、`网络组件 (flannel)`、`kubelet` 和 `kube-proxy`。
