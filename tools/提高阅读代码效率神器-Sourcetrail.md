@@ -1,6 +1,6 @@
 ## Sourcetrail 简介
 
-`Sourcetrail` 是一个免费的开放源代码跨平台资源浏览器，可帮助您提高不熟悉的源代码的工作效率。
+`Sourcetrail` 是一个免费的开放源代码跨平台资源浏览器，可帮助您提高不熟悉源代码的工作效率。
 
 ![](https://www.yp14.cn/img/user_interface.png)
 
