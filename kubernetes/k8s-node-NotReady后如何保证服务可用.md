@@ -15,10 +15,11 @@
 
 Node 条件 | 描述
 ---|---
-OutOfDisk | True 表示 node 的空闲空间不足以用于添加新 pods, 否则为 False
-Ready | True 表示 node 是健康的并已经准备好接受 pods；False 表示 node 不健康而且不能接受 pods；Unknown 表示 node 控制器在最近 40 秒内没有收到 node 的消息
-MemoryPressure | True 表示 node 不存在内存压力 – 即 node 内存用量低, 否则为 False
-DiskPressure | True 表示 node 不存在磁盘压力 – 即磁盘用量低, 否则为 False
+Ready | True 节点运行状况良好并准备好接受Pod，False 如果节点运行状况不佳并且未接受Pod，Unknown 节点控制器最近一次未从节点收到消息 node-monitor-grace-period（默认值为40秒）
+MemoryPressure | True 节点内存上存在压力，即节点内存不足；除此以外 False
+PIDPressure | True 进程是否存在压力，即节点上的进程是否过多；除此以外 False
+DiskPressure | True 磁盘大小是否受到压力，即磁盘容量是否不足；除此以外 False
+NetworkUnavailable | True 节点的网络配置不正确，否则 False
 
 ## Node 故障，什么时候驱逐 Pod
 
@@ -41,5 +42,5 @@ DiskPressure | True 表示 node 不存在磁盘压力 – 即磁盘用量低, �
 ## 参考链接
 
 - https://kubernetes.io/docs/reference/command-line-tools-reference/kube-controller-manager/
-- https://kubernetes.io/zh/docs/concepts/architecture/nodes/
+- https://kubernetes.io/docs/concepts/architecture/nodes/
 - https://blog.fleeto.us/post/node-downtime/
