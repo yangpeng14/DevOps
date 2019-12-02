@@ -62,6 +62,6 @@
 13. [Nginx 基于客户端IP分析](https://github.com/yangpeng14/DevOps/blob/master/ops/nginx-%E5%9F%BA%E4%BA%8E%E5%AE%A2%E6%88%B7%E7%AB%AFIP%E5%88%86%E6%9E%90.md)
 
 ## 公众号
-欢迎关注公众号**YP小站**，我会定期分享本人家乡美食、自动化运维、DevOps、Kubernetes、Service Mesh和Cloud Native相关文章，欢迎大家关注交流，如果有机会也可以去我家乡湖南游玩。
+欢迎大家关注微信公众号**YP小站**，我会定期分享本人家乡美食、自动化运维、DevOps、Kubernetes、Service Mesh和Cloud Native相关文章，欢迎大家关注交流，如果有机会也可以去我家乡湖南游玩。
 
 ![YP小站](https://www.yp14.cn/img/yp_wx.png)
