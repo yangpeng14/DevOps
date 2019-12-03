@@ -55,7 +55,7 @@ QoS（Quality of Service），大部分译为 `“服务质量等级”`，又�
 
 `对于CPU`：如果pod中服务使用CPU超过设置的 limits，pod不会被kill掉但会被限制。如果没有设置limits，pod可以使用全部空闲的cpu资源。
 
-`对于内存`：当一个pod使用内存超过了设置的 limits，pod中 `container` 的进程会被 `kernel` 因`OOM kill`掉。当container因为OOM被kill掉时，系统倾向于在其原所在的机器上重启该container或本机或其他重新创建一个pod。
+`对于内存`：当一个pod使用内存超过了设置的 limits，pod中 `container` 的进程会被 `kernel` 因`OOM kill`掉。当container因为OOM被kill掉时，系统倾向于在其原所在的机器上重启该container或其他重新创建一个pod。
 
 ## 下面是三个资源限制，作用域在不同点上
 
