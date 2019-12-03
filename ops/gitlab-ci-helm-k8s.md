@@ -1,5 +1,5 @@
 ## Gitlab 和 Kubernetes CI/CD流程图
-![](/images/gitlab-k8s.png)
+![](/img/gitlab-k8s.png)
 
 ## Gitlab 和 Gitlab CI搭建参考往期文章
 - https://github.com/yangpeng14/DevOps/blob/master/ops/Gitlab-Docker-Compose-%E5%90%AF%E5%8A%A8%E9%85%8D%E7%BD%AE.md
