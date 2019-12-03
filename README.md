@@ -43,6 +43,7 @@
 14. [K8S 之 Headless 浅谈](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/k8s%E4%B9%8BHeadless%E6%B5%85%E8%B0%88.md)
 15. [K8S node NotReady 后如何保证服务可用](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/k8s-node-NotReady%E5%90%8E%E5%A6%82%E4%BD%95%E4%BF%9D%E8%AF%81%E6%9C%8D%E5%8A%A1%E5%8F%AF%E7%94%A8.md)
 16. [浅谈 K8S QoS(服务质量等级)](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/%E6%B5%85%E8%B0%88k8s-QoS(%E6%9C%8D%E5%8A%A1%E8%B4%A8%E9%87%8F%E7%AD%89%E7%BA%A7).md)
+17. [Kubernetes 北极星指标](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/kubernetes%E5%8C%97%E6%9E%81%E6%98%9F%E6%8C%87%E6%A0%87.md)
 
 ### 五、Istio知识
 1. [Istio Helm 安装](https://github.com/yangpeng14/DevOps/blob/master/istio/istio-Helm-%E5%AE%89%E8%A3%85.md)
