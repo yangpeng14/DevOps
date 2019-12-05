@@ -1,6 +1,6 @@
 ## Kubernetes v1.16 发布
 
-Kubernetes v1.16 于 2019 年 9 月发布，大家需要最关注的是`部分API将弃用`。
+Kubernetes v1.16 于 2019 年 9 月发布，大家最需要关注的是`部分API将弃用`。
 
 ## v1.16.0 对以下四种类型资源的 API 做出调整
 - NetworkPolicy
@@ -14,7 +14,7 @@ Kubernetes v1.16 于 2019 年 9 月发布，大家需要最关注的是`部分AP
 
 - `NetworkPolicies` 从 `extensions/v1beta1` 改用 `networking.k8s.io/v1`；`networking.k8s.io/v1` 从 v1.8 版本开始提供API。
 - `PodSecurityPolicies` 从 `extensions/v1beta1` 改用 `policy/v1beta1`；`policy/v1beta1` 从  v1.10 版本开始提供API。
-- `Ingress` 从 `extensions/v1beta1` 改用 `networking.k8s.io/v1beta1`；`networking.k8s.io/v1beta1` 从v1.14开始可以提供API。
+- `Ingress` 从 `extensions/v1beta1` 改用 `networking.k8s.io/v1beta1`；`networking.k8s.io/v1beta1` 从v1.14 版本开始提供API。
 
 `默认情况`不在提供上面API，如果实在要临时启用，可使用 `--runtime-config` apiserver 标志临时启用这些API
 
@@ -32,8 +32,8 @@ Kubernetes v1.16 于 2019 年 9 月发布，大家需要最关注的是`部分AP
 - `export` 自 v1.14 起已弃用，将在 v1.18 删除。
 - 不推荐使用的节点条件类型 `OutOfDisk` 已被删除。使用 `DiskPressure` 条件代替。
 - `GA PodPriority` 功能现在默认情况下处于打开状态，无法禁用。功能将在 v1.18 中删除。
-- `alpha.service-controller.kubernetes.io/exclude-balancer` 不推荐使用云负载平衡器中排除节点的节点标签（使用Service Type = LoadBalancer），而推荐使用 `node.kubernetes.io/exclude-balancer`。`alpha.service-controller.kubernetes.io/exclude-balancer` 将在 v1.18 删除。
-- `admissionregistration.k8s.io/v1beta1` 版本 `MutatingWebhookConfiguration` `和ValidatingWebhookConfiguration` 已过时，将在 v1.19 移除。使用 `admissionregistration.k8s.io/v1` 替代。
+- `alpha.service-controller.kubernetes.io/exclude-balancer` 不推荐使用云负载均衡器排除节点标签（使用 Service Type = LoadBalancer），而推荐使用 `node.kubernetes.io/exclude-balancer`。`alpha.service-controller.kubernetes.io/exclude-balancer` 将在 v1.18 删除。
+- `admissionregistration.k8s.io/v1beta1` 版本 `MutatingWebhookConfiguration` `和 ValidatingWebhookConfiguration` 已过时，将在 v1.19 移除。使用 `admissionregistration.k8s.io/v1` 替代。
 
 ## 升级到 v1.16.0 之前需要做什么？
 - 更改 YAML 文件以引用新的 API
