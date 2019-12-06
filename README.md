@@ -27,6 +27,7 @@
 4. [Docker 必修课程 Dockerfile](https://github.com/yangpeng14/DevOps/blob/master/docker/Docker%E5%BF%85%E4%BF%AE%E8%AF%BE%E7%A8%8BDockerfile.md)
 5. [Docker 镜像分析之 dive](https://github.com/yangpeng14/DevOps/blob/master/docker/docker%E9%95%9C%E5%83%8F%E5%88%86%E6%9E%90%E4%B9%8Bdive.md)
 6. [Docker 最简单管理方法之 Portainer](https://github.com/yangpeng14/DevOps/blob/master/docker/Docker%E6%9C%80%E7%AE%80%E5%8D%95%E7%AE%A1%E7%90%86%E6%96%B9%E6%B3%95%E4%B9%8BPortainer.md)
+7. [比 docker stats 命令好用工具 ctop](https://github.com/yangpeng14/DevOps/blob/master/docker/%E6%AF%94docker-stats%E5%91%BD%E4%BB%A4%E5%A5%BD%E7%94%A8%E5%B7%A5%E5%85%B7ctop.md)
 
 ### 四、Kubernetes知识
 1. [Metrics Serve 0.3.2安装](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/metrics-Server-v0-3-2%E7%89%88%E6%9C%AC%E5%AE%89%E8%A3%85.md)
