@@ -2,7 +2,7 @@
 分析Linux服务器 IO 进程，分别按 `读` 和 `写` 的进程排序，`默认显示前5行`。功能类似 Linux Shell `pidstat`命令。
 
 ## 程序输出结果
-![](/img/io分析.png)
+![](/img/io.png)
 
  ## 程序环境
  - Python3+
