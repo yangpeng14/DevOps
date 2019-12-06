@@ -2,15 +2,7 @@
 分析Linux服务器 IO 进程，分别按 `读` 和 `写` 的进程排序，`默认显示前5行`。功能类似 Linux Shell `pidstat`命令。
 
 ## 程序输出结果
-
-r-pid |  r-process  | read(bytes) | w-pid |     w-process     | write(btyes)
----|---|---|---|---|---
- 6316  | (AliYunDun) |    57344    |  338  | (systemd-journal) |    536576 
- 10105 |  (php5-fpm) |      0      |  879  |       (etcd)      |    233472 
- 10111 |   (nginx)   |      0      |  266  |   (jbd2/vda1-8)   |    122880 
- 933   |   (crond)   |      0      |  609  |     (rsyslogd)    |    81920  
- 2     |  (kthreadd) |      0      |  2422 |     (php5-fpm)    |    61440  
- 10114 |   (nginx)   |      0      |  2438 |     (php5-fpm)    |    61440  
+![](/img/io分析.png)
 
  ## 程序环境
  - Python3+
