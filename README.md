@@ -68,6 +68,7 @@
 11. [Nginx 流量统计分析](https://github.com/yangpeng14/DevOps/blob/master/ops/nginx-%E6%B5%81%E9%87%8F%E7%BB%9F%E8%AE%A1%E5%88%86%E6%9E%90.md)
 12. [Elasticsearch RESTful API 常用操作](https://github.com/yangpeng14/DevOps/blob/master/ops/elasticsearch-RESTful-API-%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C.md)
 13. [Nginx 基于客户端IP分析](https://github.com/yangpeng14/DevOps/blob/master/ops/nginx-%E5%9F%BA%E4%BA%8E%E5%AE%A2%E6%88%B7%E7%AB%AFIP%E5%88%86%E6%9E%90.md)
+14. [Nginx必须知道哪些事](https://github.com/yangpeng14/DevOps/blob/master/ops/Nginx%E5%BF%85%E9%A1%BB%E7%9F%A5%E9%81%93%E5%93%AA%E4%BA%9B%E4%BA%8B.md)
 
 ## 公众号
 欢迎大家关注微信公众号**YP小站**，我会定期分享本人家乡美食、自动化运维、DevOps、Kubernetes、Service Mesh和Cloud Native相关文章，欢迎大家关注交流，如果有机会也可以去我家乡湖南游玩。
