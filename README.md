@@ -49,6 +49,7 @@
 16. [浅谈 K8S QoS(服务质量等级)](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/%E6%B5%85%E8%B0%88k8s-QoS(%E6%9C%8D%E5%8A%A1%E8%B4%A8%E9%87%8F%E7%AD%89%E7%BA%A7).md)
 17. [Kubernetes 北极星指标](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/kubernetes%E5%8C%97%E6%9E%81%E6%98%9F%E6%8C%87%E6%A0%87.md)
 18. [升级到 Kubernetes v1.16 须知API问题总结](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/%E5%8D%87%E7%BA%A7%E5%88%B0Kubernetes-v1.16%E9%A1%BB%E7%9F%A5API%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93.md)
+19. [Kubernetes 必须掌握技能之 RBAC](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/kubernetes%E5%BF%85%E9%A1%BB%E6%8E%8C%E6%8F%A1%E6%8A%80%E8%83%BD%E4%B9%8BRBAC.md)
 
 ### 五、Istio知识
 1. [Istio Helm 安装](https://github.com/yangpeng14/DevOps/blob/master/istio/istio-Helm-%E5%AE%89%E8%A3%85.md)
