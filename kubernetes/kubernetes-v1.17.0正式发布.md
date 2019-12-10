@@ -16,7 +16,7 @@
 
     Kubernetes 用户现在被授权以与集群无关的方式，将快照操作合并到他们的工具和策略中，并且可以放心地知道它将针对任意的   Kubernetes 集群，而不需要在意底层存储是什么。
 
-    此外，这些 Kubernetes 快照原语是基本的构建块，可用于为 Kubernetes 开发高级的企业级存储管理功能，如应用程序级或集群级    的备份解决方案。 了解更多 `https://kubernetes.io/blog/2019/12/09/   kubernetes-1-17-feature-cis-volume-snapshot-beta/`
+    此外，这些 Kubernetes 快照原语是基本的构建块，可用于为 Kubernetes 开发高级的企业级存储管理功能，如应用程序级或集群级    的备份解决方案。 了解更多 `https://kubernetes.io/blog/2019/12/09/kubernetes-1-17-feature-cis-volume-snapshot-beta/`
 
 - `云提供商标签达到一般可用性`：v1.17 作为 v1.2 中的 beta 功能添加，可以看到云提供商标签的一般可用性。
 
