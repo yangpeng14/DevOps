@@ -52,6 +52,7 @@
 19. [Kubernetes 必须掌握技能之 RBAC](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/kubernetes%E5%BF%85%E9%A1%BB%E6%8E%8C%E6%8F%A1%E6%8A%80%E8%83%BD%E4%B9%8BRBAC.md)
 20. [Kubernetes 终端管理神器](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/kubernetes%E7%BB%88%E7%AB%AF%E7%AE%A1%E7%90%86%E7%A5%9E%E5%99%A8.md)
 21. [Kubernetes v1.17.0 正式发布](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/kubernetes-v1.17.0%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83.md)
+22. [3分钟部署生产级k8s集群](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/3%E5%88%86%E9%92%9F%E9%83%A8%E7%BD%B2%E7%94%9F%E4%BA%A7%E7%BA%A7k8s%E9%9B%86%E7%BE%A4.md)
 
 ### 五、Istio知识
 1. [Istio Helm 安装](https://github.com/yangpeng14/DevOps/blob/master/istio/istio-Helm-%E5%AE%89%E8%A3%85.md)
