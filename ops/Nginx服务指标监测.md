@@ -1,6 +1,6 @@
 ## ngxtop 简介
 
-`ngxtop` 解析您的 nginx 访问日志，并输出 top nginx服务器有用的（类似）指标。因此，您可以实时了解服务器的状况。
+`ngxtop` 解析您的 nginx 访问日志，并输出 top nginx服务器有用的（类似）指标。因此，您可以实时了解服务的状况。
 
 ## ngxtop 默认输出
 
