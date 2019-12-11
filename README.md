@@ -73,6 +73,7 @@
 12. [Elasticsearch RESTful API 常用操作](https://github.com/yangpeng14/DevOps/blob/master/ops/elasticsearch-RESTful-API-%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C.md)
 13. [Nginx 基于客户端IP分析](https://github.com/yangpeng14/DevOps/blob/master/ops/nginx-%E5%9F%BA%E4%BA%8E%E5%AE%A2%E6%88%B7%E7%AB%AFIP%E5%88%86%E6%9E%90.md)
 14. [Nginx必须知道哪些事](https://github.com/yangpeng14/DevOps/blob/master/ops/Nginx%E5%BF%85%E9%A1%BB%E7%9F%A5%E9%81%93%E5%93%AA%E4%BA%9B%E4%BA%8B.md)
+15. [Nginx 服务指标监测](https://github.com/yangpeng14/DevOps/blob/master/ops/Nginx%E6%9C%8D%E5%8A%A1%E6%8C%87%E6%A0%87%E7%9B%91%E6%B5%8B.md)
 
 ### 七、Podman知识
 1. [Podman 会取代 Docker 吗?](https://github.com/yangpeng14/DevOps/blob/master/podman/podman%E4%BC%9A%E5%8F%96%E4%BB%A3docker%E5%90%97.md)
