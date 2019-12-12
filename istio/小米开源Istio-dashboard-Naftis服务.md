@@ -25,7 +25,7 @@
 
 - 服务详情
 
-    服务详情页面可以查看查看已部署到 Kubernetes 中服务信息
+    服务详情页面可以查看已部署到 Kubernetes 中服务信息
     ![](/img/Naftis-service.png)
 
 - 服务 Pod 和拓扑图等
