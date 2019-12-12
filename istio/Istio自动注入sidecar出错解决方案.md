@@ -7,7 +7,7 @@
 
 ## 问题
 
-安装完后，做官方 `bookinfo` 实验 `kubectl apply -f samples/bookinfo/platform/kube/bookinfo.yaml` 出现 `sidecar` 自动注入报错。
+安装完后，做官方 `bookinfo` 实验 `kubectl apply -f samples/bookinfo/platform/kube/bookinfo.yaml` 出现 `sidecar` 自动注入不成功。
 
 ## 解决方法
 
@@ -36,7 +36,7 @@
 
 - 第二种可能：
 
-    安装 Istio 时，设置 autoInject: disabled 时
+    安装 Istio 时，设置 autoInject: disabled
     ```yaml
     proxy:
       includeIPRanges: 192.168.16.0/20,192.168.32.0/20
