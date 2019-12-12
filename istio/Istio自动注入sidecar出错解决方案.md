@@ -7,7 +7,7 @@
 
 ## 问题
 
-安装完后，做官方 `bookinfo` 实验 `kubectl apply -f samples/bookinfo/platform/kube/bookinfo.yaml` 出现 `sidecar` 不能自动注入。
+安装完后，做官方 `bookinfo` 实验 `kubectl apply -f samples/bookinfo/platform/kube/bookinfo.yaml` 出现 `sidecar` 自动注入报错。
 
 ## 解决方法
 
