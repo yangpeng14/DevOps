@@ -35,16 +35,20 @@
 `注`：`绿色Pod` 为当前已运行Pod ， `紫色Pod` 为新创建Pod
 
 - 当前 Service A 把流量分给4个 绿色Pod
-![](/img/rolling-update-1.png)
+
+	![](/img/rolling-update-1.png)
 
 - 管理员更新完 `Deployment` 部署文件，触发 `Rolling-Update` 操作，根据 k8s 调度算法选出一个 Node ，在这台 Node上创建一个 紫色Pod
-![](/img/rolling-update-2.png)
+
+	![](/img/rolling-update-2.png)
 
 - 当第一个 紫色Pod 创建完开始服务，k8s 会继续停止一个 绿色Pod，并创建一个 紫色Pod
-![](/img/rolling-update-3.png)
+
+	![](/img/rolling-update-3.png)
 
 - 循环替换，直到把所有 绿色Pod 替换成 紫色Pod，紫色Pod 达到 Deployment 部署文件中定义的副本数，则滚动更新完成
-![](/img/rolling-update-4.png)
+
+	![](/img/rolling-update-4.png)
 
 
 滚动更新允许以下操作：
