@@ -94,7 +94,7 @@
     - 如果在 `terminationGracePeriodSeconds` 时间限制内，`PreStop hook` 还没有执行完，一样会直接发送 `SIGTERM` 信号，并且时间延长 `2秒`，最后强制 Kill 。
 
 ## 参考链接
-[1] https://jimmysong.io/kubernetes-handbook/concepts/pod.html
-[2] https://monkeywie.github.io/2019/07/11/k8s-graceful-shutdown/
-[3] https://kubernetes.io/docs/tutorials/kubernetes-basics/update/update-intro/
-[4] https://aleiwu.com/post/tidb-opeartor-webhook/
+- [1] https://jimmysong.io/kubernetes-handbook/concepts/pod.html
+- [2] https://monkeywie.github.io/2019/07/11/k8s-graceful-shutdown/
+- [3] https://kubernetes.io/docs/tutorials/kubernetes-basics/update/update-intro/
+- [4] https://aleiwu.com/post/tidb-opeartor-webhook/
