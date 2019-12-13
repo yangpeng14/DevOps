@@ -37,7 +37,7 @@
 - 当前 Service A 把流量分给4个 绿色Pod
 ![](/img/rolling-update-1.png)
 
-- 管理员更新完 `Deployment` 部署文件，触发 `Rolling-Update` 操作，根据 k8s 调度算法选出一个 Node ，在这台 Node 上创建一个 紫色Pod
+- 管理员更新完 `Deployment` 部署文件，触发 `Rolling-Update` 操作，根据 k8s 调度算法选出一个 Node ，在这台 Node上创建一个 紫色Pod
 ![](/img/rolling-update-2.png)
 
 - 当第一个 紫色Pod 创建完开始服务，k8s 会继续停止一个 绿色Pod，并创建一个 紫色Pod
