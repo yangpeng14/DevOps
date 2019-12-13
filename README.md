@@ -53,6 +53,7 @@
 20. [Kubernetes 终端管理神器](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/kubernetes%E7%BB%88%E7%AB%AF%E7%AE%A1%E7%90%86%E7%A5%9E%E5%99%A8.md)
 21. [Kubernetes v1.17.0 正式发布](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/kubernetes-v1.17.0%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83.md)
 22. [3分钟部署生产级k8s集群](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/3%E5%88%86%E9%92%9F%E9%83%A8%E7%BD%B2%E7%94%9F%E4%BA%A7%E7%BA%A7k8s%E9%9B%86%E7%BE%A4.md)
+23. [K8S 滚动更新如何优雅停止 Pod](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/k8s%E6%BB%9A%E5%8A%A8%E6%9B%B4%E6%96%B0%E5%A6%82%E4%BD%95%E4%BC%98%E9%9B%85%E5%81%9C%E6%AD%A2pod.md)
 
 ### 五、Istio知识
 1. [Istio Helm 安装](https://github.com/yangpeng14/DevOps/blob/master/istio/istio-Helm-%E5%AE%89%E8%A3%85.md)
