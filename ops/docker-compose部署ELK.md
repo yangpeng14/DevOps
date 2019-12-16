@@ -256,7 +256,7 @@ http.host: "0.0.0.0"
 # 配置 logstash conf
 $ cd /data/ELKStack/logstash/conf
 
-$ # vim 01-input.conf
+$ vim 01-input.conf
 
 input {
   beats {
