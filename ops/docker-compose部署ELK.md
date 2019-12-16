@@ -34,7 +34,7 @@
 ## Kibana 的用途是什么？
 `Kibana` 是一款适用于 Elasticsearch 的数据可视化和管理工具，可以提供实时的直方图、线形图、饼状图和地图。Kibana 同时还包括诸如 Canvas 和 Elastic Maps 等高级应用程序；Canvas 允许用户基于自身数据创建定制的动态信息图表，而 Elastic Maps 则可用来对地理空间数据进行可视化。
 
-## 为何使用 Elasticsearch？
+## 为何使用 Elasticsearch？[2]
 `Elasticsearch 很快`。 由于 Elasticsearch 是在 `Lucene` 基础上构建而成的，所以在全文本搜索方面表现十分出色。Elasticsearch 同时还是一个近实时的搜索平台，这意味着从文档索引操作到文档变为可搜索状态之间的延时很短，一般只有一秒。因此，Elasticsearch 非常适用于对时间有严苛要求的用例，例如安全分析和基础设施监测。
 
 `Elasticsearch 具有分布式的本质特征`。 Elasticsearch 中存储的文档分布在不同的容器中，这些容器称为分片，可以进行复制以提供数据冗余副本，以防发生硬件故障。Elasticsearch 的分布式特性使得它可以扩展至数百台（甚至数千台）服务器，并处理 PB 量级的数据。
@@ -44,7 +44,7 @@
 `Elastic Stack 简化了数据采集、可视化和报告过程`。 通过与 Beats 和 Logstash 进行集成，用户能够在向 Elasticsearch 中索引数据之前轻松地处理数据。同时，Kibana 不仅可针对 Elasticsearch 数据提供实时可视化，同时还提供 UI 以便用户快速访问应用程序性能监测 (APM)、日志和基础设施指标等数据。
 
 ## 环境
-- CentOS7.4 系统
+- CentOS 7.4 系统
 - Docker version 18.06.1-ce
 - docker-compose version 1.22.0
 - 部署单节点 ELK
@@ -341,24 +341,24 @@ $ docker-compose up -d
     ```
     ```yaml
     lient:
-     hosts:
-       - 172.16.1.3
-     port: 9200
-     url_prefix:
-     use_ssl: False
-     certificate:
-     client_cert:
-     client_key:
-     ssl_no_validate: False
-     http_auth:
-     timeout: 150
-     master_only: False
+      hosts:
+        - 172.16.1.3
+      port: 9200
+      url_prefix:
+      use_ssl: False
+      certificate:
+      client_cert:
+      client_key:
+      ssl_no_validate: False
+      http_auth:
+      timeout: 150
+      master_only: False
 
     logging:
-     loglevel: INFO
-     logfile:
-     logformat: default
-     blacklist: ['elasticsearch', 'urllib3']
+      loglevel: INFO
+      logfile:
+      logformat: default
+      blacklist: ['elasticsearch', 'urllib3']
     ```
 
 - 配置 action.yml 清理规则
