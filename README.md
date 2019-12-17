@@ -58,7 +58,7 @@
 22. [3分钟部署生产级k8s集群](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/3%E5%88%86%E9%92%9F%E9%83%A8%E7%BD%B2%E7%94%9F%E4%BA%A7%E7%BA%A7k8s%E9%9B%86%E7%BE%A4.md)
 23. [K8S 滚动更新如何优雅停止 Pod](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/k8s%E6%BB%9A%E5%8A%A8%E6%9B%B4%E6%96%B0%E5%A6%82%E4%BD%95%E4%BC%98%E9%9B%85%E5%81%9C%E6%AD%A2pod.md)
 24. [基于 Kubernetes 的微服务图形化管理界面 Kuboard](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/%E5%9F%BA%E4%BA%8EKubernetes%E7%9A%84%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%9B%BE%E5%BD%A2%E5%8C%96%E7%AE%A1%E7%90%86%E7%95%8C%E9%9D%A2-Kuboard.md)
-25. [阿里 k8s 事件通知服务](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/%E9%98%BF%E9%87%8Ck8s%E4%BA%8B%E4%BB%B6%E9%80%9A%E7%9F%A5%E6%9C%8D%E5%8A%A1.md)
+25. [阿里开源 k8s 事件通知服务](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/%E9%98%BF%E9%87%8Ck8s%E4%BA%8B%E4%BB%B6%E9%80%9A%E7%9F%A5%E6%9C%8D%E5%8A%A1.md)
 
 ### 五、Istio知识
 1. [Istio Helm 安装](https://github.com/yangpeng14/DevOps/blob/master/istio/istio-Helm-%E5%AE%89%E8%A3%85.md)
