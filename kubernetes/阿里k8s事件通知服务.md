@@ -134,6 +134,7 @@ LAST SEEN   TYPE      REASON              OBJECT                                
     ```
 
 - 查看钉钉告警事件
+
     ![](/img/dingtalk.jpeg)
 
 ## 支持下列通知程序
@@ -153,4 +154,4 @@ wechat | 微信
 > https://github.com/AliyunContainerService/kube-eventer
 
 ## 参考链接
-- https://github.com/AliyunContainerService/kube-eventer
+- https://github.com/AliyunContainerService/kube-eventer    
