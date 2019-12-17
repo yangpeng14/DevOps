@@ -133,6 +133,7 @@ LAST SEEN   TYPE      REASON              OBJECT                                
       namespace: kube-system
     ```
 
+
 - 查看钉钉告警事件
 
     ![](/img/dingtalk.jpeg)
