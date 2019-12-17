@@ -134,7 +134,7 @@ LAST SEEN   TYPE      REASON              OBJECT                                
     ```
 
 - 查看钉钉告警事件
-![](/img/dingtalk.jpeg)
+    ![](/img/dingtalk.jpeg)
 
 ## 支持下列通知程序
 
@@ -148,3 +148,9 @@ influxdb | influxdb 数据库
 kafka | kafka 数据库
 mysql | mysql 数据库
 wechat | 微信
+
+## 项目地址
+> https://github.com/AliyunContainerService/kube-eventer
+
+## 参考链接
+- https://github.com/AliyunContainerService/kube-eventer
