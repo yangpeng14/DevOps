@@ -63,12 +63,12 @@
 
 ```yaml
 lifecycle:  
-    preStop:    
-        exec:      
-            command:
-             - sh
-             - -c
-             - "sleep 5"
+  preStop:    
+    exec:      
+      command:
+        - sh
+        - -c
+        - "sleep 5"
 ```
 
 这样，您根本不需要修改应用程序的代码。如果您的应用要确保完全处理所有正在进行的请求，这个 `preStop` 钩子就可以满足所有你的需要。
