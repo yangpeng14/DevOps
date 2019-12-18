@@ -74,7 +74,7 @@ lifecycle:
 这样，您根本不需要修改应用程序的代码。如果您的应用要确保完全处理所有正在进行的请求，这个 `preStop` 钩子就可以满足所有你的需要。
 
 ## 参考文档
-[handling-client-requests-properly-with-kubernetes](handling-client-requests-properly-with-kubernetes/)
+[handling-client-requests-properly-with-kubernetes](https://freecontent.manning.com/handling-client-requests-properly-with-kubernetes/)
 
 ## 原文出处
 > 文章作者：icyboy
