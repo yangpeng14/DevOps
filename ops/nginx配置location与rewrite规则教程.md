@@ -100,7 +100,7 @@ location ~* /js/.*/\.js
 ### 实际使用建议
 
 ```bash
-所以实际使用中，个人觉得至少有三个匹配规则定义，如下：
+#所以实际使用中，个人觉得至少有三个匹配规则定义，如下：
 #直接匹配网站根，通过域名访问网站首页比较频繁，使用这个会加速处理，官网如是说。
 #这里是直接转发给后端应用服务器了，也可以是一个静态首页
 # 第一个必选规则
@@ -202,7 +202,7 @@ location ~* \.(gif|jpg|png|swf|flv)$ {
 
 下面是可以用作 `if判断` 的全局变量
 
-- `$args`： #这个变量等于请求行中的参数，同$query_string
+- `$args`： #这个变量等于请求行中的参数，同 `$query_string`
 - `$content_length` ： 请求头中的Content-length字段。
 - `$content_type` ： 请求头中的Content-Type字段。
 - `$document_root` ： 当前请求在root指令中指定的值。

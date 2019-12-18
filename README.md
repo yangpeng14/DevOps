@@ -84,6 +84,7 @@
 14. [Nginx必须知道哪些事](https://github.com/yangpeng14/DevOps/blob/master/ops/Nginx%E5%BF%85%E9%A1%BB%E7%9F%A5%E9%81%93%E5%93%AA%E4%BA%9B%E4%BA%8B.md)
 15. [Nginx 服务指标监测](https://github.com/yangpeng14/DevOps/blob/master/ops/Nginx%E6%9C%8D%E5%8A%A1%E6%8C%87%E6%A0%87%E7%9B%91%E6%B5%8B.md)
 16. [Docker-compose 部署 ELK](https://github.com/yangpeng14/DevOps/blob/master/ops/docker-compose%E9%83%A8%E7%BD%B2ELK.md)
+17. [nginx配置location与rewrite规则教程](https://github.com/yangpeng14/DevOps/blob/master/ops/nginx%E9%85%8D%E7%BD%AElocation%E4%B8%8Erewrite%E8%A7%84%E5%88%99%E6%95%99%E7%A8%8B.md)
 
 ### 七、Podman知识
 1. [Podman 会取代 Docker 吗?](https://github.com/yangpeng14/DevOps/blob/master/podman/podman%E4%BC%9A%E5%8F%96%E4%BB%A3docker%E5%90%97.md)
