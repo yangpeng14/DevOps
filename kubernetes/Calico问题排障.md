@@ -48,23 +48,23 @@ IPv4 BGP status
 
 - `can-reach` 使用您的本地路由来确定将使用哪个IP地址到达提供的目标。可以使用IP地址和域名。
 
-```bash
-# Using IP addresses
-IP_AUTODETECTION_METHOD=can-reach=8.8.8.8
-IP6_AUTODETECTION_METHOD=can-reach=2001:4860:4860::8888
+    ```bash
+    # Using IP addresses
+    IP_AUTODETECTION_METHOD=can-reach=8.8.8.8
+    IP6_AUTODETECTION_METHOD=can-reach=2001:4860:4860::8888
 
-# Using domain names
-IP_AUTODETECTION_METHOD=can-reach=www.google.com
-IP6_AUTODETECTION_METHOD=can-reach=www.google.com
-```
+    # Using domain names
+    IP_AUTODETECTION_METHOD=can-reach=www.google.com
+    IP6_AUTODETECTION_METHOD=can-reach=www.google.com
+    ```
 
 - `interface` 使用提供的接口正则表达式（golang语法）枚举匹配的接口并返回第一个匹配接口上的第一个IP地址。列出接口和IP地址的顺序取决于系统。
 
-```bash
-# Valid IP address on interface eth0, eth1, eth2 etc.
-IP_AUTODETECTION_METHOD=interface=eth.*
-IP6_AUTODETECTION_METHOD=interface=eth.*
-```
+    ```bash
+    # Valid IP address on interface eth0, eth1, eth2 etc.
+    IP_AUTODETECTION_METHOD=interface=eth.*
+    IP6_AUTODETECTION_METHOD=interface=eth.*
+    ```
 
 ## 故障二
 
