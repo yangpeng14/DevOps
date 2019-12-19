@@ -32,6 +32,7 @@
 6. [Docker 最简单管理方法之 Portainer](https://github.com/yangpeng14/DevOps/blob/master/docker/Docker%E6%9C%80%E7%AE%80%E5%8D%95%E7%AE%A1%E7%90%86%E6%96%B9%E6%B3%95%E4%B9%8BPortainer.md)
 7. [比 docker stats 命令好用工具 ctop](https://github.com/yangpeng14/DevOps/blob/master/docker/%E6%AF%94docker-stats%E5%91%BD%E4%BB%A4%E5%A5%BD%E7%94%A8%E5%B7%A5%E5%85%B7ctop.md)
 8. [如何修改容器时间而不改变宿主机时间?](https://github.com/yangpeng14/DevOps/blob/master/docker/%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9%E5%AE%B9%E5%99%A8%E6%97%B6%E9%97%B4%E8%80%8C%E4%B8%8D%E6%94%B9%E5%8F%98%E5%AE%BF%E4%B8%BB%E6%9C%BA%E6%97%B6%E9%97%B4.md)
+9. [Java和Docker限制的那些事儿](https://github.com/yangpeng14/DevOps/blob/master/docker/Java%E5%92%8CDocker%E9%99%90%E5%88%B6%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF.md)
 
 ### 四、Kubernetes知识
 1. [Metrics Serve 0.3.2安装](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/metrics-Server-v0-3-2%E7%89%88%E6%9C%AC%E5%AE%89%E8%A3%85.md)
