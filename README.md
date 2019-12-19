@@ -60,6 +60,7 @@
 24. [基于 Kubernetes 的微服务图形化管理界面 Kuboard](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/%E5%9F%BA%E4%BA%8EKubernetes%E7%9A%84%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%9B%BE%E5%BD%A2%E5%8C%96%E7%AE%A1%E7%90%86%E7%95%8C%E9%9D%A2-Kuboard.md)
 25. [阿里开源 k8s 事件通知服务](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/%E9%98%BF%E9%87%8Ck8s%E4%BA%8B%E4%BB%B6%E9%80%9A%E7%9F%A5%E6%9C%8D%E5%8A%A1.md)
 26. [使用 Kubernetes 正确的处理用户请求](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/%E4%BD%BF%E7%94%A8Kubernetes%E6%AD%A3%E7%A1%AE%E7%9A%84%E5%A4%84%E7%90%86%E7%94%A8%E6%88%B7%E8%AF%B7%E6%B1%82.md)
+27. [Calico 问题排障](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/Calico%E9%97%AE%E9%A2%98%E6%8E%92%E9%9A%9C.md)
 
 ### 五、Istio知识
 1. [Istio Helm 安装](https://github.com/yangpeng14/DevOps/blob/master/istio/istio-Helm-%E5%AE%89%E8%A3%85.md)
@@ -85,6 +86,7 @@
 15. [Nginx 服务指标监测](https://github.com/yangpeng14/DevOps/blob/master/ops/Nginx%E6%9C%8D%E5%8A%A1%E6%8C%87%E6%A0%87%E7%9B%91%E6%B5%8B.md)
 16. [Docker-compose 部署 ELK](https://github.com/yangpeng14/DevOps/blob/master/ops/docker-compose%E9%83%A8%E7%BD%B2ELK.md)
 17. [nginx配置location与rewrite规则教程](https://github.com/yangpeng14/DevOps/blob/master/ops/nginx%E9%85%8D%E7%BD%AElocation%E4%B8%8Erewrite%E8%A7%84%E5%88%99%E6%95%99%E7%A8%8B.md)
+18. [一份快速实用的 tcpdump 命令参考手册](https://github.com/yangpeng14/DevOps/blob/master/ops/%E4%B8%80%E4%BB%BD%E5%BF%AB%E9%80%9F%E5%AE%9E%E7%94%A8%E7%9A%84tcpdump%E5%91%BD%E4%BB%A4%E5%8F%82%E8%80%83%E6%89%8B%E5%86%8C.md)
 
 ### 七、Podman知识
 1. [Podman 会取代 Docker 吗?](https://github.com/yangpeng14/DevOps/blob/master/podman/podman%E4%BC%9A%E5%8F%96%E4%BB%A3docker%E5%90%97.md)
