@@ -62,6 +62,7 @@
 25. [阿里开源 k8s 事件通知服务](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/%E9%98%BF%E9%87%8Ck8s%E4%BA%8B%E4%BB%B6%E9%80%9A%E7%9F%A5%E6%9C%8D%E5%8A%A1.md)
 26. [使用 Kubernetes 正确的处理用户请求](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/%E4%BD%BF%E7%94%A8Kubernetes%E6%AD%A3%E7%A1%AE%E7%9A%84%E5%A4%84%E7%90%86%E7%94%A8%E6%88%B7%E8%AF%B7%E6%B1%82.md)
 27. [Calico 问题排障](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/Calico%E9%97%AE%E9%A2%98%E6%8E%92%E9%9A%9C.md)
+28. [Kubelet 状态更新机制](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/Kubelet%E7%8A%B6%E6%80%81%E6%9B%B4%E6%96%B0%E6%9C%BA%E5%88%B6.md)
 
 ### 五、Istio知识
 1. [Istio Helm 安装](https://github.com/yangpeng14/DevOps/blob/master/istio/istio-Helm-%E5%AE%89%E8%A3%85.md)
