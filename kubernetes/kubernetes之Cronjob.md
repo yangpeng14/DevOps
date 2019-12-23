@@ -86,8 +86,8 @@ spec:
 
 - Job 历史版本限制
 
-    `.spec.successfulJobsHistoryLimit`：# 字段是可选的，成功完成的作业保存多少个
-    `.spec.failedJobsHistoryLimit`：    # 字段是可选的，失败的作业保存多少个
+    - `.spec.successfulJobsHistoryLimit`：# 字段是可选的，成功完成的作业保存多少个
+    - `.spec.failedJobsHistoryLimit`：    # 字段是可选的，失败的作业保存多少个
 
     默认没有限制，所有成功和失败的 Job 都会被保留。然而，当运行一个 Cron Job 时，很快就会堆积很多 Job，推荐设置这两个字段的值。设置为0则不会保存，这两个字段与jobTemplate同级。
 
