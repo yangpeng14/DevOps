@@ -1,6 +1,6 @@
 ## TUF 毕业时间
 
-专为云原生软件构建可持续生态系统的云原生计算基金会（CNCF）当地时间（美国加利福尼亚州旧金山）12月18日宣布，The update Framework（TUF）已经成为继Kubernetes、Premetheus、Envoy、CoreDNS、containerd、Fluentd Jaeger以及Vitess之后，第九个正式毕业的项目。为了逐步从孵化阶段转向成熟，并最终迎来毕业，各项目必须获得蓬勃的发展态势、一路走高的采用率、建立记录明确且结构清晰的治理流程，同时在可持续性与包容性等方面对技术社区做出坚定承诺。
+专为云原生软件构建可持续生态系统的云原生计算基金会（CNCF）当地时间（美国加利福尼亚州旧金山）12月18日宣布，The update Framework（TUF）已经成为继Kubernetes、Premetheus、Envoy、CoreDNS、containerd、Fluentd、Jaeger以及Vitess之后，第九个正式毕业的项目。为了逐步从孵化阶段转向成熟，并最终迎来毕业，各项目必须获得蓬勃的发展态势、一路走高的采用率、建立记录明确且结构清晰的治理流程，同时在可持续性与包容性等方面对技术社区做出坚定承诺。
 
 ## TUF 简介
 
