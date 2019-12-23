@@ -65,6 +65,7 @@
 28. [Kubelet 状态更新机制](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/Kubelet%E7%8A%B6%E6%80%81%E6%9B%B4%E6%96%B0%E6%9C%BA%E5%88%B6.md)
 29. [Kubeadm 证书说明](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/Kubeadm%E8%AF%81%E4%B9%A6%E8%AF%B4%E6%98%8E.md)
 30. [谈谈kubernetes Runtime](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/%E8%B0%88%E8%B0%88kubernetes-Runtime.md)
+31. [IBM 开源图形终端Kui框架](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/IBM%E5%BC%80%E6%BA%90%E5%9B%BE%E5%BD%A2%E7%BB%88%E7%AB%AFKui%E6%A1%86%E6%9E%B6.md)
 
 ### 五、Istio知识
 1. [Istio Helm 安装](https://github.com/yangpeng14/DevOps/blob/master/istio/istio-Helm-%E5%AE%89%E8%A3%85.md)
