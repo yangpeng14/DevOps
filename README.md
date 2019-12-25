@@ -70,6 +70,7 @@
 31. [IBM 开源图形终端Kui框架](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/IBM%E5%BC%80%E6%BA%90%E5%9B%BE%E5%BD%A2%E7%BB%88%E7%AB%AFKui%E6%A1%86%E6%9E%B6.md)
 32. [CNCF 宣布安全更新框架 TUF 正式毕业](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/CNCF%E5%AE%A3%E5%B8%83%E5%AE%89%E5%85%A8%E6%9B%B4%E6%96%B0%E6%A1%86%E6%9E%B6TUF%E6%AD%A3%E5%BC%8F%E6%AF%95%E4%B8%9A.md)
 33. [Kubernetes 之 Cronjob](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/kubernetes%E4%B9%8BCronjob.md)
+34. [在 Kubernetes 中配置 Container Capabilities](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/%E5%9C%A8Kubernetes%E4%B8%AD%E9%85%8D%E7%BD%AE-Container-Capabilities.md)
 
 ### 五、Istio知识
 1. [Istio Helm 安装](https://github.com/yangpeng14/DevOps/blob/master/istio/istio-Helm-%E5%AE%89%E8%A3%85.md)
