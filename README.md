@@ -98,6 +98,7 @@
 17. [nginx配置location与rewrite规则教程](https://github.com/yangpeng14/DevOps/blob/master/ops/nginx%E9%85%8D%E7%BD%AElocation%E4%B8%8Erewrite%E8%A7%84%E5%88%99%E6%95%99%E7%A8%8B.md)
 18. [一份快速实用的 tcpdump 命令参考手册](https://github.com/yangpeng14/DevOps/blob/master/ops/%E4%B8%80%E4%BB%BD%E5%BF%AB%E9%80%9F%E5%AE%9E%E7%94%A8%E7%9A%84tcpdump%E5%91%BD%E4%BB%A4%E5%8F%82%E8%80%83%E6%89%8B%E5%86%8C.md)
 19. [一千行 MySQL 学习笔记](https://github.com/yangpeng14/DevOps/blob/master/ops/%E4%B8%80%E5%8D%83%E8%A1%8CMySQL%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.md)
+20. [Linux系统日志报Possible SYN flooding处理方法](https://github.com/yangpeng14/DevOps/blob/master/ops/Linux%E7%B3%BB%E7%BB%9F%E6%97%A5%E5%BF%97%E6%8A%A5Possible-SYN-flooding%E5%A4%84%E7%90%86%E6%96%B9%E6%B3%95.md)
 
 ### 七、Podman知识
 1. [Podman 会取代 Docker 吗?](https://github.com/yangpeng14/DevOps/blob/master/podman/podman%E4%BC%9A%E5%8F%96%E4%BB%A3docker%E5%90%97.md)
