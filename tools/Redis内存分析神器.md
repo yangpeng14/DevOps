@@ -35,14 +35,14 @@ portfolio:stock_follower_count:INS104806
 - Linux amd64
 
     ```bash
-    $ wget https://github.com/xueqiu/rdr/releases/download/v0.0.1/  rdr-linux -O /usr/local/bin/rdr
+    $ wget https://github.com/xueqiu/rdr/releases/download/v0.0.1/rdr-linux -O /usr/local/bin/rdr
     $ chmod +x /usr/local/bin/rdr
     ```
 
 - MacOS
 
     ```bash
-    $ curl https://github.com/xueqiu/rdr/releases/download/v0.0.1/  rdr-darwin -o /usr/local/bin/rdr
+    $ curl https://github.com/xueqiu/rdr/releases/download/v0.0.1/rdr-darwin -o /usr/local/bin/rdr
     $ chmod +x /usr/local/bin/rdr
     ```
 
@@ -50,7 +50,7 @@ portfolio:stock_follower_count:INS104806
 
     ```bash
     # 浏览器下载下面链接，在点击运行
-    https://github.com/xueqiu/rdr/releases/download/v0.0.1/ rdr-windows.exe
+    https://github.com/xueqiu/rdr/releases/download/v0.0.1/rdr-windows.exe
     ```
 
 
