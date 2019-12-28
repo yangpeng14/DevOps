@@ -1,4 +1,4 @@
-- RDR 简介
+## RDR 简介
 
 `RDR` 是解析 `redis rdbfile` 工具。与`redis-rdb-tools`相比，RDR 是由golang 实现的，速度更快（5GB rdbfile 在我的PC上大约需要2分钟）。
 
