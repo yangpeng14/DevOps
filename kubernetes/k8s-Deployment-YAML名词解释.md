@@ -9,7 +9,7 @@
 
 Kubernetes 版本 | Deployment 版本
 ---|---
-v1.5-v1.6 | extensions/v1beta1
+v1.5-v1.15 | extensions/v1beta1
 v1.7-v1.15 | apps/v1beta1
 v1.8-v1.15 | apps/v1beta2
 v1.9+ | apps/v1
