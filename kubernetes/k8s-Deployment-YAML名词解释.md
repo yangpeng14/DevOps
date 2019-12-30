@@ -2,7 +2,7 @@
 
 `Deployment` 为 `Pod` 和 `ReplicaSet` 提供了一个声明式定义 (declarative) 方法，用来替代以前的 `ReplicationController` 来方便的管理应用。
 
-作为最常用的 Kubernetes 对象，`Deployment` 经常会用来创建 `ReplicaSet` 和 `Pod`，我们往往不会直接在集群中使用 `ReplicaSet` 部署一个新的微服务，一方面是因为 `ReplicaSet` 的功能其实不够强大，一些常见的更新、扩容和缩容运维操作都不支持，`Deployment` 的引入就是为了就是为了支持这些复杂的操作。
+作为最常用的 Kubernetes 对象，`Deployment` 经常会用来创建 `ReplicaSet` 和 `Pod`，我们往往不会直接在集群中使用 `ReplicaSet` 部署一个新的微服务，一方面是因为 `ReplicaSet` 的功能其实不够强大，一些常见的更新、扩容和缩容运维操作都不支持，`Deployment` 的引入就是为了支持这些复杂的操作。
 
 
 ## Deployment API 版本对照表
