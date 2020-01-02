@@ -51,6 +51,7 @@
 
 - Linux
 
+    首先安装 `certutil`
     ```bash
     $ sudo apt install libnss3-tools
 
@@ -65,6 +66,18 @@
     或者
 
     $ sudo zypper install mozilla-nss-tools
+    ```
+
+    然后可以使用 [Linuxbrew](https://docs.brew.sh/Homebrew-on-Linux) 进行安装
+    ```bash
+    $ brew install mkcert
+    ```
+
+    或从源代码构建（需要Go 1.13+）
+    ```bash
+    $ git clone https://github.com/FiloSottile/mkcert
+    $ cd mkcert
+    $ go build -ldflags "-X main.Version=$(git describe --tags)"
     ```
 
 - Windows
