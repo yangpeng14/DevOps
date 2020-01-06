@@ -118,7 +118,7 @@ show full columns from t_member; # 查询所有表字段编码
 
 ### 数据库连接配置
 
-添加 `characterEncoding=utf8` 会被自动识别为 utf8mb4 ；`autoReconnect=true` 参数必做添加。
+添加 `characterEncoding=utf8` 会被自动识别为 utf8mb4 ；`autoReconnect=true` 参数必须添加。
 
 ## 参考链接
 
