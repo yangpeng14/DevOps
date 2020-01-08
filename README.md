@@ -76,6 +76,7 @@
 35. [K8s Deployment YAML 名词解释](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/k8s-Deployment-YAML%E5%90%8D%E8%AF%8D%E8%A7%A3%E9%87%8A.md)
 36. [Kubernetes Pod 故障归类与排查方法](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/kubernetes-pod%E6%95%85%E9%9A%9C%E5%BD%92%E7%B1%BB%E4%B8%8E%E6%8E%92%E6%9F%A5%E6%96%B9%E6%B3%95.md)
 37. [白话 Kubernetes 基础概念](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/%E7%99%BD%E8%AF%9DKubernetes%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5.md)
+38. [PrometheusAlert 多渠道告警通知神器](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/PrometheusAlert%E5%A4%9A%E6%B8%A0%E9%81%93%E5%91%8A%E8%AD%A6%E9%80%9A%E7%9F%A5%E7%A5%9E%E5%99%A8.md)
 
 ### 五、Istio知识
 1. [Istio Helm 安装](https://github.com/yangpeng14/DevOps/blob/master/istio/istio-Helm-%E5%AE%89%E8%A3%85.md)
