@@ -68,8 +68,8 @@ Node Allocatable 暴露为 API 中 `v1.Node` 对象的一部分，也是 CLI 中
 
     支持的参数值如下：
 
-        - `cgroupfs` 是默认的驱动，在主机上直接操作 cgroup 文件系统以对 cgroup 沙箱进行管理。
-        - `systemd` 是可选的驱动，使用 init 系统支持的资源的瞬时切片管理 cgroup 沙箱。
+    - `cgroupfs` 是默认的驱动，在主机上直接操作 cgroup 文件系统以对 cgroup 沙箱进行管理。
+    - `systemd` 是可选的驱动，使用 init 系统支持的资源的瞬时切片管理 cgroup 沙箱。
 
     取决于相关容器运行时（container runtime）的配置，操作员可能需要选择一个特定的 cgroup 驱动来保证系统正常运行。例如如果操作员使用 `docker` 运行时提供的 cgroup 驱动时，必须配置 `kubelet` 使用 `systemd cgroup` 驱动。
 
