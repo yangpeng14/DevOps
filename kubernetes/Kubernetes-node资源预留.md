@@ -96,19 +96,34 @@ K8S 把计算节点资源分为 4 个部分：
 
 `小结`：为了简化管理，建议不对 kube-reserved/system-reserved 做区分，直接使用 `--system-reserved`做系统预留。在 kubelet 配置文件中设置如下参数：
 
-`--system-reserved=memory=4Gi`
+```
+--system-reserved=memory=3Gi,storage=5Gi \
+--eviction-hard=memory.available<1Gi,nodefs.available<10Gi,imagefs.available<15Gi \
+--eviction-soft=memory.available<1.5Gi,nodefs.available<15Gi,imagefs.available<20Gi \
+--eviction-soft-grace-period=memory.available=2m,nodefs.available=2m,imagefs.available=2m \
+--eviction-max-pod-grace-period=30 \
+--eviction-minimum-reclaim=memory.available=200Mi,nodefs.available=5Gi,imagefs.available=5Gi \
+```
 
-效果如下：
+使用 `kubectl describe nodes node-name` 查询设置效果。
 
-```bash
-$ kubectl describe nodes node1
+例如下面效果：
 
-Name:           node1
-......
+```
 Capacity:
- memory:                65759080Ki
+ cpu:                12
+ ephemeral-storage:  2683368944Ki
+ hugepages-1Gi:      0
+ hugepages-2Mi:      0
+ memory:             65701752Ki
+ pods:               110
 Allocatable:
- memory:                61564776Ki
+ cpu:                12
+ ephemeral-storage:  2262397424Ki
+ hugepages-1Gi:      0
+ hugepages-2Mi:      0
+ memory:             55215992Ki
+ pods:               110
 ```
 
 ## 其它
