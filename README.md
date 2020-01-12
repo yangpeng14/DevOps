@@ -79,6 +79,7 @@
 38. [PrometheusAlert 多渠道告警通知神器](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/PrometheusAlert%E5%A4%9A%E6%B8%A0%E9%81%93%E5%91%8A%E8%AD%A6%E9%80%9A%E7%9F%A5%E7%A5%9E%E5%99%A8.md)
 39. [Kubernetes Node资源预留](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/Kubernetes-node%E8%B5%84%E6%BA%90%E9%A2%84%E7%95%99.md)
 40. [谈谈K8S Pod Eviction 机制](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/%E8%B0%88%E8%B0%88k8s-pod-eviction%E6%9C%BA%E5%88%B6.md)
+41. [Kubernetes之容器数据写满磁盘解决方法](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/kubernetes%E4%B9%8B%E5%AE%B9%E5%99%A8%E6%95%B0%E6%8D%AE%E5%86%99%E6%BB%A1%E7%A3%81%E7%9B%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95.md)
 
 ### 五、Istio知识
 1. [Istio Helm 安装](https://github.com/yangpeng14/DevOps/blob/master/istio/istio-Helm-%E5%AE%89%E8%A3%85.md)

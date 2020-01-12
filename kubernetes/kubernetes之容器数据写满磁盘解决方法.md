@@ -30,7 +30,7 @@
 
 ## 判断磁盘写满方法
 
-下面命令能快速的排查磁盘占满问题：
+下面命令能快速的排查磁盘占满问题：
 
 - `docker info  | grep 'Docker Root Dir'` # 检查 Docker 存储目录
 - `docker system df` # 查看容器磁盘使用情况
