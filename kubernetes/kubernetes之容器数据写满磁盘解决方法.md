@@ -138,3 +138,4 @@ $ kubectl uncordon ${node-name}
 
 ## 参考链接
 - https://kubernetes.io/docs/concepts/workloads/controllers/garbage-collection/
+- https://mp.weixin.qq.com/s/IolydydvQoRh1okI7aWuiA
