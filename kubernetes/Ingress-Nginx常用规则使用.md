@@ -175,3 +175,6 @@ spec:
           serviceName: demo-svc
           servicePort: 8080
 ```
+
+## 参考链接
+- https://github.com/kubernetes/ingress-nginx/blob/nginx-0.24.1/docs/user-guide/nginx-configuration/annotations.md
