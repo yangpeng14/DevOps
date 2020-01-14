@@ -105,7 +105,7 @@ spec:
 
 ## rewrite 配置
 
-> 下面 rewrite 规则意思是 访问 www.example.com/hello/(.\*) 跳转到 www.example.com/(.\*)
+> 下面 rewrite 规则意思是 访问 www.example.com/hello/(.*) 跳转到 www.example.com/(.*)
 
 ```yaml
 apiVersion: networking.k8s.io/v1beta1
