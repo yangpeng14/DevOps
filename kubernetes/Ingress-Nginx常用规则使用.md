@@ -20,7 +20,7 @@ containers:
       - --ingress-class=nginx # 指定ingress-class 属性
 ```
 
-`--ingress-class`：声明ingress入口名称，如果需要绑定这个ingress，需要在 `annotation` 中定义 `kubernetes.io/ingress.class: "nginx"`
+`--ingress-class`：声明ingress入口名称，如果要绑定这个ingress，需要在 `annotation` 中定义 `kubernetes.io/ingress.class: "nginx"`
 
 ## 开启 TLS
 
