@@ -49,9 +49,9 @@ data:
           valid_status_codes: [200]  # 默认 2xx，这里定义一个返回状态码，在grafana作图时，有明示。
           method: GET
           headers:
-            Host: prometheus.smartstudy.tech
+            Host: prometheus.example.com
             Accept-Language: en-US
-            Origin: smartstudy.tech
+            Origin: example.com
           preferred_ip_protocol: "ip4" # 首选IP协议
           no_follow_redirects: false # 关闭跟随重定向
       http_post_2xx: # http post 监测模块
