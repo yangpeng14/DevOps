@@ -172,7 +172,7 @@ $ kubectl create secret generic additional-configs --from-file=prometheus-additi
 ![](/img/prometheus-operator-load.png)
 
 
-打开 Prometheus 的 Target 页面，就会看到 上面定义的 `blackbox-k8s-service-dns` 任务
+打开 Prometheus 的 Target 页面，就会看到 上面定义的 `blackbox-k8s-service-dns` 任务，到 graph 页面，可以使用 `probe_success` 和 `probe_duration_seconds` 等来检查历史结果
 
 ![](/img/blackbox-k8s-service-dns.png)
 
