@@ -83,6 +83,7 @@
 42. [Kubernetes Pod 生命周期](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/Kubernetes-pod-%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F.md)
 43. [Ingress Nginx 常用规则使用](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/Ingress-Nginx%E5%B8%B8%E7%94%A8%E8%A7%84%E5%88%99%E4%BD%BF%E7%94%A8.md)
 44. [Prometheus BlackBox简单监控](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/Prometheus-Blackbox%E7%AE%80%E5%8D%95%E7%9B%91%E6%8E%A7.md)
+45. [Kubernetes Authenticate 安装向导](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/Kubernetes-Authenticate%E5%AE%89%E8%A3%85%E5%90%91%E5%AF%BC.md)
 
 ### 五、Istio知识
 1. [Istio Helm 安装](https://github.com/yangpeng14/DevOps/blob/master/istio/istio-Helm-%E5%AE%89%E8%A3%85.md)
