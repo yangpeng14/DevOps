@@ -115,6 +115,7 @@
 21. [Mysql存储微信Emoji表情问题](https://github.com/yangpeng14/DevOps/blob/master/ops/mysql%E5%AD%98%E5%82%A8%E5%BE%AE%E4%BF%A1Emoji%E8%A1%A8%E6%83%85%E9%97%AE%E9%A2%98.md)
 22. [OpenVpn 服务端与客户端部署](https://github.com/yangpeng14/DevOps/blob/master/ops/OpeVpn%E6%9C%8D%E5%8A%A1%E7%AB%AF%E4%B8%8E%E5%AE%A2%E6%88%B7%E7%AB%AF%E9%83%A8%E7%BD%B2.md)
 23. [互联网中台技术简介](https://github.com/yangpeng14/DevOps/blob/master/ops/%E4%BA%92%E8%81%94%E7%BD%91%E4%B8%AD%E5%8F%B0%E6%8A%80%E6%9C%AF%E7%AE%80%E4%BB%8B.md)
+24. [Kubernetes 中部署 Zabbix](https://github.com/yangpeng14/DevOps/blob/master/ops/kubernetes%E9%83%A8%E7%BD%B2%E4%B8%ADzabbix.md)
 
 ### 七、Podman知识
 1. [Podman 会取代 Docker 吗?](https://github.com/yangpeng14/DevOps/blob/master/podman/podman%E4%BC%9A%E5%8F%96%E4%BB%A3docker%E5%90%97.md)
