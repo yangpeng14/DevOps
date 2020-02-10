@@ -271,3 +271,9 @@ method_code:http_errors:rate5m / ignoring(code) group_left method:http_requests:
 ### 预测Gauge指标变化趋势
 
 - `predict_linear(v range-vector, t scalar)`函数：基于简单的线性回归的方式进行`t`秒后的`v`值的预测。
+
+## 原谅出处
+
+> 作者：菜鸟随笔
+
+> 原文链接：https://lengrongfu.github.io/2019/03/17/PromQL-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4
