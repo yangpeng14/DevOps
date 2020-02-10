@@ -47,7 +47,7 @@ type LabelValue string
 
 - Counter：只增不减的计数器
 - Gauge：可增可减的仪表盘
-- Histogram和Summary分析数据分布情况 （没讲清楚）
+- Histogram和Summary分析数据分布情况
 
 ## 初识 PromQL
 
@@ -57,7 +57,7 @@ type LabelValue string
 
 - 不等于：`http_requests_total{instance!="localhost:9090"}`
 
-- 匹配：`http_requests_total{environment=~"staging|testing|development",method!="GET"}` 多个值用|连接。
+- 匹配：`http_requests_total{environment=~"staging|testing|development",method!="GET"}` 多个值用`|`连接。
 
 - 排除：`http_requests_total{environment!~"staging|testing|development",method!="GET"}`不存在这几个值之间。
 
@@ -124,11 +124,11 @@ http_request_total{}[1d] offset 1d
 - `or` (或者)
 - `unless` (排除)
 
-vector1 and vector2 会产生一个由vector1的元素组成的新的向量。该向量包含vector1中完全匹配vector2中的元素组成。
+`vector1 and vector2` 会产生一个由vector1的元素组成的新的向量。该向量包含vector1中完全匹配vector2中的元素组成。
 
-vector1 or vector2 会产生一个新的向量，该向量包含vector1中所有的样本数据，以及vector2中没有与vector1匹配到的样本数据。
+`vector1 or vector2` 会产生一个新的向量，该向量包含vector1中所有的样本数据，以及vector2中没有与vector1匹配到的样本数据。
 
-vector1 unless vector2 会产生一个新的向量，新向量中的元素由vector1中没有与vector2匹配的元素组成。
+`vector1 unless vector2` 会产生一个新的向量，新向量中的元素由vector1中没有与vector2匹配的元素组成。
 
 ### 操作符优先级
 
@@ -148,7 +148,7 @@ vector1 unless vector2 会产生一个新的向量，新向量中的元素由vec
 
 ### 向量匹配模式详解
 
-向量与向量之间运算时会基于默认的匹配规则，依次找到右边边向量元素和左边向量元素匹配(标签完全一致)的进行运算，不匹配则丢弃。在PromQL中有两种典型的匹配模式。
+向量与向量之间运算时会基于默认的匹配规则，依次找到右边边向量元素和左边向量元素匹配(标签完全一致)的进行运算，不匹配则丢弃。在`PromQL`中有两种典型的匹配模式。
 
 #### 一对一（one to one）
 一对一匹配模式会从操作符两边获取瞬时向量依次比较并找到唯一匹配的样本值，使用的表达式如下：
@@ -198,6 +198,15 @@ method_code:http_errors:rate5m{code="500"} / ignoring(code) method:http_requests
 #### 多对一和一对多
 
 多对一和一对多两种匹配模式指的是“一”侧的每一个向量元素可以与”多”侧的多个元素匹配的情况。在这种情况下，必须使用`group`修饰符：`group_left`或者`group_right`来确定哪一个向量具有更高的基数（充当“多”的角色）。
+
+```
+<vector expr> <bin-op> ignoring(<label list>) group_left(<label list>) <vector expr>
+<vector expr> <bin-op> ignoring(<label list>) group_right(<label list>) <vector expr>
+<vector expr> <bin-op> on(<label list>) group_left(<label list>) <vector expr>
+<vector expr> <bin-op> on(<label list>) group_right(<label list>) <vector expr>
+```
+
+多对一和一对多两种模式一定是出现在操作符两侧表达式返回的向量标签不一致的情况。因此需要使用`ignoring`和`on`修饰符来排除或者限定匹配的标签列表。
 
 例如,使用表达式：
 ```
