@@ -272,7 +272,7 @@ method_code:http_errors:rate5m / ignoring(code) group_left method:http_requests:
 
 - `predict_linear(v range-vector, t scalar)`函数：基于简单的线性回归的方式进行`t`秒后的`v`值的预测。
 
-## 原谅出处
+## 原文出处
 
 > 作者：菜鸟随笔
 
