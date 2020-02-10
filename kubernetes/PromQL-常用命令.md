@@ -270,4 +270,4 @@ method_code:http_errors:rate5m / ignoring(code) group_left method:http_requests:
 
 ### 预测Gauge指标变化趋势
 
-- `predict_linear(v range-vector, t scalar)`函数：基于简单的线性回归的方式进行t秒后的v值的预测。
+- `predict_linear(v range-vector, t scalar)`函数：基于简单的线性回归的方式进行`t`秒后的`v`值的预测。
