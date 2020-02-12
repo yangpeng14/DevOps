@@ -98,9 +98,8 @@ $ kubectl expose deployment nginx --port=88 --type=NodePort --target-port=80 --n
 
 **set 命令**：配置应用的一些特定资源，也可以修改应用已有的资源
 
-```bash
-# 使用 kubectl set --help查看，它的子命令，env，image，resources，selector，serviceaccount，subject。
-```
+
+> 使用 `kubectl set --help`查看，它的子命令，`env`，`image`，`resources`，`selector`，`serviceaccount`，`subject`。
 
 > `语法`：resources (-f FILENAME | TYPE NAME) ([--limits=LIMITS &amp; --requests=REQUESTS]
 
