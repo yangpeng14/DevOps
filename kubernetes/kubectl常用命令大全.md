@@ -607,3 +607,8 @@ $ kubectl convert -f . | kubectl create -f -
 ## 小结
 
 以上是 `kubectl` 一些基本命令操作，需要时方便查阅。
+
+## 参考链接
+
+- https://www.jianshu.com/p/304c629d127c
+- https://kubernetes.io/zh/docs/reference/kubectl/cheatsheet
