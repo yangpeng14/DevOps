@@ -111,9 +111,9 @@ $ kubectl expose deployment nginx --port=88 --type=NodePort --target-port=80 --n
 
 资源对象中的[Pod](https://links.jianshu.com/go?to=http%3A%2F%2Fdocs.kubernetes.org.cn%2F312.html)可以指定计算资源需求（CPU-单位m、内存-单位Mi），即使用的最小资源请求（Requests），限制（Limits）的最大资源需求，Pod将保证使用在设置的资源数量范围。
 
-对于每个Pod资源，如果指定了Limits（限制）值，并省略了Requests（请求），则Requests默认为Limits的值。
+对于每个Pod资源，如果指定了`Limits`（限制）值，并省略了`Requests`（请求），则`Requests`默认为`Limits`的值。
 
-**可用资源对象包括(支持大小写)**：`replicationcontroller`、`deployment`、`daemonset`、`job`、`replicaset`。
+`可用资源对象包括(支持大小写)`：`replicationcontroller`、`deployment`、`daemonset`、`job`、`replicaset`。
 
 `例如`：
 
@@ -128,7 +128,7 @@ $ kubectl set resources deployment nginx --limits=cpu=200m,memory=512Mi --reques
 $ kubectl set resources deployment nginx --limits=cpu=0,memory=0 --requests=cpu=0,memory=0
 ```
 
-**kubectl set selector命令**
+### kubectl set selector 命令
 
 设置资源的 `selector`（选择器）。如果在调用"set selector"命令之前已经存在选择器，则新创建的选择器将覆盖原来的选择器。
 
@@ -139,7 +139,7 @@ $ kubectl set resources deployment nginx --limits=cpu=0,memory=0 --requests=cpu=
 
 > `语法`：selector (-f FILENAME | TYPE NAME) EXPRESSIONS [--resource-version=version]
 
-**kubectl set image命令**
+### kubectl set image 命令
 
 ​用于更新现有资源的容器镜像。
 
