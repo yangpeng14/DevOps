@@ -80,6 +80,9 @@ $ kubectl get deployments -o wide
 # 示例，运行一个名称为nginx，副本数为3，标签为app=example，镜像为nginx:1.10，端口为80的容器实例
 
 $ kubectl run nginx --replicas=3 --labels="app=example" --image=nginx:1.10 --port=80
+
+# 示例，运行一个名称为nginx，副本数为3，标签为app=example，镜像为nginx:1.10，端口为80的容器实例，并绑定到k8s-node1上
+$ kubectl run nginx --image=nginx:1.10 --replicas=3 --labels="app=example" --port=80 --overrides='{"apiVersion":"apps/v1","spec":{"template":{"spec":{"nodeSelector":{"kubernetes.io/hostname":"k8s-node1"}}}}}'
 ```
 
 `更详细用法参见`：http://docs.kubernetes.org.cn/468.html
