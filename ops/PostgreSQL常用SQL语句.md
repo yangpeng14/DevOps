@@ -224,3 +224,4 @@ current_query：执行中的sql
 
 - [1]https://jin-yang.github.io/post/postgresql-introduce.html
 - https://wiki.postgresql.org/wiki/Disk_Usage
+- http://www.postgres.cn/docs/9.4/app-pg-dumpall.html
