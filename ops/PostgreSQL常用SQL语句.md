@@ -155,10 +155,10 @@ SELECT
     pg_size_pretty(pg_total_relation_size('"' || table_schema || '"."' || table_name || '"')) AS size
 FROM information_schema.tables
 ORDER BY
-    pg_total_relation_size('"' || table_schema || '"."' || table_name || '"') DESC
+    pg_total_relation_size('"' || table_schema || '"."' || table_name || '"') DESC;
 
 
-# 详细显示各个参数
+# 详细显示各个参数并按数据库占用大小排序
 SELECT *, pg_size_pretty(total_bytes) AS total
     , pg_size_pretty(index_bytes) AS INDEX
     , pg_size_pretty(toast_bytes) AS toast
