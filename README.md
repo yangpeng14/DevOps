@@ -120,6 +120,7 @@
 24. [Kubernetes 中部署 Zabbix](https://github.com/yangpeng14/DevOps/blob/master/ops/kubernetes%E4%B8%AD%E9%83%A8%E7%BD%B2zabbix.md)
 25. [Elasticsearch 可视化管理工具](https://github.com/yangpeng14/DevOps/blob/master/ops/Elasticsearch%E5%8F%AF%E8%A7%86%E5%8C%96%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7.md)
 26. [PostgreSQL 常用SQL语句](https://github.com/yangpeng14/DevOps/blob/master/ops/PostgreSQL%E5%B8%B8%E7%94%A8SQL%E8%AF%AD%E5%8F%A5.md)
+27. [NGINX 上的限流（译）](https://github.com/yangpeng14/DevOps/blob/master/ops/NGINX%E4%B8%8A%E7%9A%84%E9%99%90%E6%B5%81.md)
 
 ### 七、Podman知识
 1. [Podman 会取代 Docker 吗?](https://github.com/yangpeng14/DevOps/blob/master/podman/podman%E4%BC%9A%E5%8F%96%E4%BB%A3docker%E5%90%97.md)
