@@ -4,7 +4,7 @@
 
 ![](/img/kdevtmpfsi-top.png)
 
-## 排序方法
+## 排查方法
 
 `首先`：查看 `kdevtmpfsi` 进程，使用 `ps -ef | grep kdevtmpfsi` 命令查看，见下图。
 
