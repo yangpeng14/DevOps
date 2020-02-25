@@ -494,3 +494,4 @@ GET kibana_sample_data_flights/_search
 - [`IK` 分词器](https://github.com/medcl/elasticsearch-analysis-ik)
 - [`THULAC` 分词器，清华大学自然语言处理系的分词器](https://github.com/thunlp/THULAC-Python)
 - [测试数据集下载](https://grouplens.org/datasets/)
+- [`Elasticsearch` 可视化管理工具](https://www.yp14.cn/2020/02/06/Elasticsearch-%E5%8F%AF%E8%A7%86%E5%8C%96%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/)

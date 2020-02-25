@@ -123,6 +123,7 @@
 26. [PostgreSQL 常用SQL语句](https://github.com/yangpeng14/DevOps/blob/master/ops/PostgreSQL%E5%B8%B8%E7%94%A8SQL%E8%AF%AD%E5%8F%A5.md)
 27. [NGINX 上的限流（译）](https://github.com/yangpeng14/DevOps/blob/master/ops/NGINX%E4%B8%8A%E7%9A%84%E9%99%90%E6%B5%81.md)
 28. [Linux 服务器上有挖矿病毒 kdevtmpfsi 如何处理？](https://github.com/yangpeng14/DevOps/blob/master/ops/Linux%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E6%9C%89%E6%8C%96%E7%9F%BF%E7%97%85%E6%AF%92kdevtmpfsi%E5%A6%82%E4%BD%95%E5%A4%84%E7%90%86.md)
+29. [ElasticSearch（提高篇）](https://github.com/yangpeng14/DevOps/blob/master/ops/ElasticSearch-%E6%8F%90%E9%AB%98%E7%AF%87.md)
 
 ### 七、Podman知识
 1. [Podman 会取代 Docker 吗?](https://github.com/yangpeng14/DevOps/blob/master/podman/podman%E4%BC%9A%E5%8F%96%E4%BB%A3docker%E5%90%97.md)
