@@ -424,7 +424,7 @@ POST movies/_search
     *   `positions`：记录文档`ID`、`Term`和`Term Position`
     *   `offsets`：记录文档`ID`、`Term`、`Term Position`和`offsets`
 
-&gt; PS：`Text`类型的字段默认的是`Position`，其它类型默认的是`docs`，记录的越多，占用的存储空间就越大。
+> PS：`Text`类型的字段默认的是`Position`，其它类型默认的是`docs`，记录的越多，占用的存储空间就越大。
 
 1.8.Aggregation聚合分析
 -------------------
