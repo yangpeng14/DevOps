@@ -1,3 +1,6 @@
+> - 作者：邵欢庆
+> - 链接：https://kuboard.cn/guide/proxy/#%E4%BB%A3%E7%90%86%E9%85%8D%E7%BD%AE
+
 ## Kuboard Proxy
 
 借助 `Kuboard Proxy`，登录 Kuboard 的用户可以直接访问 Service/Pod，而无需为 Service 做额外的 NodePort、Ingress 等配置。Kuboard Proxy 是 `kubectl proxy` 命令一种替代选项。

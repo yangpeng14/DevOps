@@ -87,6 +87,7 @@
 46. [PromQL 常用命令](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/PromQL-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.md)
 47. [Kubectl 常用命令大全](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/kubectl%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E5%A4%A7%E5%85%A8.md)
 48. [无需特权在Kubernetes中构建镜像之 Kaniko](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/%E6%97%A0%E9%9C%80%E7%89%B9%E6%9D%83%E5%9C%A8Kubernetes%E4%B8%AD%E6%9E%84%E5%BB%BA%E9%95%9C%E5%83%8F%E4%B9%8BKaniko.md)
+49. [Kuboard Proxy](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/Kuboard-Proxy.md)
 
 ### 五、Istio知识
 1. [Istio Helm 安装](https://github.com/yangpeng14/DevOps/blob/master/istio/istio-Helm-%E5%AE%89%E8%A3%85.md)
