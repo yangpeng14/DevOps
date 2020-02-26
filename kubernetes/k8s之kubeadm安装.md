@@ -28,7 +28,7 @@ k8s-node1 | kubeadm kubelet flanneld docker
 ```bash
 # 添加脚本执行权限并初始化 k8s-master1 机器
 $ chmod +x init.sh && ./init.sh k8s-master1
-````
+```
 
 ```bash
 #!/usr/bin/env bash
