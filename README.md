@@ -89,6 +89,7 @@
 48. [无需特权在Kubernetes中构建镜像之 Kaniko](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/%E6%97%A0%E9%9C%80%E7%89%B9%E6%9D%83%E5%9C%A8Kubernetes%E4%B8%AD%E6%9E%84%E5%BB%BA%E9%95%9C%E5%83%8F%E4%B9%8BKaniko.md)
 49. [Kuboard Proxy](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/Kuboard-Proxy.md)
 50. [K8S Pod 保护之 PodDisruptionBudget](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/k8s-pod%E4%BF%9D%E6%8A%A4%E4%B9%8BPodDisruptionBudget.md)
+51. [容器监控实践—Prometheus基本架构](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/%E5%AE%B9%E5%99%A8%E7%9B%91%E6%8E%A7%E5%AE%9E%E8%B7%B5%E2%80%94Prometheus%E5%9F%BA%E6%9C%AC%E6%9E%B6%E6%9E%84.md)
 
 ### 五、Istio知识
 1. [Istio Helm 安装](https://github.com/yangpeng14/DevOps/blob/master/istio/istio-Helm-%E5%AE%89%E8%A3%85.md)
