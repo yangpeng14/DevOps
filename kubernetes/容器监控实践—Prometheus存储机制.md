@@ -216,8 +216,6 @@ remote_read:
 
 ```
 磁盘大小 = 保留时间 * 每秒获取样本数 * 样本大小
-
-
 ```
 
 保留时间(retention\_time\_seconds)和样本大小(bytes\_per\_sample)不变的情况下，如果想减少本地磁盘的容量需求，只能通过减少每秒获取样本数(ingested\_samples\_per\_second)的方式。
