@@ -48,16 +48,16 @@
 
 - 首页
 
-![](/img/first-page.png)
+    ![](/img/first-page.png)
 
 - 创建一个用户
 
-![](/img/permission-manager-2.png)
+    ![](/img/permission-manager-2.png)
 
 - 创建的用户摘要
 
-![](/img/permission-manager-3.png)
+    ![](/img/permission-manager-3.png)
 
 - 用户 `Kubeconfig` 文件预览
 
-![](/img/permission-manager-4.png)
+    ![](/img/permission-manager-4.png)
