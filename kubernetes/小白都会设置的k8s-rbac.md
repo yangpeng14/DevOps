@@ -19,7 +19,7 @@
     $ kubectl apply -f k8s/k8s-seeds
     ```
 
-- 设置必填 `Env` 参数
+- 修改 `Deploy` 必填 `Env` 参数
 
     Env 名称 | 描述
     ---|---
