@@ -15,7 +15,7 @@
 - 部署依赖
 
     ```bash
-    $ kubectl apply -f k8s/k8s-seeds/namespace. yml
+    $ kubectl apply -f k8s/k8s-seeds/namespace.yml
     $ kubectl apply -f k8s/k8s-seeds
     ```
 
