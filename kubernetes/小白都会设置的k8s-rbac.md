@@ -4,7 +4,7 @@
 
 ## permission-manager 简介
 
-`permission-manager` 是一个 Kubernetes RBAC 和 用户管理工具。
+`permission-manager` 是一个用于 Kubernetes RBAC 和 用户管理工具。
 
 ## permission-manager 部署
 
