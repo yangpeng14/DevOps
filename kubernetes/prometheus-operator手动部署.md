@@ -214,6 +214,20 @@ $ kubectl edit svc -n kube-system kube-dns
 
 `使用钉钉推送消息安装配置方法` https://github.com/yangpeng14/prometheus-operator-configure/tree/master/dingtalk-hook
 
+> 修改 alertmanager 配置，接入 dingtalk-hook
+
+```bash
+# 先将之前的 secret 对象删除
+$ kubectl delete secret alertmanager-main -n monitoring
+
+secret "alertmanager-main" deleted
+
+# 加载dingtalk-hook 项目中 alertmanager.yaml 文件
+$ kubectl create secret generic alertmanager-main --from-file=alertmanager.yaml -n monitoring
+
+secret "alertmanager-main" created
+```
+
 2. 自定义报警
 
 `配置自定义报警配置并加载` https://www.qikqiak.com/post/prometheus-operator-custom-alert/
