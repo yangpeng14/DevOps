@@ -51,7 +51,7 @@ Please enter your MySQL administrative password: [OK] Currently running supporte
 
 ![](/img/20012016-fd0b05b4c25fca4c.jpeg)
 
-2）关注最后给的建议“Recommendations ”。
+2）关注最后给的建议 "Recommendations"。
 
 ![](/img/20012016-52ecc1118e65d90d.jpeg)
 
