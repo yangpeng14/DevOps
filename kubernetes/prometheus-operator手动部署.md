@@ -14,6 +14,9 @@ Prometheus Operator 为监控 Kubernetes service、deployment、daemonsets 和 P
 # 二、下载 prometheus-operator 配置
 
 ## 下载官方prometheus-operator v0.29.0版本代码，官方把所有文件都放在一起，这里我分类下
+
+> 注意：prometheus-operator 版本是 `v0.29.0` 不支持 `k8s 1.16+` 版本。
+
 ```
 $ git clone https://github.com/coreos/prometheus-operator.git -b release-0.29
 $ cd contrib/kube-prometheus/manifests/
@@ -56,6 +59,8 @@ quay.io/prometheus/alertmanager:v0.16.1            | yangpeng2468/alertmanager:v
 k8s.gcr.io/addon-resizer:1.8.4                     | yangpeng2468/addon-resizer:1.8.4
 
 
+> 注意：如果下载我的 `prometheus-operator-configure` 配置文件，请修改 `prometheus`、`alertmanager`、`grafana` 存储挂载配置，默认我使用`NFS`提供挂载作为演示。
+
 ## 首先创建namespace monitoring
 `kubectl apply -f 00namespace-namespace.yaml`
  
@@ -82,6 +87,8 @@ servicemonitors.monitoring.coreos.com   2019-04-16T06:22:21Z
 ```
 
 # 四、部署整套CRD
+
+> 注意：把etcd证书放到secrets中，如果证书名称跟本文示例名称不一样，`serviceMonitor/prometheus-serviceMonitorEtcd.yaml` 配置文件也需要修改。
 
 ```
 # 把etcd证书保存到secrets中
