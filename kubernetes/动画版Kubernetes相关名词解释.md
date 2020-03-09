@@ -18,7 +18,7 @@
 
 ![](/img/k8s-chahua-4.png)
 
-在Kubernetes中，pod负责运行容器。每个Pod至少有一个容器，
+`Pod`：在Kubernetes中，pod负责运行容器。每个Pod至少有一个容器，
 并控制该容器的执行。当容器退出时，Pod也会死亡。
 
 
