@@ -1,3 +1,6 @@
+> - 作者：haohao
+> - 链接：https://qhh.me/2019/08/22/Kubernetes-%E9%9B%86%E7%BE%A4%E5%AE%89%E5%85%A8%E6%9C%BA%E5%88%B6%E8%AF%A6%E8%A7%A3/?nsukey=Z5Cx%2FBcTTEIwsHr3aajAu80aQplMt2RuFWyLxUypgsefIfVQCbqzNSJ8crpCw%2BIj1Kj%2F4zmGV7W5%2BHgXdienMbOiNgt88vLlG2Z0VS5RtvhnmXWMbiRuk8f8KKl9ujfonfWCOX0PToHNCKSmv%2BpmKanPe%2Be0rcl7UtkuKKl5Gqum%2Fwcu2TzscPb4QCi5wVXel0AUHK%2BLvannlqRM7DVlxg%3D%3D&from=timeline&isappinstalled=0
+
 ## 前言
 
 本文主要介绍 Kubernetes 的安全机制，如何使用一系列概念、技术点、机制确保集群的访问是安全的，涉及到的关键词有：api-server，认证，授权，准入控制，RBAC，Service Account，客户端证书认证，Kubernetes 用户，Token 认证等等。虽然涉及到的技术点比较琐碎，比较多，但是了解整个机制后就很容易将其串起来，从而能很好地理解 Kubernetes 集群安全机制。本文结构如下：

@@ -94,6 +94,7 @@
 53. [小白都会设置的K8S RBAC](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/%E5%B0%8F%E7%99%BD%E9%83%BD%E4%BC%9A%E8%AE%BE%E7%BD%AE%E7%9A%84k8s-rbac.md)
 54. [Kubernetes 亲和与反亲和实用示例](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/kubernetes%E4%BA%B2%E5%92%8C%E4%B8%8E%E5%8F%8D%E4%BA%B2%E5%92%8C%E5%AE%9E%E7%94%A8%E7%A4%BA%E4%BE%8B.md)
 55. [动画版 Kubernetes 相关名词解释](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/%E5%8A%A8%E7%94%BB%E7%89%88Kubernetes%E7%9B%B8%E5%85%B3%E5%90%8D%E8%AF%8D%E8%A7%A3%E9%87%8A.md)
+56. [Kubernetes 集群安全机制详解](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/Kubernetes%E9%9B%86%E7%BE%A4%E5%AE%89%E5%85%A8%E6%9C%BA%E5%88%B6%E8%AF%A6%E8%A7%A3.md)
 
 ### 五、Istio知识
 1. [Istio Helm 安装](https://github.com/yangpeng14/DevOps/blob/master/istio/istio-Helm-%E5%AE%89%E8%A3%85.md)
