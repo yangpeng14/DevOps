@@ -1,3 +1,6 @@
+> - 作者：HoPGoldy
+> - 链接：https://www.jianshu.com/p/ed1ae8443fff
+
 ## 问题描述
 
 有两个（或多个）运行在不同节点上的`pod`，通过一个`svc`提供服务，如下：
