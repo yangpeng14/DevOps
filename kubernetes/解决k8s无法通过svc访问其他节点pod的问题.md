@@ -16,7 +16,7 @@ NAME         TYPE        CLUSTER-IP    EXTERNAL-IP   PORT(S)   AGE
 kubia        ClusterIP   10.98.41.49   <none>        80/TCP    34m
 ```
 
-当透过其他`pod`访问该`svc`时（_使用命令`k exec kubia-nwjcc -- curl http://10.98.41.49`_），出现了只能访问到和自己同处于一个节点的`pod`的问题，访问到其他节点上的`pod`时会出现`command terminated with exit code 7`的问题，如下：
+当透过其他`pod`访问该`svc`时（_使用命令`kubectl exec kubia-nwjcc -- curl http://10.98.41.49`_），出现了只能访问到和自己同处于一个节点的`pod`的问题，访问到其他节点上的`pod`时会出现`command terminated with exit code 7`的问题，如下：
 
 **正常访问到相同节点的`pod`**
 
