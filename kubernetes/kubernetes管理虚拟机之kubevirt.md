@@ -2,7 +2,7 @@
 
 `Kubevirt` 是Redhat开源的以容器方式运行虚拟机的项目，以k8s add-on方式，利用k8s CRD为增加资源类型VirtualMachineInstance（VMI）， 使用容器的image registry去创建虚拟机并提供VM生命周期管理。 CRD的方式是的kubevirt对虚拟机的管理不局限于pod管理接口，但是也无法使用pod的RS DS Deployment等管理能力，也意味着 kubevirt如果想要利用pod管理能力，要自主去实现，目前kubevirt实现了类似RS的功能。 kubevirt目前支持的runtime是docker和runv。
 
-## 为什么合适 KubeVirt ？
+## 为什么使用 KubeVirt ？
 
 KubeVirt 技术可满足已采用或想要采用Kubernetes开发团队的需求，但他们拥有现有的基于虚拟机的工作负载，无法轻松地对其进行容器化。更具体地说，该技术提供了一个统一的开发平台，开发人员可以在该平台上构建，修改和部署驻留在公共共享环境中的应用程序容器和虚拟机中的应用程序。
 
