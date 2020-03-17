@@ -3,7 +3,7 @@
 
 ## 背景
 
-假如你的k8s环境中运行的容器较多，单靠可视化插件 `kubernetes-dashboard` 来观察总是有些不尽人意，毕竟kubernetes-dashboard用来做可视化也是捉襟见肘的。加上我最近一直在学习helm的使用方式，（就是想多找几个项目练习一下对helm的使用熟练度）然后在github的海洋中翻来覆去，飘来飘去，找到了 `Weave Scope` 这个项目,觉得很有意思，接下来部署 `Weave Scope`。
+假如你的k8s环境中运行的容器较多，单靠可视化插件 `kubernetes-dashboard` 来观察总是有些不尽人意，毕竟kubernetes-dashboard用来做可视化也是捉襟见肘的。加上我最近一直在学习helm的使用方式，（就是想多找几个项目练习一下对helm的使用熟练度）然后在github的海洋中翻来覆去，飘来飘去，找到了 `Weave Scope` 这个项目，觉得很有意思，接下来部署 `Weave Scope`。
 
 ## 组件功能解析：
 

@@ -97,6 +97,7 @@
 56. [Kubernetes 集群安全机制详解](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/Kubernetes%E9%9B%86%E7%BE%A4%E5%AE%89%E5%85%A8%E6%9C%BA%E5%88%B6%E8%AF%A6%E8%A7%A3.md)
 57. [解决k8s无法通过svc访问其他节点pod的问题](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/%E8%A7%A3%E5%86%B3k8s%E6%97%A0%E6%B3%95%E9%80%9A%E8%BF%87svc%E8%AE%BF%E9%97%AE%E5%85%B6%E4%BB%96%E8%8A%82%E7%82%B9pod%E7%9A%84%E9%97%AE%E9%A2%98.md)
 58. [Kubernetes 管理虚拟机之 KubeVirt](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/kubernetes%E7%AE%A1%E7%90%86%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B9%8Bkubevirt.md)
+59. [K8S 可视化监控 Weave Scope 部署](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/k8s%E5%8F%AF%E8%A7%86%E5%8C%96%E7%9B%91%E6%8E%A7WeaveScope%E9%83%A8%E7%BD%B2.md)
 
 ### 五、Istio知识
 1. [Istio Helm 安装](https://github.com/yangpeng14/DevOps/blob/master/istio/istio-Helm-%E5%AE%89%E8%A3%85.md)
