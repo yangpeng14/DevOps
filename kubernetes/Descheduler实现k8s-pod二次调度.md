@@ -138,6 +138,8 @@ strategies:
 
 `Descheduler` 可以在k8s集群中作为 `Job` 或`CronJob` 运行。它的优点是可以多次运行而无需用户干预。该调度程序容器在 `kube-system` 命名空间中作为关键容器运行，以避免被自身或kubelet逐出。
 
+> 项目地址：https://github.com/kubernetes-sigs/descheduler
+
 ### `Job` 运行
 
 ```bash
