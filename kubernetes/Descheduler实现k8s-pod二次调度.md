@@ -126,7 +126,7 @@ strategies:
 - 与 DaemonSets 关联的Pod不会被逐出。
 - 永远不会驱逐具有本地存储的 Pod。
 - 首先驱逐 `Best-Effort`，再驱逐 `Burstable`、最后驱逐 `Guaranteed` 的优先级。
-- 带有注释 `descheduler.alpha.kubernetes.io/evict` 的所有类型的Pod都会被逐出。该注释用于覆盖防止驱逐的检查，用户可以选择驱逐哪个吊舱。用户应该知道如何以及是否可以重新创建容器。
+- 带有注释 `descheduler.alpha.kubernetes.io/evict` 的所有类型的Pod都会被逐出。该注释用于覆盖防止驱逐的检查，用户可以选择驱逐哪个 Pod。用户应该知道如何以及是否可以重新创建容器。
 
 > 注意：`PDB` 不受 `Descheduler` 控制
 
