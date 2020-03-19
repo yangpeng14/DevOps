@@ -90,6 +90,8 @@ servicemonitors.monitoring.coreos.com   2019-04-16T06:22:21Z
 
 > 注意：把etcd证书放到secrets中，如果证书名称跟本文示例名称不一样，`serviceMonitor/prometheus-serviceMonitorEtcd.yaml` 配置文件也需要修改(只修改文件名称，不要修改 /etc/prometheus/secrets/etcd-certs/ 路径)。
 
+> 注意：如果是kubeadm安装k8s，请使用命令 kubectl -n monitoring create secret generic etcd-certs --from-file=/etc/kubernetes/pki/etcd/server.crt --from-file=/etc/kubernetes/pki/etcd/server.key --from-file=/etc/kubernetes/pki/etcd/ca.crt
+
 ```
 # 把etcd证书保存到secrets中
 kubectl -n monitoring create secret generic etcd-certs --from-file=/opt/kubernetes/ssl/server.pem --from-file=/opt/kubernetes/ssl/server-key.pem --from-file=/opt/kubernetes/ssl/ca.pem
