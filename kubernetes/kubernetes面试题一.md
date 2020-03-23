@@ -170,7 +170,8 @@ strategy:
 
 ### 十五、生产中碰到过什么问题，故障排查思路，如何解决的
 
-故障排查，参考下面这篇文章：
+故障排查，参考下面几篇文章：
+
 - [k8s域名解析超时问题记录](https://mp.weixin.qq.com/s/ow3xxXWTg-k9HnYow_NfGQ)
 - [Kubernetes Pod 故障归类与排查方法](https://www.yp14.cn/2020/01/01/Kubernetes-Pod-%E6%95%85%E9%9A%9C%E5%BD%92%E7%B1%BB%E4%B8%8E%E6%8E%92%E6%9F%A5%E6%96%B9%E6%B3%95/)
 - [Calico 问题排障](https://www.yp14.cn/2019/12/20/Calico-%E9%97%AE%E9%A2%98%E6%8E%92%E9%9A%9C/)
