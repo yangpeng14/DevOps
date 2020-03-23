@@ -83,7 +83,9 @@ kube-scheduler 给一个 pod 做调度选择包含两个步骤：
 
 ![](/img/apiserver-1.png)
 
-负载均衡高可用如何实现：通过 Iptables 或者  Ipvs 实现
+一般规模小的集群，3 台 apiserver 已经够用，如果集群规则大，apiserver 和 ECT 节点都需要扩容。
+
+apiserver 负载均衡：apiserver 服务是一个无状态服务，可以使用 `Nginx + Keepalived`、`HAProxy + Keepalived`和 云厂商LB（比如：阿里云SLB）。
 
 ### 四、controller-manager 和etcd 通信吗？
 
