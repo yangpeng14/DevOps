@@ -106,6 +106,8 @@ apiserver 负载均衡：apiserver 服务是一个无状态服务，可以使用
 
 ### 七、etcd高可用及备份恢复方案
 
+`etcd高可用`：部署ETCD时，在配置文件中配置 ETCD_INITIAL_CLUSTER="etcd节点ip:端口,etcd节点ip:端口,etcd节点ip:端口"，集群数量最好是奇数。
+
 `备份命令`：
 
 ```bash
