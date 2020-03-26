@@ -102,6 +102,7 @@
 60. [Descheduler 实现 K8S Pod 二次调度](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/Descheduler%E5%AE%9E%E7%8E%B0k8s-pod%E4%BA%8C%E6%AC%A1%E8%B0%83%E5%BA%A6.md)
 61. [Kubernetes 面试题（一）](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/kubernetes%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B8%80.md)
 62. [Kubernetes节点频繁NotReady-处理和防范](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/Kubernetes%E8%8A%82%E7%82%B9%E9%A2%91%E7%B9%81NotReady-%E5%A4%84%E7%90%86%E5%92%8C%E9%98%B2%E8%8C%83.md)
+63. [Kubernetes v1.18 正式发布之功能预览](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/kubernetes-v1.18%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83%E4%B9%8B%E5%8A%9F%E8%83%BD%E9%A2%84%E8%A7%88.md)
 
 ### 五、Istio知识
 1. [Istio Helm 安装](https://github.com/yangpeng14/DevOps/blob/master/istio/istio-Helm-%E5%AE%89%E8%A3%85.md)
