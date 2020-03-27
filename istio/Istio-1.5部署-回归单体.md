@@ -519,3 +519,4 @@ $ kubectl get svc,pod,hpa,pdb,Gateway,VirtualService -n istio-system
 
 - [1]https://istio.io/zh/docs/ops/deployment/requirements/
 - https://istio.io/docs/setup/install/standalone-operator/
+- https://www.danielstechblog.io/high-available-control-plane-with-istio-1-5-on-azure-kubernetes-service/
