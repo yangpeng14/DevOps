@@ -95,6 +95,7 @@ istioctl 提供了多种安装配置文件，它们之间差异：
 - `overlays` 字段用来修改对应组件的各个资源对象的 `manifest`
 - 调整 `PDB` 配置
 - 安装前需要创建 `grafana` 和 `kiali` secret，用于登陆
+- `Ingress Gateway` 从安全的角度来考虑，不应该暴露那些不必要的端口，对于 Ingress Gateway 来说，只需要暴露 HTTP、HTTPS 和 metrics 端口就够了
 
 ### 配置 `grafana` 和 `kiali` secret
 
