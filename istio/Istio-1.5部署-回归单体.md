@@ -17,7 +17,7 @@ Istio 架构又换了，从 1.5 开始，把控制平面的所有组件组合并
 
 ### Kubernetes 版本支持
 
-- 按官方话来说，Istio 1.5 已在以下 Kubernetes 发现版下测试：1.14, 1.15, 1.16。
+- 按官方话来说，Istio 1.5 已在以下 Kubernetes 发布版本测试过：1.14, 1.15, 1.16。
 
 ## Kubernetes Pod 和 Service 要求
 
