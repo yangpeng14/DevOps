@@ -191,8 +191,7 @@ spec:
       proxy:
         accessLogFile: "/dev/stdout"
         includeIPRanges: 192.168.16.0/20,192.168.32.0/20
-        autoInject: disabled # 是否开启自动注入功能，取值enabled则该pods只要没有被注解为sidecar.istio.io/inject: "false",就会自动注入。如果取值为disabled，则需要为pod设置注解sidecar.istio.io/inject: "true"
-#才会进行注入
+        autoInject: disabled # 是否开启自动注入功能，取值enabled则该pods只要没有被注解为sidecar.istio.io/inject: "false",就会自动注入。如果取值为disabled，则需要为pod设置注解sidecar.istio.io/inject: "true"才会进行注入
         clusterDomain: cluster.local # 集群DNS域
         resources:
           requests:
