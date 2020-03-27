@@ -109,6 +109,7 @@
 2. [K8S 金丝雀部署之 Istio](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/k8s%E9%87%91%E4%B8%9D%E9%9B%80%E9%83%A8%E7%BD%B2%E4%B9%8B-Istio.md)
 3. [小米开源 Istio Dashboard Naftis 服务](https://github.com/yangpeng14/DevOps/blob/master/istio/%E5%B0%8F%E7%B1%B3%E5%BC%80%E6%BA%90Istio-dashboard-Naftis%E6%9C%8D%E5%8A%A1.md)
 4. [Istio 自动注入 sidecar 不成功解决方案](https://github.com/yangpeng14/DevOps/blob/master/istio/Istio%E8%87%AA%E5%8A%A8%E6%B3%A8%E5%85%A5sidecar%E4%B8%8D%E6%88%90%E5%8A%9F%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.md)
+5. [Istio 1.5部署，回归单体](https://github.com/yangpeng14/DevOps/blob/master/istio/Istio-1.5%E9%83%A8%E7%BD%B2-%E5%9B%9E%E5%BD%92%E5%8D%95%E4%BD%93.md)
 
 ### 六、运维知识
 1. [Sentry历史数据清理](https://github.com/yangpeng14/DevOps/blob/master/ops/sentry%E5%8E%86%E5%8F%B2%E6%95%B0%E6%8D%AE%E6%B8%85%E7%90%86.md)
