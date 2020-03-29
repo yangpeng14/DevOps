@@ -407,7 +407,7 @@ spec:
 
 部署 Istio 
 ```bash
-$ istioctl manifest apply -f istio-1.5.0.yaml
+$ istioctl manifest apply -f istio-1.5.1.yaml
 ```
 
 设置 `Grafana`、`istio-tracing`、`kiali`、`prometheus` 通过 `istio-ingressgateway` 暴露
