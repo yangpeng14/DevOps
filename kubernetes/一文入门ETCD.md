@@ -660,8 +660,7 @@ $ etcdctl member add etcd3 http://192.168.1.100:2380
 Added member named etcd3 with ID 8e9e05c52164694d to cluster
 ```
 
-示例
---
+`示例：`
 
 ```bash
 # 设置一个key值
