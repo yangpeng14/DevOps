@@ -337,8 +337,8 @@ spec:
       k8s:
         hpaSpec:
           minReplicas: 2 # 默认最小为1个pod
-        #service:
-        #  type: ClusterIP # 默认类型为 LoadBalancer
+        service:
+          type: ClusterIP # 默认类型为 LoadBalancer
         resources:
           limits:
             cpu: 1000m # 默认 2000m
@@ -357,10 +357,12 @@ spec:
           kind: Deployment
           name: istio-ingressgateway
           patches:
-          - path: spec.template.spec
+          - path: spec.template.spec.hostNetwork
             value:
-              hostNetwork: true
-              dnsPolicy: ClusterFirstWithHostNet
+              true
+          - path: spec.template.spec.dnsPolicy
+            value:
+              ClusterFirstWithHostNet
         - apiVersion: v1 # 从安全的角度来考虑，不应该暴露那些不必要的端口，对于 Ingress Gateway 来说，只需要暴露 HTTP、HTTPS 和 metrics 端口就够了
           kind: Service
           name: istio-ingressgateway
