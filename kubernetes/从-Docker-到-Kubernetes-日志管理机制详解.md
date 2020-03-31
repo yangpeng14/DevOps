@@ -37,7 +37,7 @@ Docker 引擎日志就是 docker 服务的日志，即 dockerd 守护进程的�
 
 容器日志指的是每个容器打到 stdout 和 stderr 的日志，而不是容器内部的日志文件。docker 管理所有容器打到 stdout 和 stderr 的日志，其他来源的日志不归 docker 管理。我们通过 `docker logs` 命令查看容器日志都是读取容器打到 stdout 和 stderr 的日志。
 
-## 基于日志驱动（loging driver）的日志管理机制
+### 基于日志驱动（loging driver）的日志管理机制
 
 Docker 提供了一套通用、灵活的日志管理机制，Docker 将所有容器打到 stdout 和 stderr 的日志都统一通过日志驱动重定向到某个地方。
 
