@@ -1,3 +1,6 @@
+> - 作者：haohao
+> - 链接：https://qhh.me/2019/08/26/%E4%BB%8E-Docker-%E5%88%B0-Kubernetes-%E6%97%A5%E5%BF%97%E7%AE%A1%E7%90%86%E6%9C%BA%E5%88%B6%E8%AF%A6%E8%A7%A3/
+
 ## 前言
 
 在容器化时代，容器应用的日志管理和传统应用存在很大的区别，为了顺应容器化应用，Docker 和 Kubernetes 提供了一套完美的日志解决方案。本文从 Docker 到 Kubernetes 逐步介绍在容器化时代日志的管理机制，以及在 Kubernetes 平台下有哪些最佳的日志收集方案。涉及到的话题有 Docker 日志管理机制、Kubernetes 日志管理机制、Kubernetes 集群日志收集方案。本文结构如下：
