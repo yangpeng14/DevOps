@@ -1,6 +1,8 @@
 > - 作者：haohao
 > - 链接：https://qhh.me/2019/09/07/%E5%9F%BA%E4%BA%8E-Kubernetes-%E7%9A%84-7-%E5%A4%A7-DevOps-%E5%85%B3%E9%94%AE%E5%AE%9E%E8%B7%B5/
 
+## 前言
+
 本文主要介绍 DevOps 的 7 大关键实践在 Kubernetes 平台下如何落地，结合我们目前基于 Kubernetes 平台的 DevOps 实践谈谈是如何贯彻相关理念的，这里不会对其具体实现细节进行深入讲解，只做一个大致的概括的描述，分享下已有的实践，具体实践细节有时间了会单独整理一篇文章分享。
 
 ## DevOps 简介
