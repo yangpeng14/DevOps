@@ -146,6 +146,7 @@
 30. [还在担心写的一手烂SQL，送你4款工具](https://github.com/yangpeng14/DevOps/blob/master/ops/%E8%BF%98%E5%9C%A8%E6%8B%85%E5%BF%83%E5%86%99%E7%9A%84%E4%B8%80%E6%89%8B%E7%83%82SQL-%E9%80%81%E4%BD%A04%E6%AC%BE%E5%B7%A5%E5%85%B7.md)
 31. [大公司为什么都有API网关？聊聊API网关的作用](https://github.com/yangpeng14/DevOps/blob/master/ops/%E5%A4%A7%E5%85%AC%E5%8F%B8%E4%B8%BA%E4%BB%80%E4%B9%88%E9%83%BD%E6%9C%89API%E7%BD%91%E5%85%B3-%E8%81%8A%E8%81%8AAPI%E7%BD%91%E5%85%B3%E7%9A%84%E4%BD%9C%E7%94%A8.md)
 32. [缓存穿透、缓存击穿、缓存雪崩](https://github.com/yangpeng14/DevOps/blob/master/ops/%E7%BC%93%E5%AD%98%E7%A9%BF%E9%80%8F-%E7%BC%93%E5%AD%98%E5%87%BB%E7%A9%BF-%E7%BC%93%E5%AD%98%E9%9B%AA%E5%B4%A9.md)
+33. [基于 Kubernetes 的 7 大 DevOps 关键实践](https://github.com/yangpeng14/DevOps/blob/master/ops/%E5%9F%BA%E4%BA%8EKubernetes%E7%9A%847%E5%A4%A7DevOps%E5%85%B3%E9%94%AE%E5%AE%9E%E8%B7%B5.md)
 
 ### 七、Podman知识
 1. [Podman 会取代 Docker 吗?](https://github.com/yangpeng14/DevOps/blob/master/podman/podman%E4%BC%9A%E5%8F%96%E4%BB%A3docker%E5%90%97.md)
