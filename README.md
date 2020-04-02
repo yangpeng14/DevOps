@@ -105,6 +105,7 @@
 63. [Kubernetes v1.18 正式发布之功能预览](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/kubernetes-v1.18%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83%E4%B9%8B%E5%8A%9F%E8%83%BD%E9%A2%84%E8%A7%88.md)
 64. [一文入门 ETCD](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/%E4%B8%80%E6%96%87%E5%85%A5%E9%97%A8ETCD.md)
 65. [从 Docker 到 Kubernetes 日志管理机制详解](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/%E4%BB%8E-Docker-%E5%88%B0-Kubernetes-%E6%97%A5%E5%BF%97%E7%AE%A1%E7%90%86%E6%9C%BA%E5%88%B6%E8%AF%A6%E8%A7%A3.md)
+66. [白话 kubernetes 网络组件 Flannel](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/%E7%99%BD%E8%AF%9Dkubernetes%E7%BD%91%E7%BB%9C%E7%BB%84%E4%BB%B6flannel.md)
 
 ### 五、Istio知识
 1. [Istio Helm 安装](https://github.com/yangpeng14/DevOps/blob/master/istio/istio-Helm-%E5%AE%89%E8%A3%85.md)
