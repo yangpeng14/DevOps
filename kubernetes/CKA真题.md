@@ -44,7 +44,24 @@ $ kubectl get node | grep -w Ready
 
 ## 5.pod中挂载volume
 
-参考官方文档：https://kubernetes.io/docs/concepts/storage/volumes/
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: test-pd
+spec:
+  containers:
+  - image: k8s.gcr.io/test-webserver
+    name: test-container
+    volumeMounts:
+    - mountPath: /cache
+      name: cache-volume
+  volumes:
+  - name: cache-volume
+    emptyDir: {}
+```
+
+更详细用法参考官方文档：https://kubernetes.io/docs/concepts/storage/volumes/
 
 
 ## 6.提供一个pod，添加init-container ,在container中添加一个空文件，启动的时候。在另一个containre中检测是否有这个文件，否则退出
@@ -188,82 +205,131 @@ $ kubectl scale --replicas=4 deployment demo
 
 ## 12 创建secret，有一个paasword字段（手动base64加密），创建两个pod引用该secret，一个用env ,一个用volume来调用
 
-```
-这个文档里面全都有，记住链接
+```bash
+$ echo -n 'admin' | base64
 
-https://kubernetes.io/docs/concepts/configuration/secret/
+YWRtaW4=
+
+$ echo -n '1f2d1e2e67df' | base64
+
+MWYyZDFlMmU2N2Rm
 ```
 
-*   13.先将nginx:1.9的deployment，升级到nginx:1.11，记录下来(—record)，然后回滚到1.9
+现在可以像这样写一个 `secret` 对象：
+
+```yaml
+apiVersion: v1
+kind: Secret
+metadata:
+  name: mysecret
+type: Opaque
+data:
+  username: YWRtaW4=
+  password: MWYyZDFlMmU2N2Rm
+```
+
+使用 kubectl apply 创建 secret：
+
+```bash
+$ kubectl apply -f ./secret.yaml
+```
+
+`Pod` 中使用 `Secret` 作为`环境变量`的示例：
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: secret-env-pod
+spec:
+  containers:
+  - name: mycontainer
+    image: redis
+    env:
+      - name: SECRET_USERNAME
+        valueFrom:
+          secretKeyRef:
+            name: mysecret
+            key: username
+      - name: SECRET_PASSWORD
+        valueFrom:
+          secretKeyRef:
+            name: mysecret
+            key: password
+  restartPolicy: Never
+```
+
+`Pod` 中使用 `volume` 挂在 `secret` 的例子：
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mypod
+spec:
+  containers:
+  - name: mypod
+    image: redis
+    volumeMounts:
+    - name: foo
+      mountPath: "/etc/foo"
+      readOnly: true
+  volumes:
+  - name: foo
+    secret:
+      secretName: mysecret
+```
+
+> 官方链接：https://kubernetes.io/docs/concepts/configuration/secret/
+
+
+## 13.先将nginx:1.9的deployment，升级到nginx:1.11，记录下来(—record)，然后回滚到1.9
 
 升级
 
-```
-kubectl set image deployments demo demo=nginx:1.11 --record
-
-
+```bash
+$ kubectl set image deployments demo demo=nginx:1.11 --record
 ```
 
 回滚
 
-```
-kubectl rollout undo deployment demo
-
-
+```bash
+$ kubectl rollout undo deployment demo
 ```
 
-*   14.使用ns lookup 查看service 和pod的dns
+## 14.使用 nslookup 查看service 和pod的dns
 
-```
-service和pod的创建用之前的yaml
+> service 和pod 的创建用之前的 yaml
 
+```bash
+# 查看 dns
+$ kubectl run -it --image busybox:1.28.4  dnstest --rm /bin/sh
 
-```
+# 查看 sevice
+$ nslookup svc-demo.kube-system.svc.cluster.local
 
-```
-查看dns
+# 查看 pod
+# 查看pod ip时，要把1.2.3.4换成1-2-3-4，否则会报错
+$ nslookup 1-2-3-4.default.pod.cluster.local
 
-kubectl run -it --image busybox:1.28.4  dnstest --rm /bin/sh
-
-
-sevice:
-
-nslookup svc-demo.kube-system.svc.cluster.local
-
-
-pod:
-
-nslookup 1-2-3-4.default.pod.cluster.local
-
-
-查看pod ip时，要把1.2.3.4换成1-2-3-4，否则会报错
-
-对应的文档：https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/
-
-
-
+# 对应的文档：https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/
 ```
 
-```
-ETCDCTL_API=3 etcdctl --endpoints ....snapshot save  xxx 根据-h提示写就行了
+## 15.etcdctl 来 备份etcd
 
-先声明环境变量ETCDCTL_API=3 ，不然etcdctl 是v2版本
-
-这个文档：
-
-文档地址：https://kubernetes.io/docs/tasks/administer-cluster/configure-upgrade-etcd/
-
-
-
+```bash
+# 先声明环境变量ETCDCTL_API=3 ，不然etcdctl 是v2版本
+$ ETCDCTL_API=3 etcdctl --cacert=/opt/kubernetes/ssl/ca.pem --cert=/opt/kubernetes/ssl/server.pem --key=/opt/kubernetes/ssl/server-key.pem --endpoints=https://192.168.1.36:2379 snapshot save /data/etcd_backup_dir/etcd-snapshot-`date +%Y%m%d`.db
 ```
 
-```
-
-文档地址：https://kubernetes.io/docs/tasks/administer-cluster/static-pod/
+> 参考文档地址：https://kubernetes.io/docs/tasks/administer-cluster/configure-upgrade-etcd/
 
 
-找到--pod-manifest-path=/etc/kubelet.d/配置的位置，然后把pod的yaml放进去
+## 16.static pod 的使用
 
+找到 `--pod-manifest-path=/etc/kubelet.d/` 配置的位置，然后把 pod 的 yaml 放进去
+
+```yaml
 apiVersion: v1
 kind: Pod
 metadata:
@@ -278,28 +344,68 @@ spec:
         - name: web
           containerPort: 80
           protocol: TCP
-
-
 ```
 
-先创建ns，在创建pod，和前面步骤类似
+> 参考文档地址：https://kubernetes.io/docs/tasks/administer-cluster/static-pod/
 
-*   18.pv 类型hostpath 位置在/data ， 大小为1G , readonly模式
+## 17.在一个新的namespace创建pod
 
+先创建 ns
+
+```bash
+# 创建 ns
+$ kubectl create namespace test
 ```
-文档地址：
 
-https://kubernetes.io/docs/concepts/storage/persistent-volumes/
+再创建 pod
 
-
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: demo
+  namespace: test
+spec:
+  containers:
+  - image: nginx
+    name: nginx
 ```
 
-*   20.给pod创建service
+## 18.pv 类型 hostpath 位置在/data，大小为1G, readonly 模式
+
+```yaml
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: example-pv
+spec:
+  capacity:
+    storage: 1Gi
+  volumeMode: Filesystem
+  accessModes:
+  - ReadOnlyMany
+  persistentVolumeReclaimPolicy: Delete
+  local:
+    path: /data
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: kubernetes.io/hostname
+          operator: In
+          values:
+          - test-node
+```
+> 参考文档地址：https://kubernetes.io/docs/concepts/storage/persistent-volumes/
+
+
+## 20.给pod创建service
+
+
     
-*   21.使用node selector，选择disk为ssd的机器调度
+## 21.使用node selector，选择disk为ssd的机器调度
     
-
-```
+```yaml
 apiVersion: v1
 kind: Pod
 metadata:
@@ -313,19 +419,15 @@ spec:
     imagePullPolicy: IfNotPresent
   nodeSelector:
     disktype: ssd
-
-
 ```
 
-22.排查apiserver连接不上问题：
+## 22.排查apiserver连接不上问题：
 
 ```
 用的kubeadmin安装的，是kubelet的配置中目录地址有问题
-
-
 ```
 
-*   23.把一个node弄成unavailable 并且把上边的pod重新调度去新的node上
+## 23.把一个node弄成unavailable 并且把上边的pod重新调度去新的node上
     
-    应该是直接drain，需要注意daemonset要强制删除，或者给节点打污点，taint，再去删掉
+应该是直接drain，需要注意daemonset要强制删除，或者给节点打污点，taint，再去删掉
    
