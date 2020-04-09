@@ -106,6 +106,7 @@
 64. [一文入门 ETCD](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/%E4%B8%80%E6%96%87%E5%85%A5%E9%97%A8ETCD.md)
 65. [从 Docker 到 Kubernetes 日志管理机制详解](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/%E4%BB%8E-Docker-%E5%88%B0-Kubernetes-%E6%97%A5%E5%BF%97%E7%AE%A1%E7%90%86%E6%9C%BA%E5%88%B6%E8%AF%A6%E8%A7%A3.md)
 66. [白话 kubernetes 网络组件 Flannel](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/%E7%99%BD%E8%AF%9Dkubernetes%E7%BD%91%E7%BB%9C%E7%BB%84%E4%BB%B6flannel.md)
+67. [CKA 真题](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/CKA%E7%9C%9F%E9%A2%98.md)
 
 ### 五、Istio知识
 1. [Istio Helm 安装](https://github.com/yangpeng14/DevOps/blob/master/istio/istio-Helm-%E5%AE%89%E8%A3%85.md)
@@ -149,6 +150,8 @@
 32. [缓存穿透、缓存击穿、缓存雪崩](https://github.com/yangpeng14/DevOps/blob/master/ops/%E7%BC%93%E5%AD%98%E7%A9%BF%E9%80%8F-%E7%BC%93%E5%AD%98%E5%87%BB%E7%A9%BF-%E7%BC%93%E5%AD%98%E9%9B%AA%E5%B4%A9.md)
 33. [基于 Kubernetes 的 7 大 DevOps 关键实践](https://github.com/yangpeng14/DevOps/blob/master/ops/%E5%9F%BA%E4%BA%8EKubernetes%E7%9A%847%E5%A4%A7DevOps%E5%85%B3%E9%94%AE%E5%AE%9E%E8%B7%B5.md)
 34. [构建高大上的MySQL监控平台](https://github.com/yangpeng14/DevOps/blob/master/ops/%E6%9E%84%E5%BB%BA%E9%AB%98%E5%A4%A7%E4%B8%8A%E7%9A%84MySQL%E7%9B%91%E6%8E%A7%E5%B9%B3%E5%8F%B0.md)
+35. [搭建harbor私有镜像仓库(一)](https://github.com/yangpeng14/DevOps/blob/master/ops/%E6%90%AD%E5%BB%BAharbor%E7%A7%81%E6%9C%89%E9%95%9C%E5%83%8F%E4%BB%93%E5%BA%93%E4%B8%80.md)
+36. [搭建harbor私有镜像仓库(二)](https://github.com/yangpeng14/DevOps/blob/master/ops/%E6%90%AD%E5%BB%BAharbor%E7%A7%81%E6%9C%89%E9%95%9C%E5%83%8F%E4%BB%93%E5%BA%93%E4%BA%8C.md)
 
 ### 七、Podman知识
 1. [Podman 会取代 Docker 吗?](https://github.com/yangpeng14/DevOps/blob/master/podman/podman%E4%BC%9A%E5%8F%96%E4%BB%A3docker%E5%90%97.md)
