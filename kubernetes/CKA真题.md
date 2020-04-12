@@ -311,9 +311,8 @@ $ nslookup svc-demo.kube-system.svc.cluster.local
 # 查看 pod
 # 查看pod ip时，要把1.2.3.4换成1-2-3-4，否则会报错
 $ nslookup 1-2-3-4.default.pod.cluster.local
-
-# 对应的文档：https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/
 ```
+> 参考文档：https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/
 
 ## 15.etcdctl 来 备份etcd
 
@@ -401,7 +400,38 @@ spec:
 
 ## 20.给pod创建service
 
+Pod 配置文件
 
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+  labels:
+    app: nginx
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    imagePullPolicy: IfNotPresent
+```
+
+service 配置文件，通过 `labels app=nginx` 关联 pod
+
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx
+  labels:
+    app: nginx
+spec:
+  ports:
+  - port: 80
+    protocol: TCP
+  selector:
+    app: nginx
+```
     
 ## 21.使用node selector，选择disk为ssd的机器调度
     
@@ -423,11 +453,28 @@ spec:
 
 ## 22.排查apiserver连接不上问题：
 
-```
-用的kubeadmin安装的，是kubelet的配置中目录地址有问题
-```
+下面例举一些可能导致的原因：
+
+- 1、apiserver 有负载均衡，负载均衡服务有问题，或者负载均衡服务连接不上后端apiserver
+- 2、TLS证书过期，分两种情况：
+  - 2.1、整个集群证书过期
+  - 2.2、ETCD证书和K8S集群证书分开颁发，只有ETCD集群证书过期，或者k8s内部证书过期
+- 3、apiserver 服务连接过多，导致连接不上
+- 4、k8s集群规则大，导致etcd集群响应慢，apiserver接口服务也受到影响（因为 apiserver 是k8s集群唯一数据查询与写入口）
+
+还有其它原因，本文只例举这些。
 
 ## 23.把一个node弄成unavailable 并且把上边的pod重新调度去新的node上
     
-应该是直接drain，需要注意daemonset要强制删除，或者给节点打污点，taint，再去删掉
-   
+```bash
+$ kubectl drain ${node-name} --delete-local-data=true --ignore-daemonsets=true
+```
+
+## 真题日期
+
+- 日期：2019年5月
+- 版本：k8s 1.13
+
+## 参考链接
+
+- https://www.jianshu.com/p/f81d191ee03b
