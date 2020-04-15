@@ -107,6 +107,8 @@
 65. [从 Docker 到 Kubernetes 日志管理机制详解](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/%E4%BB%8E-Docker-%E5%88%B0-Kubernetes-%E6%97%A5%E5%BF%97%E7%AE%A1%E7%90%86%E6%9C%BA%E5%88%B6%E8%AF%A6%E8%A7%A3.md)
 66. [白话 kubernetes 网络组件 Flannel](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/%E7%99%BD%E8%AF%9Dkubernetes%E7%BD%91%E7%BB%9C%E7%BB%84%E4%BB%B6flannel.md)
 67. [CKA 真题](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/CKA%E7%9C%9F%E9%A2%98.md)
+68. [使用 K8S 集群调度 GPU](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/%E4%BD%BF%E7%94%A8k8s%E9%9B%86%E7%BE%A4%E8%B0%83%E5%BA%A6GPU.md)
+69. [Kubernetes Pod 钩子](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/Kubernetes-Pod%E9%92%A9%E5%AD%90.md)
 
 ### 五、Istio知识
 1. [Istio Helm 安装](https://github.com/yangpeng14/DevOps/blob/master/istio/istio-Helm-%E5%AE%89%E8%A3%85.md)
