@@ -111,7 +111,7 @@ Prometheus 体系中 Exporter 都是独立的，每个组件各司其职，如�
 
 另外，Node-Exporter 不支持进程监控，可以加一个Process-Exporter，也可以用上边提到的Telegraf，使用 procstat 的 input来采集进程指标。
 
-### 合理选择黄金指标
+## 合理选择黄金指标
 
 采集的指标有很多，我们应该关注哪些？Google 在“Sre Handbook”中提出了“四个黄金信号”：延迟、流量、错误数、饱和度。实际操作中可以使用 Use 或 Red 方法作为指导，Use 用于资源，Red 用于服务。
 
