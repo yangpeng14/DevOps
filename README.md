@@ -109,6 +109,7 @@
 67. [CKA 真题](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/CKA%E7%9C%9F%E9%A2%98.md)
 68. [使用 K8S 集群调度 GPU](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/%E4%BD%BF%E7%94%A8k8s%E9%9B%86%E7%BE%A4%E8%B0%83%E5%BA%A6GPU.md)
 69. [Kubernetes Pod 钩子](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/Kubernetes-Pod%E9%92%A9%E5%AD%90.md)
+70. [高可用 Prometheus：问题集锦](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/%E9%AB%98%E5%8F%AF%E7%94%A8Prometheus%E9%97%AE%E9%A2%98%E9%9B%86%E9%94%A6.md)
 
 ### 五、Istio知识
 1. [Istio Helm 安装](https://github.com/yangpeng14/DevOps/blob/master/istio/istio-Helm-%E5%AE%89%E8%A3%85.md)
