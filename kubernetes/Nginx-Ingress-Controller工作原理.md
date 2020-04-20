@@ -8,7 +8,7 @@
 
 ## Nginx 配置
 
-Nginx Ingress 控制器的目标是构建（nginx.conf）配置文件。主要含义是在配置文件中进行任何更改后都需要重新加载 Nginx。尽管需要注意的重要一点是，不过需要特别注意的是，在只有 `upstream` 配置变更的时候我们不需要重新加载 Nginx（即当你部署的应用 Endpoints 变更时）。我们使用 [lua-nginx-module](https://github.com/openresty/lua-nginx-module) 实现这一目标。请查看下面的内容，以了解有关操作方法的更多信息。
+Nginx Ingress 控制器的目标是构建（nginx.conf）配置文件。主要含义是在配置文件中进行任何更改后都需要重新加载 Nginx。不过需要特别注意的是，在只有 `upstream` 配置变更的时候我们不需要重新加载 Nginx（即当你部署的应用 Endpoints 变更时）。我们使用 [lua-nginx-module](https://github.com/openresty/lua-nginx-module) 实现这一目标。请查看下面的内容，以了解有关操作方法的更多信息。
 
 ## Nginx 模型
 
