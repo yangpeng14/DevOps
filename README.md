@@ -111,6 +111,7 @@
 69. [Kubernetes Pod 钩子](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/Kubernetes-Pod%E9%92%A9%E5%AD%90.md)
 70. [高可用 Prometheus：问题集锦](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/%E9%AB%98%E5%8F%AF%E7%94%A8Prometheus%E9%97%AE%E9%A2%98%E9%9B%86%E9%94%A6.md)
 71. [图文了解 Kubernetes](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/%E5%9B%BE%E6%96%87%E4%BA%86%E8%A7%A3Kubernetes.md)
+72. [Nginx Ingress Controller 工作原理](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/Nginx-Ingress-Controller%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86.md)
 
 ### 五、Istio知识
 1. [Istio Helm 安装](https://github.com/yangpeng14/DevOps/blob/master/istio/istio-Helm-%E5%AE%89%E8%A3%85.md)
