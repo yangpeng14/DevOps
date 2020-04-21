@@ -87,7 +87,7 @@ kube-system   kubernetes-dashboard   NodePort    10.103.128.17    <none>        
 
 ## 日志调试
 
-使用该标志 `--v=XX` 可以增加日志记录的级别。这是通过编辑部署来执行的。
+使用该标志 `--v=XX` 可以增加日志记录的级别。编辑 deployment 文件。
 
 ```bash
 $ kubectl get deploy -n <namespace-of-ingress-controller>
