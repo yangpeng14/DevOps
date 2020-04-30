@@ -53,10 +53,12 @@ $ systemctl restart grafana-server
 ---|---
 Name | 请您根据所需自定义一个新数据源的名称
 type | Type请选择CMS Grafana Service
-URL  | URL样例：http://metrics.cn-shanghai.aliyuncs.com，metrics是Project名称，cn-shanghai.aliyuncs.com是Project所在地域Endpoint，在配置数据源时，需要替换成自己的Project和Region地址。不同域选择请参考[云监控接入地址](https://help.aliyun.com/document_detail/28616.html?spm=a2c4g.11186623.2.10.74283646MuJPVZ#section-xf3-lbv-zdb)
+URL  | URL样例：http://metrics.cn-shanghai.aliyuncs.com，metrics是Project名称，cn-shanghai.aliyuncs.com是Project所在地域Endpoint，在配置数据源时，需要替换成自己的Project和Region地址。
 Access | 使用默认值即可
 Auth | 使用默认值即可
 cloudmonitor service details | 分别填写具备读取权限的AccessKey信息。建议使用子账号的AccessKey
+
+> 不同域选择请参考[云监控接入地址](https://help.aliyun.com/document_detail/28616.html?spm=a2c4g.11186623.2.10.74283646MuJPVZ#section-xf3-lbv-zdb)
 
 配置示例如下图：
 
