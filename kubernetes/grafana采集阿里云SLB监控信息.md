@@ -9,7 +9,7 @@
 
 ## Grafana 部署 aliyun-cms-grafana 插件
 
-1、本文略过 Grafana 过程
+1、本文略过 Grafana 部署
 
 2、安装 aliyun-cms-grafana 插件
 
@@ -25,8 +25,11 @@ $ git clone https://github.com/aliyun/aliyun-cms-grafana.git
 3、重启 Grafana 服务
 
 ```bash
-# CentOS rpm 安装可以使用下面方式重启
+# CentOS6 rpm 安装可以使用下面方式重启
 $ service grafana-server restart
+
+# CentOS7 rpm 安装可以使用下面方式重启
+$ systemctl restart grafana-server
 
 # k8s 部署 Grafana 可以直接删除 Grafana Pod，k8s会自动在创建一个新的 Pod
 ```
