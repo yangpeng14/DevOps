@@ -114,6 +114,7 @@
 72. [Nginx Ingress Controller 工作原理](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/Nginx-Ingress-Controller%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86.md)
 73. [Ingress Nginx 故障排除](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/Ingress-Nginx%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4.md)
 74. [Ingress Nginx 日志配置](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/Ingress-Nginx%E6%97%A5%E5%BF%97%E9%85%8D%E7%BD%AE.md)
+75. [Grafana 采集阿里云SLB监控信息](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/grafana%E9%87%87%E9%9B%86%E9%98%BF%E9%87%8C%E4%BA%91SLB%E7%9B%91%E6%8E%A7%E4%BF%A1%E6%81%AF.md)
 
 ### 五、Istio知识
 1. [Istio Helm 安装](https://github.com/yangpeng14/DevOps/blob/master/istio/istio-Helm-%E5%AE%89%E8%A3%85.md)
