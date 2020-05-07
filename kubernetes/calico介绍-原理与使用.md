@@ -103,10 +103,6 @@ $ cat /etc/cni/net.d/10-calico.conflist
 
 而 `Flannel host-gw` 和 `Calico` 的唯一不一样的地方就是当数据包下一跳到达node2节点的容器的时候发生变化，并且出数据包也发生变化，我们知道它是从veth的设备对让容器里面的数据包到达宿主机上数据包，这个数据包到达node2之后，它又根据一个特殊的路由规则，这个会记录目的通信地址的cni网络，然后通过cali的设备进去容器，这个就跟网线一样，数据包通过这个网线发到容器中，这也是一个`二层的网络互通才能实现`，如果二层不通只能使用`IPIP模式`。
 
-### Calico 没有网桥数据包是怎么出去的？
-
-Pod1 的数据包从veth的设备对到宿主机的一段eth0上，之前的数据包其实是走的默认宿主机的网关将流量转发到calico的cali的设备上的，通过路由表信息下一跳地址到宿主机然后转发到对应的容器中
-
 ## Route Reflector 模式（RR）（路由反射）
 
 > 设置方法请参考官方链接 https://docs.projectcalico.org/master/networking/bgp
