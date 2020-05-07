@@ -116,6 +116,7 @@
 74. [Ingress Nginx 日志配置](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/Ingress-Nginx%E6%97%A5%E5%BF%97%E9%85%8D%E7%BD%AE.md)
 75. [Grafana 采集阿里云SLB监控信息](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/grafana%E9%87%87%E9%9B%86%E9%98%BF%E9%87%8C%E4%BA%91SLB%E7%9B%91%E6%8E%A7%E4%BF%A1%E6%81%AF.md)
 75. [K8s Pod Command 与容器镜像 Cmd 启动优先级详解](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/k8s-pod-command%E4%B8%8E%E5%AE%B9%E5%99%A8%E9%95%9C%E5%83%8Fcmd%E5%90%AF%E5%8A%A8%E4%BC%98%E5%85%88%E7%BA%A7%E8%AF%A6%E8%A7%A3.md)
+76. [Calico 介绍、原理与使用](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/calico%E4%BB%8B%E7%BB%8D-%E5%8E%9F%E7%90%86%E4%B8%8E%E4%BD%BF%E7%94%A8.md)
 
 ### 五、Istio知识
 1. [Istio Helm 安装](https://github.com/yangpeng14/DevOps/blob/master/istio/istio-Helm-%E5%AE%89%E8%A3%85.md)
