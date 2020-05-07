@@ -41,7 +41,7 @@
 
 `RR模式` 中会指定一个或多个BGP Speaker为RouterReflection，它与网络中其他Speaker建立连接，每个Speaker只要与Router Reflection建立BGP就可以获得全网的路由信息。在calico中可以通过`Global Peer`实现RR模式。
 
-## Calico BGP 原理概述
+## Calico BGP 概述
 
 ![](/img/calico-bgp-1.png)
 
@@ -97,11 +97,11 @@ $ cat /etc/cni/net.d/10-calico.conflist
 
 3、到达 Node2，根据路由规则将数据包转发给 cali 设备，从而到达 Pod2。
 
-其中，这里最核心的 `下一跳` 路由规则，就是由 `Calico` 的 `Felix` 进程负责维护的。这些路由规则信息，则是通过 BGP Client 也就是 BIRD 组件，使用 BGP 协议传输而来的。
+其中，这里最核心的 `下一跳` 路由规则，就是由 `Calico` 的 `Felix` 进程负责维护的。这些路由规则信息，则是通过 BGP Client 中 BIRD 组件，使用 BGP 协议来传输。
 
 不难发现，Calico 项目实际上将集群里的所有节点，都当作是边界路由器来处理，它们一起组成了一个全连通的网络，互相之间通过 BGP 协议交换路由规则。这些节点，我们称为 `BGP Peer`。
 
-而 `Flannel host-gw` 和 `Calico` 的唯一不一样的地方就是当数据包下一跳到达node2节点的容器的时候发生变化，并且出数据包也发生变化，我们知道它是从veth的设备对让容器里面的数据包到达宿主机上数据包，这个数据包到达node2之后，它又根据一个特殊的路由规则，这个会记录目的通信地址的cni网络，然后通过cali的设备进去容器，这个就跟网线一样，数据包通过这个网线发到容器中，这也是一个`二层的网络互通才能实现`，如果二层不通只能使用`IPIP模式`。
+而 `Flannel host-gw` 和 `Calico` 的唯一不一样的地方就是当数据包下一跳到达node2节点容器时发生变化，并且出数据包也发生变化，知道它是从veth的设备流出，容器里面的数据包到达宿主机上，这个数据包到达node2之后，它又根据一个特殊的路由规则，这个会记录目的通信地址的cni网络，然后通过cali设备进去容器，这个就跟网线一样，数据包通过这个网线发到容器中，这也是一个`二层的网络互通才能实现`。
 
 ## Route Reflector 模式（RR）（路由反射）
 
@@ -111,7 +111,7 @@ Calico 维护的网络在默认是 `（Node-to-Node Mesh）全互联模式`，Ca
 
 在BGP中可以通过calicoctl node status看到启动是 node-to-node mesh 网格的形式，这种形式是一个全互联的模式，默认的BGP在k8s的每个节点担任了一个BGP的一个喇叭，一直吆喝着扩散到其他节点，随着集群节点的数量的增加，那么上百台节点就要构建上百台链接，就是全互联的方式，都要来回建立连接来保证网络的互通性，那么增加一个节点就要成倍的增加这种链接保证网络的互通性，这样的话就会使用大量的网络消耗，所以这时就需要使用Route reflector，也就是找几个大的节点，让他们去这个大的节点建立连接，也叫RR，也就是公司的员工没有微信群的时候，找每个人沟通都很麻烦，那么建个群，里面的人都能收到，所以要找节点或着多个节点充当路由反射器，建议至少是2到3个，一个做备用，一个在维护的时候不影响其他的使用。
 
-## IPIP 模式
+## IPIP 模式概述
 
 ![](/img/calico-ipip-1.png)
 
@@ -150,8 +150,6 @@ Pod 名称 | Pod IP | 宿主机 IP
 ---|---|---
 zipkin-dependencies-production | 10.20.169.155 | 192.168.162.248
 zipkin-production | 10.20.36.85 | 192.168.163.40
-
-zipkin-dependencies-production 与 zipkin-production 分别在不同的 Node 机器上
 
 zipkin-dependencies-production 访问 zipkin-production 过程如下：
 
@@ -201,6 +199,7 @@ calicoctl 工具安装
 # 下载工具：https://github.com/projectcalico/calicoctl/releases
 
 $ wget -O /usr/local/bin/calicoctl https://github.com/projectcalico/calicoctl/releases/download/v3.13.3/calicoctl
+
 $ chmod +x /usr/local/bin/calicoctl
 ```
 
@@ -248,23 +247,23 @@ $ calicoctl get bgppeer
 
 1、需要细粒度网络访问控制？
 
-这个flannel是不支持的，calico支持，所以做多租户网络方面的控制ACL,那么要选择 calico。
+这个flannel是不支持的，calico支持，所以做多租户网络方面的控制ACL，那么要选择 calico。
 
 2、追求网络性能？
 
-这两个方案无疑是flannel和calico的路由方案是最高的，也就是flannel的host-gw和calico的BGP。
+选择 `flannel host-gw` 模式 和 `calico BGP` 模式。
 
 3、服务器之前是否可以跑BGP协议？
 
-很多的公有云是不支持跑BGP协议的，那么使用calico的BGP模式自然是不行的。
+很多的公有云是不支持跑BGP协议，那么使用calico的BGP模式自然是不行的。
 
 4、集群规模多大？
 
-如果规模不大，100节点以下维护起来比较方面之间可以使用flannel就可以
+如果规模不大，100以下节点可以使用flannel，优点是维护比较简单。
 
 5、是否有维护能力？
 
-calico的路由表很多，而且走BGP协议，一旦出现问题排查起来也比较困难，上百台的，路由表去排查也是很麻烦，这个具体的需求也是跟自己饿的情况而定。
+calico的路由表很多，而且走BGP协议，一旦出现问题排查起来也比较困难，上百台的，路由表去排查也是很麻烦，这个具体需求需要根据自己的情况而定。
 
 ## 参考链接
 
