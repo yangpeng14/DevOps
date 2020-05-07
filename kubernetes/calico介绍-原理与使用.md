@@ -115,7 +115,7 @@ Calico 维护的网络在默认是 `（Node-to-Node Mesh）全互联模式`，Ca
 
 ![](/img/calico-ipip-1.png)
 
-`IPIP` 是linux内核的驱动程序，可以对数据包进行隧道，那么它看到两个不同的网络vlan1和vlan2,启动ipip模式也有个前提，它是属于4层的，因为它是基于现有的以太网的网络将你原来包里的原始IP，也是进行一次封装，因为现有的网络已经通了，三层的路由现实不同的vlan进行通信，所以通过tunl0解包，这个tunl0类似于ipip模块，这个就跟Flannel vxlan的veth类似，所以这个模式跟Flannel vxlan的模式大致是一样的。
+`IPIP` 是linux内核的驱动程序，可以对数据包进行隧道，上图可以看到两个不同的网络 vlan1 和 vlan2。启动ipip模式也有个前提，它是工作在4层，基于现有的以太网将原始包中的原始IP进行一次封装，通过tunl0解包，这个tunl0类似于ipip模块，和Flannel vxlan的veth很类似。
 
 ### Pod1 访问 Pod2 流程如下：
 
