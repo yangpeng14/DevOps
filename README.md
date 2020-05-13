@@ -118,6 +118,7 @@
 75. [K8s Pod Command 与容器镜像 Cmd 启动优先级详解](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/k8s-pod-command%E4%B8%8E%E5%AE%B9%E5%99%A8%E9%95%9C%E5%83%8Fcmd%E5%90%AF%E5%8A%A8%E4%BC%98%E5%85%88%E7%BA%A7%E8%AF%A6%E8%A7%A3.md)
 76. [Calico 介绍、原理与使用](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/calico%E4%BB%8B%E7%BB%8D-%E5%8E%9F%E7%90%86%E4%B8%8E%E4%BD%BF%E7%94%A8.md)
 77. [Gitlab CI/CD 部署应用到 K8S 演示](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/gitlab-ci-cd-%E9%83%A8%E7%BD%B2%E5%BA%94%E7%94%A8%E5%88%B0k8s%E6%BC%94%E7%A4%BA.md)
+78. [Kubernetes 无法查看 pods 日志问题](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/kubernetes%E6%97%A0%E6%B3%95%E6%9F%A5%E7%9C%8Bpods%E6%97%A5%E5%BF%97%E9%97%AE%E9%A2%98.md)
 
 ### 五、Istio知识
 1. [Istio Helm 安装](https://github.com/yangpeng14/DevOps/blob/master/istio/istio-Helm-%E5%AE%89%E8%A3%85.md)
