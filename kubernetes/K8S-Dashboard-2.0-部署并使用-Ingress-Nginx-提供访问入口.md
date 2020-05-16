@@ -11,7 +11,7 @@ Kubernetes Dashboard 终于发布 `2.0` 正式版本，从 `Betat版本` 到 `v2
 
 ### 依赖服务
 
-- 需要K8S集群部署 [metrics-server](https://www.yp14.cn/2019/08/29/Metrics-Server-v0-3-2%E7%89%88%E6%9C%AC%E5%AE%89%E8%A3%85/)，这样才能正常查看 Dashboard 查看监控指标。
+- 需要K8S集群部署 [metrics-server](https://www.yp14.cn/2019/08/29/Metrics-Server-v0-3-2%E7%89%88%E6%9C%AC%E5%AE%89%E8%A3%85/)，这样才能正常查看 Dashboard 监控指标。
 
 > 注意：如果集群有1.7+以下旧版本，请确保删除`kubernetes-dashboard`服务帐户的群集角色绑定，否则Dashboard将具有对该群集的`完全管理员访问权限`。
 
@@ -175,6 +175,11 @@ spec:
   - secretName: k8s-dashboard
     hosts:
     - k8s-dashboard.yp14.cn
+```
+
+```bash
+# 创建
+$ kubectl apply -f k8s-dashboard-ingress.yaml
 ```
 
 `访问入口域名`：https://k8s-dashboard.yp14.cn
