@@ -192,6 +192,6 @@ $ kubectl apply -f k8s-dashboard-ingress.yaml
 
 > 下面演示使用 `谷歌浏览器`
 
-Kubernetes Dashboard 2.0 已经支持中文界面了，但是你需要做一下浏览器设置，如下图：
+Kubernetes Dashboard 2.0 已经支持中文界面了，但是你需要改一下浏览器设置，如下图：
 
 ![](/img/k8s-dashboard-2.png)
