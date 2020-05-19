@@ -14,7 +14,7 @@ slb | lb.ypvip.com.cn | 外网阿里slb域名
 ### 服务版本与K8S集群说明
 
 - `阿里slb`设置`TCP监听`，监听6443端口(通过四层负载到master apiserver)。
-- 所有`阿里云ECS主机`使用 `CentOS 7.6.1810` 版本，并且内核都升到到`5.x`版本。
+- 所有`阿里云ECS主机`使用 `CentOS 7.6.1810` 版本，并且内核都升到`5.x`版本。
 - K8S 集群使用 `Iptables 模式`（kube-proxy 注释中预留 `Ipvs` 模式配置）
 - Calico 使用 `IPIP` 模式
 - 集群使用默认 `svc.cluster.local`
@@ -172,18 +172,18 @@ Install_docker
 
 ### 部署顺序
 
-1、自签TLS证书
-2、部署Etcd集群
-3、创建 metrics-server 证书
-4、获取K8S二进制包
-5、创建Node节点kubeconfig文件
-6、配置Master组件并运行
-7、配置kubelet证书自动续期
-8、配置Node组件并运行
-9、安装calico网络，使用IPIP模式
-10、集群CoreDNS部署
-11、部署集群监控服务 Metrics Server
-12、部署 Kubernetes Dashboard
+- 1、自签TLS证书
+- 2、部署Etcd集群
+- 3、创建 metrics-server 证书
+- 4、获取K8S二进制包
+- 5、创建Node节点kubeconfig文件
+- 6、配置Master组件并运行
+- 7、配置kubelet证书自动续期
+- 8、配置Node组件并运行
+- 9、安装calico网络，使用IPIP模式
+- 10、集群CoreDNS部署
+- 11、部署集群监控服务 Metrics Server
+- 12、部署 Kubernetes Dashboard
 
 ### 3.1 自签TLS证书
 
