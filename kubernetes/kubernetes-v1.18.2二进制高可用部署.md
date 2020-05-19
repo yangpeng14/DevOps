@@ -1215,6 +1215,32 @@ k8s-master3   NoReady    <none>   4d4h   v1.18.2
 ```
 > 上面 Node 节点处理 `NoReady` 状态，是因为目前还没有安装网络组件，下文安装网络组件。
 
+#### 解决无法查询pods日志问题
+
+```bash
+$ vim ~/yaml/apiserver-to-kubelet-rbac.yml
+```
+
+```yaml
+kind: ClusterRoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: kubelet-api-admin
+subjects:
+- kind: User
+  name: kubernetes
+  apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: ClusterRole
+  name: system:kubelet-api-admin
+  apiGroup: rbac.authorization.k8s.io
+```
+
+```bash
+# 应用
+$ kubectl apply -f ~/yaml/apiserver-to-kubelet-rbac.yml
+```
+
 ### 3.9 安装calico网络，使用IPIP模式
 
 > 登陆到 `k8s-master1` 操作
@@ -1266,7 +1292,7 @@ data:
 关于ConfigMap部分主要参数如下：
 - `etcd_endpoints`：Calico使用etcd来保存网络拓扑和状态，该参数指定etcd的地址，可以使用K8S Master所用的etcd，也可以另外搭建。
 - `calico_backend`：Calico的后端，默认为bird。
-- `cni_network_config`：符合CNI规范的网络配置，其中type=calico表示，Kubelet从 CNI_PATH(默认为/opt/cni/bin)找名为calico的可执行文件，用于容器IP地址的分配。
+- `cni_network_config`：符合CNI规范的网络配置，其中type=calico表示，Kubelet 从 CNI_PATH (默认为/opt/cni/bin)目录找calico的可执行文件，用于容器IP地址的分配。
 - etcd 如果配置`TLS安全认证`，则还需要指定相应的`ca`、`cert`、`key`等文件
 
 ##### 修改 Pods 使用的 `IP 网段`，默认使用 `192.168.0.0/16` 网段
