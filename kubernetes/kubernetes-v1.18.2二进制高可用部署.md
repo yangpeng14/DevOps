@@ -1509,7 +1509,7 @@ Kubernetes Dashboard 部署，请参考 [K8S Dashboard 2.0 部署](https://www.y
 
 ## 结束语
 
-Kubernetes v1.18.2 二进制部署，作者测试过无坑。这篇部署文章完成可以直接用于生产环境部署。全方位包含整个 Kubernetes 组件部署。
+Kubernetes v1.18.2 二进制部署，作者测试过无坑。这篇部署文章完全可以直接用于生产环境部署。全方位包含整个 Kubernetes 组件部署。
 
 ## 参考链接
 
