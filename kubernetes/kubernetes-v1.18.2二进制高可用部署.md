@@ -9,7 +9,7 @@ k8s-master2 | 192.168.0.217 | 主集群1,etcd1,node节点
 k8s-master3 | 192.168.0.218 | 主集群1,etcd1,node节点
 slb | lb.ypvip.com.cn | 外网阿里slb域名
 
-> 本环境是使用阿里云，`API Server` 高可用能`阿里云SLB`实现，如果环境不在云上，可以通过 Nginx + Keepalived，或者 HaProxy + Keepalived等实现。
+> 本环境使用阿里云，`API Server` 高可用通过`阿里云SLB`实现，如果环境不在云上，可以通过 Nginx + Keepalived，或者 HaProxy + Keepalived等实现。
 
 ### 服务版本与K8S集群说明
 
