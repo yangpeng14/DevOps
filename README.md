@@ -120,6 +120,7 @@
 77. [Gitlab CI/CD 部署应用到 K8S 演示](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/gitlab-ci-cd-%E9%83%A8%E7%BD%B2%E5%BA%94%E7%94%A8%E5%88%B0k8s%E6%BC%94%E7%A4%BA.md)
 78. [Kubernetes 无法查看 pods 日志问题](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/kubernetes%E6%97%A0%E6%B3%95%E6%9F%A5%E7%9C%8Bpods%E6%97%A5%E5%BF%97%E9%97%AE%E9%A2%98.md)
 79. [K8S Dashboard 2.0 部署并使用 Ingress-Nginx 提供访问入口](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/K8S-Dashboard-2.0-%E9%83%A8%E7%BD%B2%E5%B9%B6%E4%BD%BF%E7%94%A8-Ingress-Nginx-%E6%8F%90%E4%BE%9B%E8%AE%BF%E9%97%AE%E5%85%A5%E5%8F%A3.md)
+80. [Kubernetes v1.18.2 二进制高可用部署](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/kubernetes-v1.18.2%E4%BA%8C%E8%BF%9B%E5%88%B6%E9%AB%98%E5%8F%AF%E7%94%A8%E9%83%A8%E7%BD%B2.md)
 
 ### 五、Istio知识
 1. [Istio Helm 安装](https://github.com/yangpeng14/DevOps/blob/master/istio/istio-Helm-%E5%AE%89%E8%A3%85.md)
