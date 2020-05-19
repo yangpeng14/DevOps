@@ -597,6 +597,7 @@ $ mkdir /data/k8s-package
 $ cd /data/k8s-package
 
 # 下载 v1.18.2 二进制包
+# 作者把二进制安装包上传到cdn上 https://cdm.yp14.cn/k8s-package/kubernetes-server-v1.18.2-linux-amd64.tar.gz
 $ wget https://dl.k8s.io/v1.18.2/kubernetes-server-linux-amd64.tar.gz
 
 $ tar xf kubernetes-server-linux-amd64.tar.gz
