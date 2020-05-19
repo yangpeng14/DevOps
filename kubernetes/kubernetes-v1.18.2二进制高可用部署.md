@@ -950,9 +950,14 @@ etcd-0               Healthy   {"health":"true"}
 
 ### 3.7 配置kubelet证书自动续期
 
+> 登陆到 `k8s-master1` 操作
+
 创建自动批准相关 CSR 请求的 ClusterRole
 
 ```bash
+# 创建证书旋转配置存放目录
+$ mkdir ~/yaml/kubelet-certificate-rotating
+$ cd ~/yaml/kubelet-certificate-rotating
 $ vim tls-instructs-csr.yaml 
 ```
 
