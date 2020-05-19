@@ -4,9 +4,9 @@
 
 主机名 | IP | 备注
 ---|---|---
-k8s-master1 | 192.168.0.216 | 主集群1,etcd1,node节点
-k8s-master2 | 192.168.0.217 | 主集群1,etcd1,node节点
-k8s-master3 | 192.168.0.218 | 主集群1,etcd1,node节点
+k8s-master1 | 192.168.0.216 | Master1,etcd1,node节点
+k8s-master2 | 192.168.0.217 | Master2,etcd2,node节点
+k8s-master3 | 192.168.0.218 | Master3,etcd3,node节点
 slb | lb.ypvip.com.cn | 外网阿里slb域名
 
 > 本环境使用阿里云，`API Server` 高可用通过`阿里云SLB`实现，如果环境不在云上，可以通过 Nginx + Keepalived，或者 HaProxy + Keepalived等实现。
