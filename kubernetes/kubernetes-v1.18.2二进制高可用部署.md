@@ -1375,6 +1375,8 @@ k8s-master3   Ready    <none>   4d4h   v1.18.2
 $ yum install jq -y
 
 $ cd ~/yaml
+$ mkdir coredns
+$ cd coredns
 
 # 下载 CoreDNS 项目
 $ git clone https://github.com/coredns/deployment.git
