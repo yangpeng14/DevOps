@@ -178,7 +178,7 @@ Install_docker
 - 4、获取K8S二进制包
 - 5、创建Node节点kubeconfig文件
 - 6、配置Master组件并运行
-- 7、配置kubelet证书自动续期
+- 7、配置kubelet证书自动续期和创建Node授权用户
 - 8、配置Node组件并运行
 - 9、安装calico网络，使用IPIP模式
 - 10、集群CoreDNS部署
@@ -948,9 +948,15 @@ etcd-1               Healthy   {"health":"true"}
 etcd-0               Healthy   {"health":"true"}
 ```
 
-### 3.7 配置kubelet证书自动续期
+### 3.7 配置kubelet证书自动续期和创建Node授权用户
 
 > 登陆到 `k8s-master1` 操作
+
+创建 `Node节点` 授权用户 `kubelet-bootstrap`
+
+```bash
+$ kubectl create clusterrolebinding  kubelet-bootstrap --clusterrole=system:node-bootstrapper  --user=kubelet-bootstrap
+```
 
 创建自动批准相关 CSR 请求的 ClusterRole
 
