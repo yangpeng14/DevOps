@@ -30,6 +30,12 @@ metadata:
     app.kubernetes.io/name: ingress-nginx
     app.kubernetes.io/part-of: ingress-nginx
 data:
+  # 把真实IP地址传给后端
+  compute-full-forwarded-for: "true"
+  forwarded-for-header: "X-Forwarded-For"
+  use-forwarded-headers: "true"
+  # 关闭版本显示
+  server-tokens: "false"
   # 客户端请求头的缓冲区大小 
   client-header-buffer-size: "512k"
   # 设置用于读取大型客户端请求标头的最大值number和size缓冲区
