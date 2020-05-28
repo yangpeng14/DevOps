@@ -976,6 +976,7 @@ error: no configuration has been provided, try setting KUBERNETES_MASTER environ
 # 降级 kubectl 版本到 1.17.5 
 $ mv /opt/kubernetes/bin/kubectl /opt/kubernetes/bin/kubectl-1.18.2
 $ wget https://cdm.yp14.cn/k8s-package/k8s-1.17-bin/kubectl -O /opt/kubernetes/bin/kubectl
+$ chmod +x /opt/kubernetes/bin/kubectl
 
 # 创建一个存放用户文件目录
 $ mkdir -p /root/yaml/create-user
@@ -1147,6 +1148,7 @@ $ cp admin.kubeconfig ~/.kube/config
 
 # 把kubectl 从 1.17.5 换成 1.18.2版本，可以正常查看集群状态
 $ mv /opt/kubernetes/bin/kubectl-1.18.2 /opt/kubernetes/bin/kubectl
+$ chmod +x /opt/kubernetes/bin/kubectl
 $ kubectl  get cs
 
 NAME                 STATUS    MESSAGE             ERROR
