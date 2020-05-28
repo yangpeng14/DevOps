@@ -975,7 +975,7 @@ error: no configuration has been provided, try setting KUBERNETES_MASTER environ
 ```bash
 # 降级 kubectl 版本到 1.17.5 
 $ mv /opt/kubernetes/bin/kubectl /opt/kubernetes/bin/kubectl-1.18.2
-$ wget /dev/null https://cdm.yp14.cn/k8s-package/k8s-1.17-bin/kubectl -O /opt/kubernetes/bin/kubectl
+$ wget https://cdm.yp14.cn/k8s-package/k8s-1.17-bin/kubectl -O /opt/kubernetes/bin/kubectl
 
 # 创建一个存放用户文件目录
 $ mkdir -p /root/yaml/create-user
