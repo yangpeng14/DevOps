@@ -69,7 +69,7 @@ e_net
 $ chmod +x e_net.sh
 ```
 
-本例抓取 `test` 命名空间中 `demo2-deployment-5f5f4fbd9b-92gd4` Pod `8080` 端口请求包。
+本例抓取 `test` 命名空间中 `demo2-deployment-5f5f4fbd9b-92gd4` Pod `80` 端口请求包。
 
 ```bash
 # 进入 Pod demo2-deployment-5f5f4fbd9b-92gd4 net 命名空间
