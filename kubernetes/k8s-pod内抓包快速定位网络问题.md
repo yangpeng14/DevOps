@@ -89,7 +89,7 @@ $ ifconfig
 
 ![](/img/k8s-nsenter-1.png)
 
-使用 `tcpdump` 抓取 `eth0` 网卡上 `8080` 端口 数据包。
+使用 `tcpdump` 抓取 `eth0` 网卡上 `80` 端口 数据包。
 
 ```bash
 $ tcpdump -nnnvv -As 0 -i eth0 port 80 -w demo2.pcap
