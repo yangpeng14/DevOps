@@ -123,6 +123,7 @@
 80. [Kubernetes v1.18.2 二进制高可用部署](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/kubernetes-v1.18.2%E4%BA%8C%E8%BF%9B%E5%88%B6%E9%AB%98%E5%8F%AF%E7%94%A8%E9%83%A8%E7%BD%B2.md)
 81. [Kubernetes v1.18.2 二进制一键添加 Node节点](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/kubernetes-v1.18.2%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%B8%80%E9%94%AE%E6%B7%BB%E5%8A%A0Node%E8%8A%82%E7%82%B9.md)
 82. [Etcd 问题、调优、监控](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/etcd-%E9%97%AE%E9%A2%98-%E8%B0%83%E4%BC%98-%E7%9B%91%E6%8E%A7.md)
+83. [K8S Pod 内抓包快速定位网络问题](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/k8s-pod%E5%86%85%E6%8A%93%E5%8C%85%E5%BF%AB%E9%80%9F%E5%AE%9A%E4%BD%8D%E7%BD%91%E7%BB%9C%E9%97%AE%E9%A2%98.md)
 
 ### 五、Istio知识
 1. [Istio Helm 安装](https://github.com/yangpeng14/DevOps/blob/master/istio/istio-Helm-%E5%AE%89%E8%A3%85.md)
