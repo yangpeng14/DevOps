@@ -106,7 +106,7 @@ tcpdump: listening on eth0, link-type EN10MB (Ethernet), capture size 262144 byt
 
 ## 原理
 
-`namespace` 是Linux中一些进程的属性的作用域，使用命名空间，可以隔离不同的进程。
+`namespace` 是Linux中一些进程属性的作用域，使用命名空间，可以隔离不同的进程。
 
 Linux在不断的添加命名空间，目前有：
 
