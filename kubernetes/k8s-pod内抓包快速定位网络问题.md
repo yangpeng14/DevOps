@@ -2,7 +2,7 @@
 
 在使用 Kubernetes 时，可能会遇到一些网络问题。当通过检查配置与日志无法排查错误时，这时就需要抓取网络数据包，但是Pod内一般不会安装`tcpdump`命令，那有没有方法可以直接通过宿主机抓取Pod网络数据包？
 
-当然有，本文介绍 `nsenter` 命令，能够进入Pod容器 `net` 命令空间。并且本文提供一个快速进入Pod容器 `net` 命令空间脚本，方便大家使用。
+当然有，本文介绍 `nsenter` 命令，能够进入Pod容器 `net` 命名空间。并且本文提供一个快速进入Pod容器 `net` 命名空间脚本，方便大家使用。
 
 ## nsenter 使用参数
 
@@ -11,12 +11,12 @@ nsenter [options] [program [arguments]]
 
 options:
 -t, --target pid：指定被进入命名空间的目标进程的pid
--m, --mount[=file]：进入mount命令空间。如果指定了file，则进入file的命令空间
--u, --uts[=file]：进入uts命令空间。如果指定了file，则进入file的命令空间
--i, --ipc[=file]：进入ipc命令空间。如果指定了file，则进入file的命令空间
--n, --net[=file]：进入net命令空间。如果指定了file，则进入file的命令空间
--p, --pid[=file]：进入pid命令空间。如果指定了file，则进入file的命令空间
--U, --user[=file]：进入user命令空间。如果指定了file，则进入file的命令空间
+-m, --mount[=file]：进入mount命名空间。如果指定了file，则进入file的命名空间
+-u, --uts[=file]：进入uts命名空间。如果指定了file，则进入file的命名空间
+-i, --ipc[=file]：进入ipc命名空间。如果指定了file，则进入file的命名空间
+-n, --net[=file]：进入net命名空间。如果指定了file，则进入file的命名空间
+-p, --pid[=file]：进入pid命名空间。如果指定了file，则进入file的命名空间
+-U, --user[=file]：进入user命名空间。如果指定了file，则进入file的命名空间
 -G, --setgid gid：设置运行程序的gid
 -S, --setuid uid：设置运行程序的uid
 -r, --root[=directory]：设置根目录
@@ -113,7 +113,7 @@ Linux在不断的添加命名空间，目前有：
 - `mount`：挂载命名空间，使进程有一个独立的挂载文件系统，始于Linux 2.4.19
 - `ipc`：ipc命名空间，使进程有一个独立的ipc，包括消息队列，共享内存和信号量，始于Linux 2.6.19
 - `uts`：uts命名空间，使进程有一个独立的hostname和domainname，始于Linux 2.6.19
-- `net`：network命令空间，使进程有一个独立的网络栈，始于Linux 2.6.24
+- `net`：network命名空间，使进程有一个独立的网络栈，始于Linux 2.6.24
 - `pid`：pid命名空间，使进程有一个独立的pid空间，始于Linux 2.6.24
 - `user`：user命名空间，是进程有一个独立的user空间，始于Linux 2.6.23，结束于Linux 3.8
 - `cgroup`：cgroup命名空间，使进程有一个独立的cgroup控制组，始于Linux 4.6
