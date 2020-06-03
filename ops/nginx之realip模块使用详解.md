@@ -1,6 +1,6 @@
 ## realip 功能介绍
 
-`用途`：`realip` 当本机 `Nginx` 处于反向代理后端时可以获取到用户的`真实IP地址`。
+`用途`：当本机 `Nginx` 处于反向代理后端时可以获取到用户的`真实IP地址`。
 
 `使用`：`realip` 功能需要 `Nginx` 添加 `ngx_http_realip_module` 模块，默认情况下是不被编译，如果需要添加，请在编译时添加 `--with-http_realip_module` 选项开启它。
 
@@ -8,7 +8,7 @@
 
 `set_real_ip_from`、`real_ip_header` 和 `real_ip_recursive` 都可以用于 `http`、 `server`、`location` 区域配置。
 
-## realip 部署参数解释
+## realip 部分参数解释
 
 - `set_real_ip_from`：设置反向代理服务器，即信任服务器IP
 - `real_ip_header X-Forwarded-For`：用户真实IP存在`X-Forwarded-For`请求头中
