@@ -49,7 +49,25 @@ proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
 
 ### 假设一：
 
-如果 Nginx 没有使用 `realip模块`，
+1、如果 Nginx 没有使用 `realip模块`，第二台 Nginx中 `X-Forwarded-For` 请求是 1.1.1.1，但 `remote_addr` 地址是 2.2.2.2，这时应用服务可以通过 `X-Forwarded-For` 字段获取用户真实IP。不过这里有点风险，如果中间多几层反向代理服务，就无法获取唯一一个用户真实IP。
+
+2、如果 Nginx 使用`realip模块`，并如下设置；Nginx 会取 `X-Forwarded-For` 最后一个IP也就是 2.2.2.2 作为真实IP。最后应用服务拿到的地址也是 2.2.2.2，但事实这不是用户IP。
+
+```
+set_real_ip_from 2.2.2.2;
+set_real_ip_from 2.2.2.3; 
+real_ip_header X-Forwarded-For; 
+real_ip_recursive off;
+```
+
+3、如果 Nginx 使用`realip模块`，并如下设置；由于 2.2.2.2 是信任服务器IP，Nginx 会继续往前查找，发现 1.1.1.1 不是信任服务器IP，就认为是真实IP。但事实 1.1.1.1 也就是用户IP。最后应用服务也拿到唯一的用户真实IP。
+
+```
+set_real_ip_from 2.2.2.2;
+set_real_ip_from 2.2.2.3; 
+real_ip_header X-Forwarded-For; 
+real_ip_recursive on;
+```
 
 ## 参考链接
 
