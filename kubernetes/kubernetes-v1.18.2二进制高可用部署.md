@@ -644,6 +644,8 @@ $ cd /data/ssl/
 $ vim kubeconfig.sh
 ```
 
+> 修改 `kubeconfig.sh` 脚本配置 `KUBE_APISERVER` 变量时，一定要把 `https://` 带上，否则默认使用 `http://` 请求
+
 ```bash
 # 创建 TLS Bootstrapping Token
 export BOOTSTRAP_TOKEN=$(head -c 16 /dev/urandom | od -An -t x | tr -d ' ')
@@ -654,6 +656,7 @@ EOF
 #----------------------
 
 # 创建kubelet bootstrapping kubeconfig
+# 一定要把 https:// 带上，否则默认使用 http:// 请求
 export KUBE_APISERVER="https://lb.ypvip.com.cn:6443"
 
 # 设置集群参数
