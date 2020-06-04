@@ -2,7 +2,7 @@
 
 一般在机房或者云上使用ECS自建Kubernetes集群是无法使用 `LoadBalancer` 类型的 `Service` 。因为 Kubernetes 本身没有为裸机群集提供网络负载均衡器的实现。
 
-自建的 Kubernetes 集群暴露让外网访问，目前只能使用 `NodePort` 或 `Ingress` 的方法进行服务暴露。`NodePort` 缺点是每个暴露的服务需要占用所有节点的某个端口。`Ingress` 是一个不错的解方法。
+自建的 Kubernetes 集群暴露让外网访问，目前只能使用 `NodePort` 或 `Ingress` 等的方法进行服务暴露。`NodePort` 缺点是每个暴露的服务需要占用所有节点的某个端口。`Ingress` 是一个不错的解方法。
 
 有没有方法，让自建的 Kubernetes 集群也能使用 `LoadBalancer` 类型的 `Service` ？
 
@@ -87,7 +87,7 @@ Kube-router | 部分支持（[有附加条件](https://metallb.universe.tf/confi
 Romana | 部分支持（[有附加条件](https://metallb.universe.tf/configuration/romana/)）
 Weave Net | 部分支持（[有附加条件](https://metallb.universe.tf/configuration/weave/)）
 
-> MetalLB 可以在Kubenetes 1.13 或更高版本的 Kube-Proxy 中使用 IPVS 模式。但是,它尚未明确测试，因此风险自负。具体内容可参考：https://github.com/google/metallb/issues/153
+> MetalLB 可以在Kubenetes 1.13 或更高版本的 Kube-Proxy 中使用 IPVS 模式。但是，它尚未明确测试，因此风险自负。具体内容可参考：https://github.com/google/metallb/issues/153
 
 ## MetalLB 部署
 
@@ -281,9 +281,52 @@ $ wget -SO /dev/null 192.168.0.100
 
 ### 配置 MetalLB 为 BGP 模式
 
-test
+配置 BGP 模式，需要先准备好下面4条信息：
+
+- MetalLB 应该连接的路由器IP地址
+- 路由器的 AS 号
+- MetalLB 应该使用的 AS 号
+- 以 CIDR 前缀表示的IP地址范围
+
+> 由于本环境基于云上ECS搭建，云上不支持 BGP，所以无法演示
+
+下面简单介绍下 BGP 配置：
+
+前面已经安装了 MetalLB 的 `Controller` 和 `Speaker`，所使用的是 `Layer 2` 模式。这里只需要把 `Configmap` 中 `Config` 改为 `BGP 模式` 配置就行。
+
+假设 MetalLB 提供范围 192.168.10.0/24 和 AS 号 65009，并将其连接到 192.168.0.10 的 AS 号为 65000 的路由器，具体配置如下：
+
+```bash
+$ vim MetalLB-BGP-Configmap.yaml
+```
+
+```yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  namespace: metallb-system
+  name: config
+data:
+  config: |
+    peers:
+    - peer-address: 192.168.0.10
+      peer-asn: 65000
+      my-asn: 65009
+    address-pools:
+    - name: default
+      protocol: bgp
+      addresses:
+      - 192.168.10.0/24
+```
+
+## 总结
+
+本文简单介绍了 MetalLB 工具以及两种部署模式：`Layer 2` 模式和 `BGP` 模式。
+
+如果集群环境支持 BGP，推荐使用 `BGP` 模式。
 
 ## 参考链接
 
+- https://metallb.universe.tf/configuration/
 - https://mp.weixin.qq.com/s/Z49-5WlhfmxKscmjoZk52Q
 - https://zhuanlan.zhihu.com/p/103717169
