@@ -125,6 +125,7 @@
 82. [Etcd 问题、调优、监控](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/etcd-%E9%97%AE%E9%A2%98-%E8%B0%83%E4%BC%98-%E7%9B%91%E6%8E%A7.md)
 83. [K8S Pod 内抓包快速定位网络问题](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/k8s-pod%E5%86%85%E6%8A%93%E5%8C%85%E5%BF%AB%E9%80%9F%E5%AE%9A%E4%BD%8D%E7%BD%91%E7%BB%9C%E9%97%AE%E9%A2%98.md)
 84. [Kubernetes 私有集群 LoadBalancer 解决方案](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/kubernetes%E7%A7%81%E6%9C%89%E9%9B%86%E7%BE%A4LoadBalancer%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.md)
+85. [Kubernetes 是否值得学习吗？](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/Kubernetes%E6%98%AF%E5%90%A6%E5%80%BC%E5%BE%97%E5%AD%A6%E4%B9%A0%E5%90%97.md)
 
 ### 五、Istio知识
 1. [Istio Helm 安装](https://github.com/yangpeng14/DevOps/blob/master/istio/istio-Helm-%E5%AE%89%E8%A3%85.md)
