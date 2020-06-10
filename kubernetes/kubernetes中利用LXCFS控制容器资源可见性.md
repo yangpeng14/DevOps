@@ -158,4 +158,5 @@ $ kubectl delete -f deployment/lxcfs-daemonset.yaml
 
 ## 参考链接
 
+- https://github.com/denverdino/lxcfs-admission-webhook
 - https://yq.aliyun.com/articles/566208
