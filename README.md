@@ -127,6 +127,7 @@
 84. [Kubernetes 私有集群 LoadBalancer 解决方案](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/kubernetes%E7%A7%81%E6%9C%89%E9%9B%86%E7%BE%A4LoadBalancer%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.md)
 85. [Kubernetes 是否值得学习吗？](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/Kubernetes%E6%98%AF%E5%90%A6%E5%80%BC%E5%BE%97%E5%AD%A6%E4%B9%A0%E5%90%97.md)
 86. [Kubernetes Node节点主机名 修改](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/kubernetes-node%E8%8A%82%E7%82%B9%E4%B8%BB%E6%9C%BA%E5%90%8D%E4%BF%AE%E6%94%B9.md)
+87. [Kubernetes 中利用 LXCFS 控制容器资源可见性](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/kubernetes%E4%B8%AD%E5%88%A9%E7%94%A8LXCFS%E6%8E%A7%E5%88%B6%E5%AE%B9%E5%99%A8%E8%B5%84%E6%BA%90%E5%8F%AF%E8%A7%81%E6%80%A7.md)
 
 ### 五、Istio知识
 1. [Istio Helm 安装](https://github.com/yangpeng14/DevOps/blob/master/istio/istio-Helm-%E5%AE%89%E8%A3%85.md)
