@@ -156,6 +156,8 @@ $ kubectl delete -f deployment/lxcfs-daemonset.yaml
 
 `lxcfs` 支持容器镜像 `Centos系统`、`Ubuntu系统`、`Debian系统`，但是不支持容器镜像 `Alpine系统`。
 
+> 因为 Alpine 不是使用 `Gnu libc`，而是使用 `musl libc`。
+
 ## 参考链接
 
 - https://github.com/denverdino/lxcfs-admission-webhook
