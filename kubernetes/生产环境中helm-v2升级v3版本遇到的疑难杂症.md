@@ -1,6 +1,6 @@
 ## 前言
 
-Helm `V3` 与 `V2` 版本架构变化较大，数据迁移也比较麻烦，但官方为了解决数据迁移问题，提供一个 `helm-2to3` 工具，本文基于 `helm-2to3` 工具来迁移 `V2` 版本中的数据。
+Helm `V3` 与 `V2` 版本架构变化较大，数据迁移也比较麻烦，官方为了解决数据迁移问题，提供一个 `helm-2to3` 工具，本文基于 `helm-2to3` 工具来迁移 `V2` 版本中的数据。
 
 Helm `V3` 与 `V2` 变化，请参考 [Helm v3 新的功能](https://www.yp14.cn/2019/11/18/Helm-v3-%E6%96%B0%E7%9A%84%E5%8A%9F%E8%83%BD/)
 
@@ -222,3 +222,7 @@ $ helm3 2to3 cleanup
 ```
 
 执行完后，`Tiller` Pod 会被删除，并且 `kube-system` 命名空间中 `configmaps` 历史版本信息也会被清理。
+
+## 参考链接
+
+- https://helm.sh/blog/migrate-from-helm-v2-to-helm-v3/
