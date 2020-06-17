@@ -33,10 +33,6 @@
 
 ![](/img/Lens-2.png)
 
-### 查看集群所有 Pod
-
-![](/img/Lens-4.png)
-
 ### 登陆 Pod 或者 查看 Pod 日志
 
 ![](/img/Lens-5.png)
