@@ -33,6 +33,7 @@ contexts: # 上下文参数
 - context:
     cluster: {cluster-name}
     user: {user-name}
+  name: kubernetes # 集群上下文名称
 current-context: kubernetes # 当前上下文
  ```
 
