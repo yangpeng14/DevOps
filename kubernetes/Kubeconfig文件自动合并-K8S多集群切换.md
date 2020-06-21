@@ -93,7 +93,7 @@ $ kubecm switch
 
 通过 `kubecm` 工具能快速的把多个 kubeconfig 文件合并到一个 kubeconfig 文件中，并且也提供集群切换。而不需要再下载 `kubectx` 工具来切换集群。
 
- ## 参考文档
+## 参考文档
 
- - https://kubernetes.io/docs/concepts/configuration/organize-cluster-access-kubeconfig/
- - https://github.com/sunny0826/kubecm
+- https://kubernetes.io/docs/concepts/configuration/organize-cluster-access-kubeconfig/
+- https://github.com/sunny0826/kubecm
