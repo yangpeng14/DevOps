@@ -133,6 +133,7 @@
 90. [比Kubernetes Dashboard更好用的K8S管理工具 Kuboard](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/%E6%AF%94Kubernetes-Dashboard%E6%9B%B4%E5%A5%BD%E7%94%A8%E7%9A%84K8S%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7-Kuboard.md)
 91. [Kubeconfig文件自动合并-实现K8S多集群切换](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/Kubeconfig%E6%96%87%E4%BB%B6%E8%87%AA%E5%8A%A8%E5%90%88%E5%B9%B6-K8S%E5%A4%9A%E9%9B%86%E7%BE%A4%E5%88%87%E6%8D%A2.md)
 92. [Kubernetes故障排查指南-分析容器退出状态码](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/kubernetes%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4%E6%8C%87%E5%8D%97-%E5%88%86%E6%9E%90%E5%AE%B9%E5%99%A8%E9%80%80%E5%87%BA%E7%8A%B6%E6%80%81%E7%A0%81.md)
+93. [K8S备份、恢复、迁移神器 Velero](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/K8S%E5%A4%87%E4%BB%BD-%E6%81%A2%E5%A4%8D-%E8%BF%81%E7%A7%BB%E7%A5%9E%E5%99%A8-Velero.md)
 
 ### 五、Istio知识
 1. [Istio Helm 安装](https://github.com/yangpeng14/DevOps/blob/master/istio/istio-Helm-%E5%AE%89%E8%A3%85.md)
