@@ -1,6 +1,6 @@
 ## 前言
 
-Kubernetes 集群备份一直是我们的痛点。虽然可以通过[备份ETCD](https://www.yp14.cn/2019/08/29/Etcd-v3%E5%A4%87%E4%BB%BD%E4%B8%8E%E6%81%A2%E5%A4%8D/)来实现K8S集群备份，但是这种备份很难恢复单个 `Namespace`。
+Kubernetes 集群备份一直是我们的痛点。虽然可以通过[备份ETCD](https://www.yp14.cn/2019/08/29/Etcd-v3%E5%A4%87%E4%BB%BD%E4%B8%8E%E6%81%A2%E5%A4%8D/)来实现K8S集群备份，但是这种备份很难恢复单个 `Namespace`。
 
 今天推荐 `Velero` 工具，它提供以下功能：
 
