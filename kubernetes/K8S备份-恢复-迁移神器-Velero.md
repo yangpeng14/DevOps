@@ -55,14 +55,15 @@ Velero 分为两部分：
 - 创建阿里云 `OSS`（对象存储）`Bucket`
     - 创建 `OSS Bucket` 请访问 https://www.aliyun.com/product/oss?spm=a2c6h.12873639.0.0.5f49340drYAEk0
 
-- 创建阿里云 `创建RAM用户`，并自定义策略，把自定义策略加入到新创建的`RAM用户`中
+- 创建阿里云 `RAM用户`，并自定义策略，把自定义策略加入到新创建的`RAM用户`中
     - 创建自定义策略（策略在上方），请访问链接 https://ram.console.aliyun.com/policies
     ![](/img/velero-2.png)
     - 创建 `RAM用户`并把`AK信息`复制出来为后面使用做准备，请参考链接 https://www.alibabacloud.com/help/zh/doc-detail/93720.htm
     ![](/img/velero-1.png)
+
     ![](/img/velero-3.png)
 
-- 下载官方 velero 客户端 （https://github.com/vmware-tanzu/velero/releases）
+- 下载官方 velero 客户端 （ https://github.com/vmware-tanzu/velero/releases ）
 
 
 ## 部署 velero 插件服务端
