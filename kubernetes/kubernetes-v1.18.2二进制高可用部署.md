@@ -1355,7 +1355,7 @@ metricsBindAddress: 0.0.0.0:10249 # 监控指标地址,监控获取相关信息 
 clientConnection:
   kubeconfig: /opt/kubernetes/cfg/kube-proxy.kubeconfig # 读取配置文件
 hostnameOverride: ${HOSTNAME} # 注册到k8s的节点名称唯一
-clusterCIDR: 10.10.0.0/16 # service IP范围
+clusterCIDR: 10.20.0.0/16 # Pod IP范围
 mode: iptables # 使用iptables模式
 
 # 使用 ipvs 模式
