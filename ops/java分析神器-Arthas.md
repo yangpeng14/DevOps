@@ -131,7 +131,7 @@ COPY --from=hengyunabc/arthas:latest /opt/arthas /opt/arthas
 
 ## 总结
 
-`Arthas` 是一个强大的 Java 诊断工具，可以分析 Java 代码bug带来的资源消耗等。
+`Arthas` 是一个强大的 Java 诊断工具，可以分析 Java 代码bug带来的资源消耗等问题。
 
 Arthas 详细使用方法，公众号后台回复 `Arthas` 获取Arthas详细参数思维导图。
 
