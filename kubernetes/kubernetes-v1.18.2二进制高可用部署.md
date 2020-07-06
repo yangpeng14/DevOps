@@ -407,7 +407,7 @@ $ source /etc/profile
 $ cd /data/ssl
 
 # 把证书 copy 到 k8s-master1 机器 /opt/kubernetes/ssl/ 目录
-$ cp ca*pem  server*pem /opt/kubernetes/ssl/
+$ cp ca*pem  server*pem ca-config.json /opt/kubernetes/ssl/
 
 # 把etcd执行文件与证书 copy 到 k8s-master2  k8s-master3 机器 
 scp -r /opt/kubernetes/*  root@k8s-master2:/opt/kubernetes
