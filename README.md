@@ -137,6 +137,7 @@
 93. [K8S备份、恢复、迁移神器 Velero](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/K8S%E5%A4%87%E4%BB%BD-%E6%81%A2%E5%A4%8D-%E8%BF%81%E7%A7%BB%E7%A5%9E%E5%99%A8-Velero.md)
 94. [K8S故障排查指南-Orphaned pod found, but volume paths are still present on disk](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/k8s%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97-Orphaned-pod-found-but-volume-paths-are-still-present-on-disk.md)
 95. [根据 PID 获取 K8S Pod名称 - 反之 POD名称 获取 PID](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/%E6%A0%B9%E6%8D%AEPID%E8%8E%B7%E5%8F%96K8S-Pod%E5%90%8D%E7%A7%B0-%E5%8F%8D%E4%B9%8BPOD%E5%90%8D%E7%A7%B0%E8%8E%B7%E5%8F%96PID.md)
+96. [Kubernetes 升级填坑指南（一）](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/Kubernetes%E5%8D%87%E7%BA%A7%E5%A1%AB%E5%9D%91%E6%8C%87%E5%8D%97%E4%B8%80.md)
 
 ### 五、Istio知识
 1. [Istio Helm 安装](https://github.com/yangpeng14/DevOps/blob/master/istio/istio-Helm-%E5%AE%89%E8%A3%85.md)
