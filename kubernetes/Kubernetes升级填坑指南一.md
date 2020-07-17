@@ -22,7 +22,7 @@ Calico `v3.2.3` 升级到 `v3.14.0`
 
 `临时解决方法`：
 
-把 `docker-compose` 创建的服务直接使用 `docker run` 来操作，这样就不会创建一个新的网卡。
+把 `docker-compose` 创建的服务直接使用 `docker run` 来创建，这样就不会创建一个新的网卡。
 
 `最终解决方法`：
 
