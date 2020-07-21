@@ -189,6 +189,7 @@
 39. [Linux 整个系统权限玩坏了怎么办？](https://github.com/yangpeng14/DevOps/blob/master/ops/Linux%E6%95%B4%E4%B8%AA%E7%B3%BB%E7%BB%9F%E6%9D%83%E9%99%90%E7%8E%A9%E5%9D%8F%E4%BA%86%E6%80%8E%E4%B9%88%E5%8A%9E.md)
 40. [Java分析神器 - Arthas](https://github.com/yangpeng14/DevOps/blob/master/ops/java%E5%88%86%E6%9E%90%E7%A5%9E%E5%99%A8-Arthas.md)
 41. [前端本地缓存概况之浏览器缓存策略](https://github.com/yangpeng14/DevOps/blob/master/ops/%E5%89%8D%E7%AB%AF%E6%9C%AC%E5%9C%B0%E7%BC%93%E5%AD%98%E6%A6%82%E5%86%B5%E4%B9%8B%E6%B5%8F%E8%A7%88%E5%99%A8%E7%BC%93%E5%AD%98%E7%AD%96%E7%95%A5.md)
+42. [磁盘空间分析神器 - ncdu](https://github.com/yangpeng14/DevOps/blob/master/ops/%E7%A3%81%E7%9B%98%E7%A9%BA%E9%97%B4%E5%88%86%E6%9E%90%E7%A5%9E%E5%99%A8-ncdu.md)
 
 ### 七、Podman知识
 1. [Podman 会取代 Docker 吗?](https://github.com/yangpeng14/DevOps/blob/master/podman/podman%E4%BC%9A%E5%8F%96%E4%BB%A3docker%E5%90%97.md)
