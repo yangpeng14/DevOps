@@ -181,8 +181,8 @@ zipkin-dependencies-production 访问 zipkin-production 过程如下：
 
 ### 优势
 
-- 没有封包和解包过程，完全基于两端宿主机的路由表进行转发
-- 可以配合使用 `Network Policy` 做 pod 和 pod 之前的访问控制
+- Calico `BGP模式`下没有封包和解包过程，完全基于两端宿主机的路由表进行转发。
+- 可以配合使用 `Network Policy` 做 pod 和 pod 之前的访问控制。
 
 ### 劣势
 
