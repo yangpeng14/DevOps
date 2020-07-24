@@ -139,7 +139,7 @@
 95. [根据 PID 获取 K8S Pod名称 - 反之 POD名称 获取 PID](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/%E6%A0%B9%E6%8D%AEPID%E8%8E%B7%E5%8F%96K8S-Pod%E5%90%8D%E7%A7%B0-%E5%8F%8D%E4%B9%8BPOD%E5%90%8D%E7%A7%B0%E8%8E%B7%E5%8F%96PID.md)
 96. [Kubernetes 升级填坑指南（一）](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/Kubernetes%E5%8D%87%E7%BA%A7%E5%A1%AB%E5%9D%91%E6%8C%87%E5%8D%97%E4%B8%80.md)
 97. [Kubernetes v1.15.3 升级到 v1.18.5 心得](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/Kubernetes-v1.15.3%E5%8D%87%E7%BA%A7%E5%88%B0v1.18.5%E5%BF%83%E5%BE%97.md)
-98. [聊聊 resolv.conf 中 search 和 ndots 配置]()
+98. [聊聊 resolv.conf 中 search 和 ndots 配置](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/%E8%81%8A%E8%81%8Aresolv.conf-search%E5%92%8Cndots%E9%85%8D%E7%BD%AE.md)
 
 ### 五、Istio知识
 1. [Istio Helm 安装](https://github.com/yangpeng14/DevOps/blob/master/istio/istio-Helm-%E5%AE%89%E8%A3%85.md)
