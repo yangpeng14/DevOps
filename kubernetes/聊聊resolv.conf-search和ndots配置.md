@@ -54,7 +54,7 @@ Address: 10.10.72.218
 
 ![](/img/coredns-img-1.png)
 
-从上面看，解析 `blog` 域名时，点的个数比配置中 `ndots` 值小，会按照配置 `search` 参数填补域名后辍。在第一次填补后辍 `production.svc.cluster.local` 就解析出 `A记录`，这时就会终止dns查询返回A记录结果。
+从上面看，解析 `blog` 域名时，点的个数比配置中 `ndots` 值小，会按照配置 `search` 参数填补域名后缀。在第一次填补后缀 `production.svc.cluster.local` 就解析出 `A记录`，这时就会终止dns查询返回A记录结果。
 
 ### 解析集群外部域名
 
@@ -82,7 +82,7 @@ Address: 222.186.184.3
 
 ![](/img/coredns-img-2.png)
 
-从上图抓包来看，京东域名点的个数比配置中 `ndots` 值小，会按照配置 `search` 参数填补域名后辍。依次填补 `production.svc.cluster.local.`、`svc.cluster.local.`、`cluster.local.`都没有查询出结果，后面直接解析 `www.jd.com` 域名，查询出A记录并返回结果。
+从上图抓包来看，京东域名点的个数比配置中 `ndots` 值小，会按照配置 `search` 参数填补域名后缀。依次填补 `production.svc.cluster.local.`、`svc.cluster.local.`、`cluster.local.`都没有查询出结果，后面直接解析 `www.jd.com` 域名，查询出A记录并返回结果。
 
 ### 解析域名点数大于或者等于ndots配置
 
@@ -130,4 +130,4 @@ Address: 39.106.191.105
 通过上面案例可以发现`ndots`的值和请求息息相关，在使用中为了避免过多的DNS查询请求，可以适当优化相应的值或者请求域名。
 
 - 条件允许的情况下，尽量将请求体中的点都带上，并且要大于或者等于配置中的ndots的值。
-- 由于自动填补域名后辍是按照配置中的参数依次添加，所以在`同一个namespace`下，可以直接解析`Service名`即可。如 nslookup blog，会自动补全 `production.svc.cluster.local` 后缀，且是第一个配置的，因此查询也只有一条。提高DNS解析速度。
+- 由于自动填补域名后缀是按照配置中的参数依次添加，所以在`同一个namespace`下，可以直接解析`Service名`即可。如 nslookup blog，会自动补全 `production.svc.cluster.local` 后缀，且是第一个配置的，因此查询也只有一条。提高DNS解析速度。
