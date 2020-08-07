@@ -195,6 +195,9 @@
 ### 七、Podman知识
 1. [Podman 会取代 Docker 吗?](https://github.com/yangpeng14/DevOps/blob/master/podman/podman%E4%BC%9A%E5%8F%96%E4%BB%A3docker%E5%90%97.md)
 
+### 八、面试
+1. [IT运维面试问题总结-Linux基础](https://github.com/yangpeng14/DevOps/blob/master/interview/IT%E8%BF%90%E7%BB%B4%E9%9D%A2%E8%AF%95%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93-Linux%E5%9F%BA%E7%A1%80.md)
+
 ## 公众号
 欢迎大家关注微信公众号**YP小站**，我会定期分享本人家乡美食、自动化运维、DevOps、Kubernetes、Service Mesh和Cloud Native相关文章，欢迎大家关注交流，如果有机会也可以去我家乡湖南游玩。
 
