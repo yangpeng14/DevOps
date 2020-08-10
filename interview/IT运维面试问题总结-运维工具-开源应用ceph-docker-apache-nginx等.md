@@ -580,3 +580,6 @@ Heartbeat + Nginx 实现Nginx的高可用：通过Heartbeat的心跳检测和资
 `HTTPS`（Hypertext Transfer Protocol Secure）是超文本传输协议和SSL/TLS的组合，用以提供加密通讯及对网络服务器身份的鉴定。
 
 HTTPS也可以理解为HTTP over SSL，即HTTP连接建立在SSL安全连接之上。
+
+> - 作者：木二
+> - 链接：https://www.yuque.com/docs/share/d3dd1e8e-6828-4da7-9e30-6a4f45c6fa8e
