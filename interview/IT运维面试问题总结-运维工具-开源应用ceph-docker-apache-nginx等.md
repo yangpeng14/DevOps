@@ -298,13 +298,21 @@ Docker容器可以有四种状态：
 Docker体系相对简单，主要涉及如下5个组件：
 
 - Docker客户端 – Docker
+
 docker客户端则扮演着docker服务端的远程控制器，可以用来控制docker的服务端进程。
+
 - Docker服务端 – Docker Daemon
+
 docker服务端是一个服务进程，管理着所有的容器。
+
 - Docker镜像 – Image
-docker镜像，一个能够运行在docker容器上的一组程序文件，是一个只读的模板，不包含任何动态数据。。
+
+docker镜像，一个能够运行在docker容器上的一组程序文件，是一个只读的模板，不包含任何动态数据。
+
 - Docker容器 – Docker Container
+
 docker容器，就是运行程序的载体，容器是镜像运行时的实体。
+
 - Docker镜像仓库 -- Registry
 
 Docker仓库是集中存放镜像文件的场所，Docker仓库分为公开仓库（Public）和私有仓库（Private）两种形式。
