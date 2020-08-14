@@ -9,10 +9,10 @@ Harbor 镜像回收分两部分：
 
 `TAG保留策略`有那些策略，如下图：
 
-![](../img/harbor-artifact-1.png)
+![](/img/harbor-artifact-1.png)
 
 
-![](../img/harbor-artifact-2.png)
+![](/img/harbor-artifact-2.png)
 
 
 ### Harbor Python SDK
