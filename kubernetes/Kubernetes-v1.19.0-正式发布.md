@@ -116,3 +116,5 @@ Kubernetes DevStats 仪表盘(https://k8s.devstats.cncf.io/d/12/dashboards?orgId
 ## 即将发布的在线讲座
 
 2020年9月25日，加入 Kubernetes 1.19发布团队成员，了解本次发布的主要功能，包括存储容量跟踪、结构化日志、Ingress V1 GA 等。请在此注册：https://www.cncf.io/webinars/kubernetes-1-19/。
+
+> - 原文链接：https://kubernetes.io/blog/2020/08/26/kubernetes-release-1.19-accentuate-the-paw-sitive/
