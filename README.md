@@ -142,6 +142,7 @@
 98. [聊聊 resolv.conf 中 search 和 ndots 配置](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/%E8%81%8A%E8%81%8Aresolv.conf-search%E5%92%8Cndots%E9%85%8D%E7%BD%AE.md)
 99. [Kubectl 备忘录](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/kubectl-%E5%A4%87%E5%BF%98%E5%BD%95.md)
 100. [Kubernetes v1.19.0 正式发布！](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/Kubernetes-v1.19.0-%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83.md)
+101. [kubernetes 临时存储需要限制吗？](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/kubernetes%E4%B8%B4%E6%97%B6%E5%AD%98%E5%82%A8%E9%9C%80%E8%A6%81%E9%99%90%E5%88%B6%E5%90%97.md)
 
 ### 五、Istio知识
 1. [Istio Helm 安装](https://github.com/yangpeng14/DevOps/blob/master/istio/istio-Helm-%E5%AE%89%E8%A3%85.md)
