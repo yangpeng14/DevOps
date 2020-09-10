@@ -71,7 +71,7 @@ kubernetes 小于 1.15 版本的，可以参考 `https://github.com/yuyicai/upda
 
 ```bash
 # 删除旧的 kubelet 证书文件
-$ rm -f  /opt/kubernetes/ssl/kubelet.*
+$ rm -f  /opt/kubernetes/ssl/kubelet*
 
 # 删除 kubelet kubeconfig 文件
 $ rm -f /opt/kubernetes/cfg/kubelet.kubeconfig
