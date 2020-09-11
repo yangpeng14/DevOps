@@ -144,7 +144,7 @@
 100. [Kubernetes v1.19.0 正式发布！](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/Kubernetes-v1.19.0-%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83.md)
 101. [Kubernetes 临时存储需要限制吗？](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/kubernetes%E4%B8%B4%E6%97%B6%E5%AD%98%E5%82%A8%E9%9C%80%E8%A6%81%E9%99%90%E5%88%B6%E5%90%97.md)
 102. [Kubernetes 故障解决心得（一）](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/kubernetes-%E6%95%85%E9%9A%9C%E8%A7%A3%E5%86%B3%E5%BF%83%E5%BE%97%E4%B8%80.md)
-102. [Kubernetes YAML 生成器]()
+102. [Kubernetes YAML 生成器](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/kubernetes-yaml%E7%94%9F%E6%88%90%E5%99%A8.md)
 
 ### 五、Istio知识
 1. [Istio Helm 安装](https://github.com/yangpeng14/DevOps/blob/master/istio/istio-Helm-%E5%AE%89%E8%A3%85.md)
