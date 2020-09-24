@@ -85,7 +85,7 @@ etcd operator 有如下特性：
 
 4、需要配置单独的 Etcd 集群存储 kube-apiserver 的 event。
 
-## 镜像拉取相关配置
+## 三、镜像拉取相关配置
 
 1、Docker 配置
 
