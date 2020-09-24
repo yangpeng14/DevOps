@@ -97,8 +97,7 @@ etcd operator 有如下特性：
 2、Kubelet配置
 
 - 设置 --serialize-image-pulls=false
-该选项配置串行拉取镜像，默认值时true，配置为false可以增加并发度。但是如果docker daemon
-- 版本小于 1.9，且使用 aufs 存储则不能改动该选项。
+该选项配置串行拉取镜像，默认值时true，配置为false可以增加并发度。但是如果docker daemon 版本小于 1.9，且使用 aufs 存储则不能改动该选项。
 - 设置 --image-pull-progress-deadline=30
 配置镜像拉取超时。默认值时1分，对于大镜像拉取需要适量增大超时时间。
 - Kubelet 单节点允许运行的最大 Pod 数：--max-pods=110（默认是 110，可以根据实际需要设置）。
