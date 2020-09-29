@@ -202,6 +202,7 @@
 44. [Linux Used内存到底哪里去了？](https://github.com/yangpeng14/DevOps/blob/master/ops/Linux-Used%E5%86%85%E5%AD%98%E5%88%B0%E5%BA%95%E5%93%AA%E9%87%8C%E5%8E%BB%E4%BA%86.md)
 45. [如何实现rsync多并发同步？](https://github.com/yangpeng14/DevOps/blob/master/ops/%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0rsync%E5%A4%9A%E5%B9%B6%E5%8F%91%E5%90%8C%E6%AD%A5.md)
 46. [分享Linux内存占用几个案例](https://github.com/yangpeng14/DevOps/blob/master/ops/%E5%88%86%E4%BA%ABLinux%E5%86%85%E5%AD%98%E5%8D%A0%E7%94%A8%E5%87%A0%E4%B8%AA%E6%A1%88%E4%BE%8B.md)
+47. [监控域名HTTPS证书过期时间](https://github.com/yangpeng14/DevOps/blob/master/ops/%E7%9B%91%E6%8E%A7%E5%9F%9F%E5%90%8DHTTPS%E8%AF%81%E4%B9%A6%E8%BF%87%E6%9C%9F%E6%97%B6%E9%97%B4.md)
 
 ### 七、Podman知识
 1. [Podman 会取代 Docker 吗?](https://github.com/yangpeng14/DevOps/blob/master/podman/podman%E4%BC%9A%E5%8F%96%E4%BB%A3docker%E5%90%97.md)
