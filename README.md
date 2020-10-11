@@ -40,6 +40,7 @@
 11. [终于有人把 Docker 讲清楚了，万字详解！](https://github.com/yangpeng14/DevOps/blob/master/docker/%E7%BB%88%E4%BA%8E%E6%9C%89%E4%BA%BA%E6%8A%8ADocker%E8%AE%B2%E6%B8%85%E6%A5%9A%E4%BA%86%E4%B8%87%E5%AD%97%E8%AF%A6%E8%A7%A3.md)
 12. [Docker 网络配置那些事](https://github.com/yangpeng14/DevOps/blob/master/docker/Docker%E7%BD%91%E7%BB%9C%E9%85%8D%E7%BD%AE%E9%82%A3%E4%BA%9B%E4%BA%8B.md)
 13. [解密 Docker 挂载文件，宿主机修改后容器里文件没有修改](https://github.com/yangpeng14/DevOps/blob/master/docker/%E8%A7%A3%E5%AF%86Docker%E6%8C%82%E8%BD%BD%E6%96%87%E4%BB%B6-%E5%AE%BF%E4%B8%BB%E6%9C%BA%E4%BF%AE%E6%94%B9%E5%90%8E%E5%AE%B9%E5%99%A8%E9%87%8C%E6%96%87%E4%BB%B6%E6%B2%A1%E6%9C%89%E4%BF%AE%E6%94%B9.md)
+14. [推荐两个Docker配置检查与启动异常修复方法脚本](https://github.com/yangpeng14/DevOps/blob/master/docker/%E6%8E%A8%E8%8D%90%E4%B8%A4%E4%B8%AADocker%E9%85%8D%E7%BD%AE%E6%A3%80%E6%9F%A5%E4%B8%8E%E5%90%AF%E5%8A%A8%E5%BC%82%E5%B8%B8%E4%BF%AE%E5%A4%8D%E6%96%B9%E6%B3%95%E8%84%9A%E6%9C%AC.md)
 
 ### 四、Kubernetes知识
 1. [Metrics Serve 0.3.2安装](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/metrics-Server-v0-3-2%E7%89%88%E6%9C%AC%E5%AE%89%E8%A3%85.md)
