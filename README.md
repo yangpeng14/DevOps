@@ -141,6 +141,7 @@
 103. [Kubernetes YAML 生成器](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/kubernetes-yaml%E7%94%9F%E6%88%90%E5%99%A8.md)
 104. [5个维度对 Kubernetes 集群优化](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/5%E4%B8%AA%E7%BB%B4%E5%BA%A6%E5%AF%B9Kubernetes%E9%9B%86%E7%BE%A4%E4%BC%98%E5%8C%96.md)
 105. [Grafana Tanka：比K8S YAML声明更简洁](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/GrafanaTanka:%E6%AF%94K8S-YAML%E5%A3%B0%E6%98%8E%E6%9B%B4%E7%AE%80%E6%B4%81.md)
+106. [kubelet 原理解析六：垃圾回收](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/kubelet%E5%8E%9F%E7%90%86%E8%A7%A3%E6%9E%90%E5%85%AD:%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6.md)
 
 ### 五、Istio知识
 1. [Istio Helm 安装](https://github.com/yangpeng14/DevOps/blob/master/istio/istio-Helm-%E5%AE%89%E8%A3%85.md)
