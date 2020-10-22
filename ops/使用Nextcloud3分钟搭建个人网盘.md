@@ -179,7 +179,8 @@ services:
   redis:
     image: redis:6.0.8
     restart: always
-    command: redis-server --requirepass smartstudy
+    # 设置 redis 密码为 redis123
+    command: redis-server --requirepass redis123
     ports:
       - 6379:6379
     volumes:
