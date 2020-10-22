@@ -8,7 +8,7 @@
 
 - 部署 docker、docker-compose (本文不讲docker、docker-compose部署)
 
-# 部署 Nextcloud
+## 部署 Nextcloud
 
 ```bash
 # 创建 nextcloud 目录
