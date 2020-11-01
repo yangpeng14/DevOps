@@ -45,7 +45,7 @@ $ kind create cluster
 
 列出K8S集群pods
 
-![](../img/kind-list-image.png)
+![](../img/kind-pods-all.png)
 
 ```bash
 # 定义集群名称
