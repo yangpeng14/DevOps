@@ -144,6 +144,7 @@
 106. [kubelet 原理解析六：垃圾回收](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/kubelet%E5%8E%9F%E7%90%86%E8%A7%A3%E6%9E%90%E5%85%AD:%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6.md)
 107. [K8S 问题排查：cgroup 内存泄露问题](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/K8S%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5:cgroup%E5%86%85%E5%AD%98%E6%B3%84%E9%9C%B2%E9%97%AE%E9%A2%98.md)
 108. [Kind：一个容器创建K8S开发集群](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/Kind:%E4%B8%80%E4%B8%AA%E5%AE%B9%E5%99%A8%E5%88%9B%E5%BB%BAK8S%E5%BC%80%E5%8F%91%E9%9B%86%E7%BE%A4.md)
+109. [Kubernetes 1.20版本开始不推荐使用Docker，你知道吗？](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/Kubernetes1.20%E7%89%88%E6%9C%AC%E5%BC%80%E5%A7%8B%E4%B8%8D%E6%8E%A8%E8%8D%90%E4%BD%BF%E7%94%A8Docker-%E4%BD%A0%E7%9F%A5%E9%81%93%E5%90%97.md)
 
 ### 五、Istio知识
 1. [Istio Helm 安装](https://github.com/yangpeng14/DevOps/blob/master/istio/istio-Helm-%E5%AE%89%E8%A3%85.md)
