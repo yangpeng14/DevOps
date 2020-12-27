@@ -146,6 +146,7 @@
 108. [Kind：一个容器创建K8S开发集群](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/Kind:%E4%B8%80%E4%B8%AA%E5%AE%B9%E5%99%A8%E5%88%9B%E5%BB%BAK8S%E5%BC%80%E5%8F%91%E9%9B%86%E7%BE%A4.md)
 109. [Kubernetes 1.20版本开始不推荐使用Docker，你知道吗？](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/Kubernetes1.20%E7%89%88%E6%9C%AC%E5%BC%80%E5%A7%8B%E4%B8%8D%E6%8E%A8%E8%8D%90%E4%BD%BF%E7%94%A8Docker-%E4%BD%A0%E7%9F%A5%E9%81%93%E5%90%97.md)
 110. [Kubernetes 实用技巧](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/Kubernetes%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7.md)
+111. [kubernetes pod为什么需要pause容器？](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/kubernetes-pod%E4%B8%BA%E4%BB%80%E4%B9%88%E9%9C%80%E8%A6%81pause%E5%AE%B9%E5%99%A8.md)
 
 ### 五、Istio知识
 1. [Istio Helm 安装](https://github.com/yangpeng14/DevOps/blob/master/istio/istio-Helm-%E5%AE%89%E8%A3%85.md)
