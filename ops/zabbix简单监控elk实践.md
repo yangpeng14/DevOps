@@ -2,7 +2,7 @@
 
 ![](../img/elk-status.png)
 
-## 创建监控 ELK 脚本
+## 创建监控 ES 脚本
 
 ```bash
 # zabbix agent 创建 scripts 目录并安装jq命令
@@ -12,6 +12,8 @@ $ yum install -y jq
 # 创建elk监控脚本
 $ touch es_monitoring.sh && chmod +x es_monitoring.sh
 $ vim es_monitoring.sh
+
+#!/usr/bin/env bash
 
 case $1 in
     active_primary_shards)
