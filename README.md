@@ -209,6 +209,7 @@
 49. [容器部署ELK7.10，适用于生产](https://github.com/yangpeng14/DevOps/blob/master/ops/%E5%AE%B9%E5%99%A8%E9%83%A8%E7%BD%B2ELK7.10-%E9%80%82%E7%94%A8%E4%BA%8E%E7%94%9F%E4%BA%A7.md)
 50. [Zabbix简单监控es实践](https://github.com/yangpeng14/DevOps/blob/master/ops/zabbix%E7%AE%80%E5%8D%95%E7%9B%91%E6%8E%A7elk%E5%AE%9E%E8%B7%B5.md)
 51. [Redis数据同步和数据迁移如何做？](https://github.com/yangpeng14/DevOps/blob/master/ops/Redis%E6%95%B0%E6%8D%AE%E5%90%8C%E6%AD%A5%E5%92%8C%E6%95%B0%E6%8D%AE%E8%BF%81%E7%A7%BB%E5%A6%82%E4%BD%95%E5%81%9A.md)
+52. [Nginx 配置可视化管理](https://github.com/yangpeng14/DevOps/blob/master/ops/Nginx%E9%85%8D%E7%BD%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E7%AE%A1%E7%90%86.md)
 
 ### 七、Podman知识
 1. [Podman 会取代 Docker 吗?](https://github.com/yangpeng14/DevOps/blob/master/podman/podman%E4%BC%9A%E5%8F%96%E4%BB%A3docker%E5%90%97.md)
