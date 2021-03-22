@@ -52,19 +52,19 @@ $ scan 0 MATCH testkey-*
 $ scan 34 MATCH testkey-* COUNT 1000
 
 1) "0"
-2)  1) "ops-coffee-16"
-    2) "ops-coffee-19"
-    3) "ops-coffee-23"
-    4) "ops-coffee-21"
-    5) "ops-coffee-40"
-    6) "ops-coffee-22"
-    7) "ops-coffee-1"
-    8) "ops-coffee-11"
-    9) "ops-coffee-28"
-   10) "ops-coffee-3"
-   11) "ops-coffee-26"
-   12) "ops-coffee-4"
-   13) "ops-coffee-31"
+2)  1) "testkey-16"
+    2) "testkey-19"
+    3) "testkey-23"
+    4) "testkey-21"
+    5) "testkey-40"
+    6) "testkey-22"
+    7) "testkey-1"
+    8) "testkey-11"
+    9) "testkey-28"
+   10) "testkey-3"
+   11) "testkey-26"
+   12) "testkey-4"
+   13) "testkey-31"
    ...
 ```
 
