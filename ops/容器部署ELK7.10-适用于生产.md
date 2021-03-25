@@ -215,7 +215,8 @@ $ docker-compose ps
 $ cd /data/ELKStack/elasticsearch
 
 # 修改 docker-compose.yml elasticsearch.yml 两个配置
-$ sed -i 's/es01/es02/g' docker-compose.yml elasticsearch.yml
+$ sed -i 's/es01/es02/g' elasticsearch.yml
+$ sed -i 's/container_name: es01/container_name: es02/g' docker-compose.yml
 
 # 启动 es
 $ docker-compose up -d
@@ -227,7 +228,8 @@ $ docker-compose up -d
 $ cd /data/ELKStack/elasticsearch
 
 # 修改 docker-compose.yml elasticsearch.yml 两个配置
-$ sed -i 's/es01/es03/g' docker-compose.yml elasticsearch.yml
+$ sed -i 's/es01/es03/g' elasticsearch.yml
+$ sed -i 's/container_name: es01/container_name: es03/g' docker-compose.yml
 
 # 启动 es
 $ docker-compose up -d
@@ -239,7 +241,8 @@ $ docker-compose up -d
 $ cd /data/ELKStack/elasticsearch
 
 # 修改 docker-compose.yml elasticsearch.yml 两个配置
-$ sed -i 's/es01/es04/g' docker-compose.yml elasticsearch.yml
+$ sed -i 's/es01/es04/g' elasticsearch.yml
+$ sed -i 's/container_name: es01/container_name: es04/g' docker-compose.yml
 
 # 不做为 es master 节点，只做数据节点
 $ sed -i 's/node.master: true/node.master: false/g' elasticsearch.yml
@@ -254,7 +257,8 @@ $ docker-compose up -d
 $ cd /data/ELKStack/elasticsearch
 
 # 修改 docker-compose.yml elasticsearch.yml 两个配置
-$ sed -i 's/es01/es05/g' docker-compose.yml elasticsearch.yml
+$ sed -i 's/es01/es05/g' elasticsearch.yml
+$ sed -i 's/container_name: es01/container_name: es05/g' docker-compose.yml
 
 # 不做为 es master 节点，只做数据节点
 $ sed -i 's/node.master: true/node.master: false/g' elasticsearch.yml
