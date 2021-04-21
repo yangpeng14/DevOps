@@ -150,6 +150,7 @@
 112. [Kubernetes Pod应用性能分析工具 Kubectl Flame](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/kubernetes-pod%E5%BA%94%E7%94%A8%E6%80%A7%E8%83%BD%E5%88%86%E6%9E%90%E5%B7%A5%E5%85%B7-kubectl-flame.md)
 113. [Grafana展示精美的nginx访问日志图表](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/grafana%E5%B1%95%E7%A4%BA%E7%B2%BE%E7%BE%8E%E7%9A%84nginx%E8%AE%BF%E9%97%AE%E6%97%A5%E5%BF%97%E5%9B%BE%E8%A1%A8.md)
 114. [十道Kubernetes面试题](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/%E5%8D%81%E9%81%93Kubernetes%E9%9D%A2%E8%AF%95%E9%A2%98.md)
+115. [K8S Cluster Autoscaler 集群自动伸缩](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/k8s-cluster-autoscaler-%E9%9B%86%E7%BE%A4%E8%87%AA%E5%8A%A8%E4%BC%B8%E7%BC%A9.md)
 
 ### 五、Istio知识
 1. [Istio Helm 安装](https://github.com/yangpeng14/DevOps/blob/master/istio/istio-Helm-%E5%AE%89%E8%A3%85.md)
