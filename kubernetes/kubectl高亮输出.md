@@ -39,3 +39,9 @@ alias kubectl="kubecolor"
 ```
 
 当 kubecolor 输出 tty 不是标准输出时，它会自动禁用着色。例如，如果您正在运行 `kubecolor get pods > result.txt` 或 `kubecolor get pods | grep xxx`，则输出将传递到文件或其它命令，因此不会着色。在这种情况下，您可以通过传递 `--force-colors` 标志来强制 kubecolor 进行着色。
+
+> 项目地址：https://github.com/dty1er/kubecolor
+
+## 参考链接
+
+- https://github.com/dty1er/kubecolor
