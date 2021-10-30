@@ -53,3 +53,6 @@ ingress的文档 https://kubernetes.github.io/ingress-nginx/user-guide/nginx-con
 值得注意的是，并不是所有的场景都能通过X-Forwarded-For来获取用户正式ip。  
 比如，当服务器前端使用了CDN的时候，X-Forwarded-For方式获取到的可能就是CDN的来源ip了，  
 这种情况，可以根CDN厂商约定一个字段名来记录用户真实ip，然后代理将这个字段逐层传递，最后到服务端。
+
+> - 作者：felix_yujing
+> - 原文链接：https://blog.csdn.net/felix_yujing/article/details/106616962
