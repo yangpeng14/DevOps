@@ -155,6 +155,7 @@
 117. [K8S Configmap和Secret热更新之Reloader](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/K8S-Configmap%E5%92%8CSecret%E7%83%AD%E6%9B%B4%E6%96%B0%E4%B9%8BReloader.md)
 118. [探索Kubernetes的Service Accounts](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/%E6%8E%A2%E7%B4%A2Kubernetes%E7%9A%84ServiceAccounts.md)
 119. [Kubectl 高亮输出](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/kubectl%E9%AB%98%E4%BA%AE%E8%BE%93%E5%87%BA.md)
+120. [Ingress Nginx传递用户真实IP问题](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/ingress-nginx%E4%BC%A0%E9%80%92%E7%94%A8%E6%88%B7%E7%9C%9F%E5%AE%9Eip%E9%97%AE%E9%A2%98.md)
 
 ### 五、Istio知识
 1. [Istio Helm 安装](https://github.com/yangpeng14/DevOps/blob/master/istio/istio-Helm-%E5%AE%89%E8%A3%85.md)
