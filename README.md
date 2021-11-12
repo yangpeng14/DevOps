@@ -6,7 +6,7 @@
 
 ## 一、架构
 
-1. [架构杂谈]()
+1. [架构杂谈](https://github.com/yangpeng14/DevOps/blob/master/architecture/%E6%9E%B6%E6%9E%84%E6%9D%82%E8%B0%88.md)
 
 ### 二、Let's Encrypt 证书自动颁发脚本
 1. [基于 acme.sh脚本 DNS别名功能 分批申请证书](https://github.com/yangpeng14/DevOps/blob/master/letsencrypt/letsencrypt-dns-alias.md)
