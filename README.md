@@ -4,11 +4,15 @@
 
 ## 目录
 
-### 一、Let's Encrypt 证书自动颁发脚本
+## 一、架构
+
+1. [架构杂谈]()
+
+### 二、Let's Encrypt 证书自动颁发脚本
 1. [基于 acme.sh脚本 DNS别名功能 分批申请证书](https://github.com/yangpeng14/DevOps/blob/master/letsencrypt/letsencrypt-dns-alias.md)
 
 
-### 二、工具
+### 三、工具
 1. [Python工具](https://github.com/yangpeng14/DevOps/tree/master/python3)
 2. [提高阅读代码效率神器 Sourcetrail](https://github.com/yangpeng14/DevOps/blob/master/tools/%E6%8F%90%E9%AB%98%E9%98%85%E8%AF%BB%E4%BB%A3%E7%A0%81%E6%95%88%E7%8E%87%E7%A5%9E%E5%99%A8-Sourcetrail.md)
 3. [Linux IO分析小神器](https://github.com/yangpeng14/DevOps/blob/master/tools/Linux-IO%E5%88%86%E6%9E%90%E5%B0%8F%E7%A5%9E%E5%99%A8.md)
@@ -18,7 +22,7 @@
 7. [Redis 内存分析神器](https://github.com/yangpeng14/DevOps/blob/master/tools/Redis%E5%86%85%E5%AD%98%E5%88%86%E6%9E%90%E7%A5%9E%E5%99%A8.md)
 8. [创建本地 LocalHost SSL 证书](https://github.com/yangpeng14/DevOps/blob/master/tools/%E5%88%9B%E5%BB%BA%E6%9C%AC%E5%9C%B0LocalHost-SSL%E8%AF%81%E4%B9%A6.md)
 
-### 三、Docker知识
+### 四、Docker知识
 1. [Docker容器日志清理方案](https://github.com/yangpeng14/DevOps/blob/master/docker/docker-%E5%AE%B9%E5%99%A8%E6%97%A5%E5%BF%97%E6%B8%85%E7%90%86%E6%96%B9%E6%A1%88.md)
 2. [一次构建多平台docker镜像](https://github.com/yangpeng14/DevOps/blob/master/docker/%E4%B8%80%E6%AC%A1%E6%9E%84%E5%BB%BA%E5%A4%9A%E5%B9%B3%E5%8F%B0docker%E9%95%9C%E5%83%8F.md)
 3. [RedHat 开源企业镜像项目 Quay](https://github.com/yangpeng14/DevOps/blob/master/docker/RedHat%E5%BC%80%E6%BA%90%E4%BC%81%E4%B8%9A%E9%95%9C%E5%83%8F%E9%A1%B9%E7%9B%AEQuay.md)
@@ -34,7 +38,7 @@
 13. [解密 Docker 挂载文件，宿主机修改后容器里文件没有修改](https://github.com/yangpeng14/DevOps/blob/master/docker/%E8%A7%A3%E5%AF%86Docker%E6%8C%82%E8%BD%BD%E6%96%87%E4%BB%B6-%E5%AE%BF%E4%B8%BB%E6%9C%BA%E4%BF%AE%E6%94%B9%E5%90%8E%E5%AE%B9%E5%99%A8%E9%87%8C%E6%96%87%E4%BB%B6%E6%B2%A1%E6%9C%89%E4%BF%AE%E6%94%B9.md)
 14. [推荐两个Docker配置检查与启动异常修复方法脚本](https://github.com/yangpeng14/DevOps/blob/master/docker/%E6%8E%A8%E8%8D%90%E4%B8%A4%E4%B8%AADocker%E9%85%8D%E7%BD%AE%E6%A3%80%E6%9F%A5%E4%B8%8E%E5%90%AF%E5%8A%A8%E5%BC%82%E5%B8%B8%E4%BF%AE%E5%A4%8D%E6%96%B9%E6%B3%95%E8%84%9A%E6%9C%AC.md)
 
-### 四、Kubernetes知识
+### 五、Kubernetes知识
 1. [Metrics Serve 0.3.2安装](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/metrics-Server-v0-3-2%E7%89%88%E6%9C%AC%E5%AE%89%E8%A3%85.md)
 2. [Prometheus Operator手动安装](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/prometheus-operator%E6%89%8B%E5%8A%A8%E9%83%A8%E7%BD%B2.md)
 3. [Etcd v3版本备份与恢复](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/etcd-v3%E5%A4%87%E4%BB%BD%E4%B8%8E%E6%81%A2%E5%A4%8D.md)
@@ -157,14 +161,14 @@
 119. [Kubectl 高亮输出](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/kubectl%E9%AB%98%E4%BA%AE%E8%BE%93%E5%87%BA.md)
 120. [Ingress Nginx传递用户真实IP问题](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/ingress-nginx%E4%BC%A0%E9%80%92%E7%94%A8%E6%88%B7%E7%9C%9F%E5%AE%9Eip%E9%97%AE%E9%A2%98.md)
 
-### 五、Istio知识
+### 六、Istio知识
 1. [Istio Helm 安装](https://github.com/yangpeng14/DevOps/blob/master/istio/istio-Helm-%E5%AE%89%E8%A3%85.md)
 2. [K8S 金丝雀部署之 Istio](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/k8s%E9%87%91%E4%B8%9D%E9%9B%80%E9%83%A8%E7%BD%B2%E4%B9%8B-Istio.md)
 3. [小米开源 Istio Dashboard Naftis 服务](https://github.com/yangpeng14/DevOps/blob/master/istio/%E5%B0%8F%E7%B1%B3%E5%BC%80%E6%BA%90Istio-dashboard-Naftis%E6%9C%8D%E5%8A%A1.md)
 4. [Istio 自动注入 sidecar 不成功解决方案](https://github.com/yangpeng14/DevOps/blob/master/istio/Istio%E8%87%AA%E5%8A%A8%E6%B3%A8%E5%85%A5sidecar%E4%B8%8D%E6%88%90%E5%8A%9F%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.md)
 5. [Istio 1.5部署，回归单体](https://github.com/yangpeng14/DevOps/blob/master/istio/Istio-1.5%E9%83%A8%E7%BD%B2-%E5%9B%9E%E5%BD%92%E5%8D%95%E4%BD%93.md)
 
-### 六、运维知识
+### 七、运维知识
 1. [Sentry历史数据清理](https://github.com/yangpeng14/DevOps/blob/master/ops/sentry%E5%8E%86%E5%8F%B2%E6%95%B0%E6%8D%AE%E6%B8%85%E7%90%86.md)
 2. [Sentry9.1.2部署](https://github.com/yangpeng14/DevOps/blob/master/ops/sentry9.1.2%E9%83%A8%E7%BD%B2.md)
 3. [Gitlab Docker Compose 启动配置](https://github.com/yangpeng14/DevOps/blob/master/ops/Gitlab-Docker-Compose-%E5%90%AF%E5%8A%A8%E9%85%8D%E7%BD%AE.md)
@@ -223,10 +227,10 @@
 56. [Mysqldump导入备份数据到阿里云RDS会报错吗](https://github.com/yangpeng14/DevOps/blob/master/ops/mysqldump%E5%AF%BC%E5%85%A5%E5%A4%87%E4%BB%BD%E6%95%B0%E6%8D%AE%E5%88%B0%E9%98%BF%E9%87%8C%E4%BA%91RDS%E4%BC%9A%E6%8A%A5%E9%94%99%E5%90%97.md)
 57. [聊聊TPS、QPS、CPS概念和区别.md](https://github.com/yangpeng14/DevOps/blob/master/ops/%E8%81%8A%E8%81%8ATPS-QPS-CPS%E6%A6%82%E5%BF%B5%E5%92%8C%E5%8C%BA%E5%88%AB.md)
 
-### 七、Podman知识
+### 八、Podman知识
 1. [Podman 会取代 Docker 吗?](https://github.com/yangpeng14/DevOps/blob/master/podman/podman%E4%BC%9A%E5%8F%96%E4%BB%A3docker%E5%90%97.md)
 
-### 八、面试
+### 九、面试
 1. [IT运维面试问题总结-Linux基础](https://github.com/yangpeng14/DevOps/blob/master/interview/IT%E8%BF%90%E7%BB%B4%E9%9D%A2%E8%AF%95%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93-Linux%E5%9F%BA%E7%A1%80.md)
 2. [IT运维面试问题总结-基础服务、磁盘管理、虚拟平台和系统管理](https://github.com/yangpeng14/DevOps/blob/master/interview/IT%E8%BF%90%E7%BB%B4%E9%9D%A2%E8%AF%95%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93-%E5%9F%BA%E7%A1%80%E6%9C%8D%E5%8A%A1-%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86-%E8%99%9A%E6%8B%9F%E5%B9%B3%E5%8F%B0-%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86.md)
 3. [IT运维面试问题总结-运维工具、开源应用(Ceph、Docker、Apache、Nginx等)](https://github.com/yangpeng14/DevOps/blob/master/interview/IT%E8%BF%90%E7%BB%B4%E9%9D%A2%E8%AF%95%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93-%E8%BF%90%E7%BB%B4%E5%B7%A5%E5%85%B7-%E5%BC%80%E6%BA%90%E5%BA%94%E7%94%A8ceph-docker-apache-nginx%E7%AD%89.md)
