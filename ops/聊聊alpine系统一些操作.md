@@ -317,4 +317,4 @@ RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
 2. https://blog.csdn.net/liumiaocn/article/details/87603628
 
 
-> - 原文出处：https://gitbook.curiouser.top/origin/docker-alpine.html#
+> 原文出处：https://gitbook.curiouser.top/origin/docker-alpine.html#
