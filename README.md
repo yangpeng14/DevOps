@@ -160,6 +160,7 @@
 118. [探索Kubernetes的Service Accounts](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/%E6%8E%A2%E7%B4%A2Kubernetes%E7%9A%84ServiceAccounts.md)
 119. [Kubectl 高亮输出](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/kubectl%E9%AB%98%E4%BA%AE%E8%BE%93%E5%87%BA.md)
 120. [Ingress Nginx传递用户真实IP问题](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/ingress-nginx%E4%BC%A0%E9%80%92%E7%94%A8%E6%88%B7%E7%9C%9F%E5%AE%9Eip%E9%97%AE%E9%A2%98.md)
+121. [K8S部署分布式调度任务Airflow](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/K8S%E9%83%A8%E7%BD%B2%E5%88%86%E5%B8%83%E5%BC%8F%E8%B0%83%E5%BA%A6%E4%BB%BB%E5%8A%A1Airflow.md)
 
 ### 六、Istio知识
 1. [Istio Helm 安装](https://github.com/yangpeng14/DevOps/blob/master/istio/istio-Helm-%E5%AE%89%E8%A3%85.md)
