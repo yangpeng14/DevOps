@@ -1,6 +1,6 @@
 ## 前言
 
-`Kubernetes` 计划在即将发布的 `1.24` 版本里弃用并移除 `docker shim`，这导致 `1.24` 版本开始不在支持 `docker` 运行时。大部分用户会选择使用 `Containerd` 做为Kubernetes运行时。
+`Kubernetes` 在 `1.24` 版本里弃用并移除 `docker shim`，这导致 `1.24` 版本开始不在支持 `docker` 运行时。大部分用户会选择使用 `Containerd` 做为Kubernetes运行时。
 
 > PS: `docker-ce` 底层就是 `Containerd`
 
