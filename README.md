@@ -38,6 +38,7 @@
 13. [解密 Docker 挂载文件，宿主机修改后容器里文件没有修改](https://github.com/yangpeng14/DevOps/blob/master/docker/%E8%A7%A3%E5%AF%86Docker%E6%8C%82%E8%BD%BD%E6%96%87%E4%BB%B6-%E5%AE%BF%E4%B8%BB%E6%9C%BA%E4%BF%AE%E6%94%B9%E5%90%8E%E5%AE%B9%E5%99%A8%E9%87%8C%E6%96%87%E4%BB%B6%E6%B2%A1%E6%9C%89%E4%BF%AE%E6%94%B9.md)
 14. [推荐两个Docker配置检查与启动异常修复方法脚本](https://github.com/yangpeng14/DevOps/blob/master/docker/%E6%8E%A8%E8%8D%90%E4%B8%A4%E4%B8%AADocker%E9%85%8D%E7%BD%AE%E6%A3%80%E6%9F%A5%E4%B8%8E%E5%90%AF%E5%8A%A8%E5%BC%82%E5%B8%B8%E4%BF%AE%E5%A4%8D%E6%96%B9%E6%B3%95%E8%84%9A%E6%9C%AC.md)
 15. [docker exec 失败问题排查之旅](https://github.com/yangpeng14/DevOps/blob/master/docker/docker-exec%E5%A4%B1%E8%B4%A5%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5%E4%B9%8B%E6%97%85.md)
+16. [Docker与Containerd使用区别](https://github.com/yangpeng14/DevOps/blob/master/docker/docker%E4%B8%8EContainerd%E4%BD%BF%E7%94%A8%E5%8C%BA%E5%88%AB.md)
 
 ### 五、Kubernetes知识
 1. [Metrics Serve 0.3.2安装](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/metrics-Server-v0-3-2%E7%89%88%E6%9C%AC%E5%AE%89%E8%A3%85.md)
