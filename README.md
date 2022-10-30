@@ -165,6 +165,7 @@
 121. [K8S部署分布式调度任务Airflow](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/K8S%E9%83%A8%E7%BD%B2%E5%88%86%E5%B8%83%E5%BC%8F%E8%B0%83%E5%BA%A6%E4%BB%BB%E5%8A%A1Airflow.md)
 122. [阿里云ACK多个Service绑定单个SLB实践](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/%E9%98%BF%E9%87%8C%E4%BA%91ACK%E5%A4%9A%E4%B8%AAService%E7%BB%91%E5%AE%9A%E5%8D%95%E4%B8%AASLB%E5%AE%9E%E8%B7%B5.md)
 123. [业务日志告警如何做?](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/%E4%B8%9A%E5%8A%A1%E6%97%A5%E5%BF%97%E5%91%8A%E8%AD%A6%E5%A6%82%E4%BD%95%E5%81%9A.md)
+124. [ETCD存储满了如何处理?](https://github.com/yangpeng14/DevOps/blob/master/kubernetes/etcd%E5%AD%98%E5%82%A8%E6%BB%A1%E4%BA%86%E5%A6%82%E4%BD%95%E5%A4%84%E7%90%86.md)
 
 ### 六、Istio知识
 1. [Istio Helm 安装](https://github.com/yangpeng14/DevOps/blob/master/istio/istio-Helm-%E5%AE%89%E8%A3%85.md)
